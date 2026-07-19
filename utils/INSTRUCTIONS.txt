@@ -1,0 +1,40 @@
+/*
+Instructions to recreate the shard data, in case I forget.
+1: https://hypixelskyblock.minecraft.wiki/w/Attributes/Search
+I am scalping the data from a wiki that literally anyone can edit. Hypixel doesn't have this data in their public API.
+
+2: Navigate the HTML, until I find the table body for that rarity of attributes. Make sure <tbody> == $0.
+
+3: Note the rarity of the attribute table.
+
+4: I will paste this script into the console. Do not run it yet:
+this script is so terribly coded. it's literally just parse the html nodes and text content. what am i doing.
+*/
+var SHARD_TABLE = $0, NEW_SHARD_TABLE = [];
+Array.from(SHARD_TABLE.children).forEach((index) => {
+    var html = Array.from(index.childNodes),
+    shardID = html[3].textContent,
+    attributeName = html[5].textContent,
+    attributeEffect = html[7].textContent,
+    shardName = html[9].textContent.split(" Shard")[0],
+    wikiDescription = html[11].textContent,
+    shardFamily = html[13].textContent,
+    shardSkill = html[15].textContent,
+    shardCategory = html[17].textContent;
+    NEW_SHARD_TABLE[parseInt(shardID.split( "C" )[1])] = { // change this value C/U/R/E/L accordingly.
+        shardID: shardID,
+        attributeName: attributeName,
+        attributeEffect: attributeEffect,
+        shardName: shardName,
+        wikiDescription: wikiDescription,
+        shardFamily: shardFamily,
+        shardSkill: shardSkill,
+        shardCategory: shardCategory,
+    }
+});
+console.log(JSON.stringify(NEW_SHARD_TABLE));
+/*
+5: Change the value that says it needs changing just how the script says to.
+
+6: Run the script of doom. I will get a JSON file. Update the respective json files in src. For example, common.json.
+*/
