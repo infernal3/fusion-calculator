@@ -1,1 +1,377 @@
-[null,{"shardID":"U1\n","attributeName":"Wood Elemental\n","attributeEffect":"Grants +2–20  Health\n","shardName":"Bramble","wikiDescription":"\nFusing Forest Category and Uncommon with Rare or higher\n","shardFamily":"Elemental\n","shardSkill":"Global\n","shardCategory":"Forest\n"},{"shardID":"U2\n","attributeName":"Water Elemental\n","attributeEffect":"Grants +1–10  Intelligence\n","shardName":"Tide","wikiDescription":"\nFusing Water Category and Uncommon with Rare or higher\n","shardFamily":"Elemental\n","shardSkill":"Global\n","shardCategory":"Water\n"},{"shardID":"U3\n","attributeName":"Stone Elemental\n","attributeEffect":"Grants +1–10  Strength\n","shardName":"Quake","wikiDescription":"\nFusing Combat Category and Uncommon with Rare or higher\n","shardFamily":"Elemental\n","shardSkill":"Global\n","shardCategory":"Combat\n"},{"shardID":"U4\n","attributeName":"Fig Collector\n","attributeEffect":"Grants +1–10  Fig Fortune for every digit in your Fig Log collection. (Max 10M collection)\n","shardName":"Sparrow","wikiDescription":"\nUnlocked from Fig Collection VII\n","shardFamily":"Bird\n","shardSkill":"Foraging\n","shardCategory":"Forest\n"},{"shardID":"U5\n","attributeName":"Gold Bait\n","attributeEffect":"The cooldown of Golden Fish is reduced by +30s–300s\n","shardName":"Goldfin","wikiDescription":"\nFusing Golden Ghoul Shard with Water Category\n","shardFamily":"\n","shardSkill":"Fishing\n","shardCategory":"Water\n"},{"shardID":"U6\n","attributeName":"Mountain Climber\n","attributeEffect":"Commissions grant +1%–10% more HOTM Exp\n","shardName":"Troglobyte","wikiDescription":"\nFusing Cave Dweller Family with Combat Category\n","shardFamily":"Cave Dweller\n","shardSkill":"Mining\n","shardCategory":"Combat\n"},{"shardID":"U7\n","attributeName":"Bigger Box\n","attributeEffect":"Grants a +5%–50% chance to find an extra item in Treasure Chests and the Crystal Nucleus\n","shardName":"Hideoncave","wikiDescription":"\nFusing Shulker Family with Cave Dweller Family\n","shardFamily":"Shulker\n","shardSkill":"Global\n","shardCategory":"Forest\n"},{"shardID":"U8\n","attributeName":"Good Karma\n","attributeEffect":"Grants +2–20  Hunter Fortune towards Uncommon Attributes\n","shardName":"Salamander","wikiDescription":"\nFusing Newt Shard with Water Category\n","shardFamily":"Lizard, Reptile\n","shardSkill":"Hunting\n","shardCategory":"Water\n"},{"shardID":"U9\n","attributeName":"Echo of Boxes\n","attributeEffect":"Your \"Box\" Attributes are +2%–20% stronger\n","shardName":"Cuboa","wikiDescription":"\nFusing Shulker Family with Reptile Family\n","shardFamily":"Reptile, Serpent\n","shardSkill":"Hunting\n","shardCategory":"Combat\n"},{"shardID":"U10\n","attributeName":"Pest Luck [AHN]\n","attributeEffect":"Grants +0.5–5  Overbloom on  Pests\n","shardName":"Field Mouse","wikiDescription":"\n","shardFamily":"Bug\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U11\n","attributeName":"Forest Trap\n","attributeEffect":"Forest Shards get caught by Traps +1%–10% faster\n","shardName":"Mossybit","wikiDescription":"\nFusing Tadgang Shard with Forest Category\nPlace Traps in Galatea (On Land)\nHunted in Murkwater Loch\n","shardFamily":"Amphibian, Frog\n","shardSkill":"Hunting\n","shardCategory":"Water\n"},{"shardID":"U12\n","attributeName":"Mana Steal\n","attributeEffect":"Regain +0.5–5 Mana every time you hit a monster. Cooldown: 0.5s\n","shardName":"Rain Slime","wikiDescription":"\nCatch with Pocket Black Hole\nKill Rain Slime or Toxic Rain Slime while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},null,null,{"shardID":"U15\n","attributeName":"Dragon Shortbow Improvement\n","attributeEffect":"Your Dragon Shortbow gains +2%–20% more  Damage while in  The End\n","shardName":"Seer","wikiDescription":"\nCatch with Pocket Black Hole\nKill Seer while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"U16\n","attributeName":"Mangrove Sharpening\n","attributeEffect":"Grants +10–100  Sweep towards Mangrove Trees\n","shardName":"Heron","wikiDescription":"\nPurchased in Agatha's Shop\n","shardFamily":"Bird\n","shardSkill":"Foraging\n","shardCategory":"Forest\n"},{"shardID":"U17\n","attributeName":"Humanoid Ruler [AHN]\n","attributeEffect":"Grants +3%–30% more  Damage against  Humanoid mobs\n","shardName":"Wetwing","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"U18\n","attributeName":"Speed\n","attributeEffect":"Grants +1–10  Speed\n","shardName":"Obsidian Defender","wikiDescription":"\nCatch with Pocket Black Hole\nKill Obsidian Defender while using Salts\n","shardFamily":"\n","shardSkill":"Global\n","shardCategory":"Combat\n"},{"shardID":"U19\n","attributeName":"Pest Fortune [AHN]\n","attributeEffect":"Grants +5–50  Farming Fortune on  Pests\n","shardName":"Cricket","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U20\n","attributeName":"Lost and Found\n","attributeEffect":"Grants a +0.1%–1% chance to find a Wet Book when fishing a Treasure\n","shardName":"Salmon","wikiDescription":"\nPlace Traps in Murkwater Depths (Underwater)\nPlace Traps in Murkwater Shallows (Underwater)\nCaught by Fishing in Tomb Floodway\nCatch with a Fishing Net\n","shardFamily":"\n","shardSkill":"Fishing\n","shardCategory":"Water\n"},{"shardID":"U21\n","attributeName":"Hunter's Fang\n","attributeEffect":"Your Hunting Axes gain +1%–10% more stats from the weapon they hold\n","shardName":"Viper","wikiDescription":"\nFusing Cuboa Shard with Combat Category\nPurchased from Kiara's Shop\n","shardFamily":"Reptile, Serpent\n","shardSkill":"Hunting\n","shardCategory":"Combat\n"},{"shardID":"U22\n","attributeName":"Insect Power\n","attributeEffect":"Your Vacuum deals +10%–100% extra  Damage\n","shardName":"Praying Mantis","wikiDescription":"\nFusing Pest Shard with Combat Category\n","shardFamily":"Bug\n","shardSkill":"Farming\n","shardCategory":"Forest\n"},{"shardID":"U23\n","attributeName":"Lily Tracker\n","attributeEffect":"Grants +1–10  Tracking on Exploding Lily Pads\n","shardName":"Lotum","wikiDescription":"\nPlace Traps in Lotus Atoll (On Land)\nHunted in Lotus Atoll\n","shardFamily":"Amphibian, Frog\n","shardSkill":"Fishing\n","shardCategory":"Water\n"},{"shardID":"U24\n","attributeName":"Undead Ruler\n","attributeEffect":"Grants +3%–30% more  Damage against  Undead mobs\n","shardName":"Zombie Soldier","wikiDescription":"\nKill Zombie Knight, Zombie Soldier, Zombie Commander, or Zombie Lord while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"U25\n","attributeName":"Strong Arms\n","attributeEffect":"Your Axe gains +3–30  Sweep on throws\n","shardName":"Bambuleaf","wikiDescription":"\nPlace Traps in Tranquility Sanctum (Spring or Summer)\nObtained from Pandas on Galatea\n","shardFamily":"Panda\n","shardSkill":"Foraging\n","shardCategory":"Forest\n"},{"shardID":"U26\n","attributeName":"Dwarven Training [AHN]\n","attributeEffect":"Gain +1%–10% more Heart of the Mountain Exp\n","shardName":"Treasure Hoarder","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"U27\n","attributeName":"Life Recovery\n","attributeEffect":"Heals for +0.1%–1% of your max health each time you kill a mob. Cooldown: 0.5s\n","shardName":"Sycophant","wikiDescription":"\nCatch with Pocket Black Hole\nKill Revenant Sycophant while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"U28\n","attributeName":"Mangrove Collector\n","attributeEffect":"Grants +1–10  Mangrove Fortune for every digit in your Mangrove Log collection. (Max 10M collection)\n","shardName":"Seagull","wikiDescription":"\nUnlocked from Mangrove Collection VII\n","shardFamily":"Bird\n","shardSkill":"Foraging\n","shardCategory":"Forest\n"},{"shardID":"U29\n","attributeName":"Woodland Ruler\n","attributeEffect":"Grants +3%–30% more  Damage against  Woodland mobs\n","shardName":"Ent","wikiDescription":"\nCatch with Pocket Black Hole\nKill Ent while using Salts\nPlace Traps in Murkwater Depths (Underwater)\nPlace Traps in Murkwater Shallows (Underwater)\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Water\n"},{"shardID":"U30\n","attributeName":"Combo\n","attributeEffect":"Deal +0.1%–1% more  Damage per Grandma Wolf Pet combo. (Max 50 combo)\n","shardName":"Soul of the Alpha","wikiDescription":"\nCatch with Pocket Black Hole\nKill Soul of the Alpha while using Salts\nPlace Traps in Howling Cave\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"U31\n","attributeName":"Strong Legs\n","attributeEffect":"Your Axe gains +3–30  Sweep on melee\n","shardName":"Mochibear","wikiDescription":"\nPlace Traps in Tranquility Sanctum (Autumn or Winter)\nObtained from Pandas on Galatea\n","shardFamily":"Panda\n","shardSkill":"Foraging\n","shardCategory":"Forest\n"},{"shardID":"U32\n","attributeName":"Infection\n","attributeEffect":"Increases the chance of catching corrupted Sea Creatures by +0.2%–2%\n","shardName":"Magma Slug","wikiDescription":"\nCatch with Pocket Black Hole\nKill Magma Slug while while using Salts\nObtained from Kuudra\nPlace Traps in Crimson Isle (Under lava)\n","shardFamily":"\n","shardSkill":"Fishing\n","shardCategory":"Water\n"},{"shardID":"U33\n","attributeName":"Arthropod Ruler\n","attributeEffect":"Grants +3%–30% more  Damage against  Arthropod mobs\n","shardName":"Flaming Spider","wikiDescription":"\nCatch with Pocket Black Hole\nKill Flaming Spider while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"U34\n","attributeName":"Kat's Favorite\n","attributeEffect":"Kat takes +1%–10% less time to upgrade a Pet\n","shardName":"Kiwi","wikiDescription":"\nFusing Bird Family with Uncommon or higher\n","shardFamily":"Bird\n","shardSkill":"Taming\n","shardCategory":"Forest\n"},null,{"shardID":"U36\n","attributeName":"Ender Ruler\n","attributeEffect":"Grants +3%–30% more  Damage against  Ender mobs\n","shardName":"Bruiser","wikiDescription":"\nCatch with Pocket Black Hole\nKill Zealot Bruiser while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},null,{"shardID":"U38\n","attributeName":"Magmatic Ruler\n","attributeEffect":"Grants +3%–30% more  Damage against  Magmatic mobs\n","shardName":"Stridersurfer","wikiDescription":"\nCatch with Pocket Black Hole\nKill Strider Surfer or Strider while using Salts\nPlace Traps in Strider-Ember Fissure\n","shardFamily":"Drowned\n","shardSkill":"Combat\n","shardCategory":"Water\n"},{"shardID":"U39\n","attributeName":"Battle Frog\n","attributeEffect":"Your Frog Pet gains +3–30  Strength\n","shardName":"Rana","wikiDescription":"\nFusing Frog Family with Combat Category\n","shardFamily":"Amphibian, Frog\n","shardSkill":"Taming\n","shardCategory":"Combat\n"},{"shardID":"U40\n","attributeName":"Infiltration [AHN]\n","attributeEffect":"Grants +3–30 ? Farming Fortune if your Garden Plot currently has a ? Pest in it\n","shardName":"Earthworm","wikiDescription":"\n","shardFamily":"Bug\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U41\n","attributeName":"Golden Frog\n","attributeEffect":"Trophy Frogs are +0.5%–5% more likely to be GOLD\n","shardName":"Flipflopper","wikiDescription":"\nCatch with a Fishing Net\nFusing Water Category and Uncommon with Common or higher\n","shardFamily":"\n","shardSkill":"Fishing\n","shardCategory":"Water\n"},{"shardID":"U42\n","attributeName":"Frozen Ruler [AHN]\n","attributeEffect":"Grants +3%–30% more  Damage against  Frozen mobs\n","shardName":"Polaris","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"U43\n","attributeName":"Foraging Frog [AHN]\n","attributeEffect":"Your Frog Pet gains +1–10  Foraging Fortune\n","shardName":"Treefrog","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U44\n","attributeName":"Compost Speed [AHN]\n","attributeEffect":"Your Composter works +1%–10% faster\n","shardName":"Bayou Sludge","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"U45\n","attributeName":"Battle Arachnid [AHN]\n","attributeEffect":"Your Spider Pet and Tarantula Pet gain +2–20  Crit Damage\n","shardName":"Areita","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"U46\n","attributeName":"Airborne Ruler [AHN]\n","attributeEffect":"Grants +3%–30% more  Damage against  Airborne mobs\n","shardName":"Bluebird","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U47\n","attributeName":"Flexible Fisher [AHN]\n","attributeEffect":"Increases your chance of catching Flexbones by +2.5%–25% while in the Tomb Floodway\n","shardName":"Osedax","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"U48\n","attributeName":"Arcane Ruler [AHN]\n","attributeEffect":"Grants +3%–30% more  Damage against  Arcane mobs\n","shardName":"Duplico","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"U49\n","attributeName":"Buckle Fisher [AHN]\n","attributeEffect":"Junk catches are +1%–10% more likely to be GREAT\n","shardName":"Litterbug","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U50\n","attributeName":"Titanoboa Tracker [AHN]\n","attributeEffect":"Grants +0.5–5  Tracking towards Tianoboa\n","shardName":"Water Snake","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"U51\n","attributeName":"Zealot Tracker [AHN]\n","attributeEffect":"Grants +0.5–5  Tracking towards Special Zealots\n","shardName":"Gazer","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"U52\n","attributeName":"Visitor Honey [AHN]\n","attributeEffect":"Garden Visitors have a +0.25%–2.5% chacne to bring Honey Jar\n","shardName":"Honeybug","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U53\n","attributeName":"Animal Ruler [AHN]\n","attributeEffect":"Grants +3%–30% more  Damage against  Animal mobs\n","shardName":"Sprawl","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"U54\n","attributeName":"Yeti Tracker [AHN]\n","attributeEffect":"Grants +0.5–5  Tracking towards Yeti\n","shardName":"Shuddersquid","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water*\n"},{"shardID":"U55\n","attributeName":"Soul Snatcher [AHN]\n","attributeEffect":"Mobs are +1%–10% more likely to drop their soul when killed\n","shardName":"Solsnatcher","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U56\n","attributeName":"Bucket Greed [AHN]\n","attributeEffect":"Your Chums give +10%–100% extra Coins when deposited into any bucket\n","shardName":"Sepialot","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"U57\n","attributeName":"Honey Serendipity [AHN]\n","attributeEffect":"Grants a +0.5%–5% chance to instantly attract a mob when lathering a Tree with Honeycomb\n","shardName":"Honey Badger","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest*\n"},{"shardID":"U58\n","attributeName":"Elusive Ruler [AHN]\n","attributeEffect":"Grants +3%–30% more  Damage against  Elusive mobs\n","shardName":"Queen Ant","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U59\n","attributeName":"Lily Puncher\n","attributeEffect":"Punching Exploding Lily Pads applies +5%–50% more force\n","shardName":"Tewtil","wikiDescription":"\nPlace Traps in Lotus Atoll (On Land)\nPlace Traps in Lotus Atoll (Underwater)\nHunted in Lotus Atoll\n","shardFamily":"Reptile, Turtle\n","shardSkill":"Fishing\n","shardCategory":"Water\n"},{"shardID":"U60\n","attributeName":"Mythological Ruler [AHN]\n","attributeEffect":"Grants +3%–30% more  Damage against  Mythological mobs\n","shardName":"Minos Hunter","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"U61\n","attributeName":"Builder Discount [AHN]\n","attributeEffect":"Reduces the cost of items in the Builder's Shop by +1%–10%\n","shardName":"Woodchucker","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U62\n","attributeName":"Starlyn Traininig [AHN]\n","attributeEffect":"Gain +1%–10% more points in Starlyn Contests\n","shardName":"Solar","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"U63\n","attributeName":"Visitor Compost [AHN]\n","attributeEffect":"Garden Visitors have a +0.25%–2.5% chance to bring Compost\n","shardName":"Parched","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"U64\n","attributeName":"Visitor Dung [AHN]\n","attributeEffect":"Garden Visitors have a +0.25%–2.5% chance to bring Dung\n","shardName":"Dung Beetle","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U65\n","attributeName":"Combat Trap [AHN]\n","attributeEffect":"Combat Shards get caught by Traps +1%–10% faster\n","shardName":"Dustybit","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"U66\n","attributeName":"Legendary Rabbit Luck [AHN]\n","attributeEffect":"Increases your chance of finding LEGENDARY Rabbits during Hoppity's Hunt by +1%–10%\n","shardName":"Rabbit Cat","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest*\n"},{"shardID":"U67\n","attributeName":"Visitor Cheese [AHN]\n","attributeEffect":"Garden Visitors have a +0.25%–2.5% chance to bring Tasty Cheese\n","shardName":"Woodlouse","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"U68\n","attributeName":"Galatea Training [AHN]\n","attributeEffect":"Gain +1%–10% more Heart of the Forest Exp\n","shardName":"Ember","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"U69\n","attributeName":"Bayou Treasure [AHN]\n","attributeEffect":"Grants +0.1–1  Treasure Chance while in the Backwater Bayou\n","shardName":"Cheeky Tiki","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"U70\n","attributeName":"Visitor Plant [AHN]\n","attributeEffect":"Garden Visitors have a +0.25%–2.5% chance to bring Plant Matter\n","shardName":"Red Panda","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,{"shardID":"U72\n","attributeName":"Tiki Tracker [AHN]\n","attributeEffect":"Grants +0.5–5  Tracking towards Wiki Tiki\n","shardName":"Sneaky Tiki","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},null,null,{"shardID":"U75\n","attributeName":"Construct Ruler [AHN]\n","attributeEffect":"Grants +3%–30% more  Damage against ︎ Construct mobs\n","shardName":"Shrieky Tiki","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"U76\n","attributeName":"Forest Felling [AHN]\n","attributeEffect":"Grants +0.1%–1% chance to fell an entire tree!\n","shardName":"Woodpecker","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,{"shardID":"U78\n","attributeName":"Mite Spawner [AHN]\n","attributeEffect":"Grants a +2.5%–25% chance to spawn an additional Nest Endermite when mining Ender Nodes\n","shardName":"Honeymite","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},null,null,null,null,null,null,{"shardID":"U85\n","attributeName":"Ticket Discount [AHN]\n","attributeEffect":"Upgrading Safari Tickets at the Safari Manager costs +1%–10% less Forest Essence\n","shardName":"June Bug","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,null,null,null,null,{"shardID":"U91\n","attributeName":"Sprayonator Serendipity [AHN]\n","attributeEffect":"Grants a +1%–10% chance for  Pests to drop an extra Sprayonator Material\n","shardName":"Rat","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,null,{"shardID":"U94\n","attributeName":"Bonus Pest Chance [AHN]\n","attributeEffect":"Grants +1–10  Bonus Pest Chance\n","shardName":"Keeled Slug","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,null,{"shardID":"U97\n","attributeName":"Filter Upgrade [AHN]\n","attributeEffect":"Increases the effects of your Atmospheric Filter by +2%–20%\n","shardName":"Mite","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,null,{"shardID":"U100\n","attributeName":"Pest Cooldown [AHN]\n","attributeEffect":"Reduces the spawn cooldown of  Pests by 0.5s\n","shardName":"Moth","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,null,{"shardID":"U103\n","attributeName":"Enchanted Farmer [AHN]\n","attributeEffect":"Grants a +0.001%–0.01% chance to find an Enchanted Crop while Farming\n","shardName":"Mosquito","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"}]
+[
+    null,
+    {
+        "shardID": "U1",
+        "attributeName": "Wood Elemental",
+        "attributeEffect": "Grants +2–20  Health",
+        "shardName": "Bramble",
+        "wikiDescription": "Fusing Forest Category and Uncommon with Rare or higher",
+        "shardFamily": "Elemental",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U2",
+        "attributeName": "Water Elemental",
+        "attributeEffect": "Grants +1–10  Intelligence",
+        "shardName": "Tide",
+        "wikiDescription": "Fusing Water Category and Uncommon with Rare or higher",
+        "shardFamily": "Elemental",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U3",
+        "attributeName": "Stone Elemental",
+        "attributeEffect": "Grants +1–10  Strength",
+        "shardName": "Quake",
+        "wikiDescription": "Fusing Combat Category and Uncommon with Rare or higher",
+        "shardFamily": "Elemental",
+        "shardSkill": "Global",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U4",
+        "attributeName": "Fig Collector",
+        "attributeEffect": "Grants +1–10  Fig Fortune for every digit in your Fig Log collection. (Max 10M collection)",
+        "shardName": "Sparrow",
+        "wikiDescription": "Unlocked from Fig Collection VII",
+        "shardFamily": "Bird",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U5",
+        "attributeName": "Gold Bait",
+        "attributeEffect": "The cooldown of Golden Fish is reduced by +30s–300s",
+        "shardName": "Goldfin",
+        "wikiDescription": "Fusing Golden Ghoul Shard with Water Category",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U6",
+        "attributeName": "Mountain Climber",
+        "attributeEffect": "Commissions grant +1%–10% more HOTM Exp",
+        "shardName": "Troglobyte",
+        "wikiDescription": "Fusing Cave Dweller Family with Combat Category",
+        "shardFamily": "Cave Dweller",
+        "shardSkill": "Mining",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U7",
+        "attributeName": "Bigger Box",
+        "attributeEffect": "Grants a +5%–50% chance to find an extra item in Treasure Chests and the Crystal Nucleus",
+        "shardName": "Hideoncave",
+        "wikiDescription": "Fusing Shulker Family with Cave Dweller Family",
+        "shardFamily": "Shulker",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U8",
+        "attributeName": "Good Karma",
+        "attributeEffect": "Grants +2–20  Hunter Fortune towards Uncommon Attributes",
+        "shardName": "Salamander",
+        "wikiDescription": "Fusing Newt Shard with Water Category",
+        "shardFamily": "Lizard, Reptile",
+        "shardSkill": "Hunting",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U9",
+        "attributeName": "Echo of Boxes",
+        "attributeEffect": "Your \"Box\" Attributes are +2%–20% stronger",
+        "shardName": "Cuboa",
+        "wikiDescription": "Fusing Shulker Family with Reptile Family",
+        "shardFamily": "Reptile, Serpent",
+        "shardSkill": "Hunting",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U10",
+        "attributeName": "Pest Luck",
+        "attributeEffect": "Grants +2–20  Overbloom towards  Pests",
+        "shardName": "Pest",
+        "wikiDescription": "Catch with Lasso\nKill Dragonfly, Praying Mantis, Mosquito, Firefly, Cricket, Fly, Beetle, Earthworm, Locust, Slug, Moth, Rat, or Mite while using Salts",
+        "shardFamily": "Bug",
+        "shardSkill": "Farming",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U11",
+        "attributeName": "Forest Trap",
+        "attributeEffect": "Forest Shards get caught by Traps +1%–10% faster",
+        "shardName": "Mossybit",
+        "wikiDescription": "Fusing Tadgang Shard with Forest Category\nPlace Traps in Galatea (On Land)\nHunted in Murkwater Loch",
+        "shardFamily": "Amphibian, Frog",
+        "shardSkill": "Hunting",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U12",
+        "attributeName": "Mana Steal",
+        "attributeEffect": "Regain +0.5–5 Mana every time you hit a monster. Cooldown: 0.5s",
+        "shardName": "Rain Slime",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Rain Slime or Toxic Rain Slime while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    null,
+    null,
+    {
+        "shardID": "U15",
+        "attributeName": "Dragon Shortbow Improvement",
+        "attributeEffect": "Your Dragon Shortbow gains +2%–20% more  Damage while in  The End",
+        "shardName": "Seer",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Seer while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U16",
+        "attributeName": "Mangrove Sharpening",
+        "attributeEffect": "Grants +10–100  Sweep towards Mangrove Trees",
+        "shardName": "Heron",
+        "wikiDescription": "Purchased in Agatha's Shop",
+        "shardFamily": "Bird",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "U18",
+        "attributeName": "Speed",
+        "attributeEffect": "Grants +1–10  Speed",
+        "shardName": "Obsidian Defender",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Obsidian Defender while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Combat"
+    },
+    null,
+    {
+        "shardID": "U20",
+        "attributeName": "Lost and Found",
+        "attributeEffect": "Grants a +0.1%–1% chance to find a Wet Book when fishing a Treasure",
+        "shardName": "Salmon",
+        "wikiDescription": "Place Traps in Murkwater Depths (Underwater)\nPlace Traps in Murkwater Shallows (Underwater)\nCaught by Fishing in Tomb Floodway\nCatch with a Fishing Net",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U21",
+        "attributeName": "Hunter's Fang",
+        "attributeEffect": "Your Hunting Axes gain +1%–10% more stats from the weapon they hold",
+        "shardName": "Viper",
+        "wikiDescription": "Fusing Cuboa Shard with Combat Category\nPurchased from Kiara's Shop",
+        "shardFamily": "Reptile, Serpent",
+        "shardSkill": "Hunting",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U22",
+        "attributeName": "Insect Power",
+        "attributeEffect": "Your Vacuum deals +10%–100% extra  Damage",
+        "shardName": "Praying Mantis",
+        "wikiDescription": "Fusing Pest Shard with Combat Category",
+        "shardFamily": "Bug",
+        "shardSkill": "Farming",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U23",
+        "attributeName": "Lily Tracker",
+        "attributeEffect": "Grants +1–10  Tracking on Exploding Lily Pads",
+        "shardName": "Lotum",
+        "wikiDescription": "Place Traps in Lotus Atoll (On Land)\nHunted in Lotus Atoll",
+        "shardFamily": "Amphibian, Frog",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U24",
+        "attributeName": "Undead Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Undead mobs",
+        "shardName": "Zombie Soldier",
+        "wikiDescription": "Kill Zombie Knight, Zombie Soldier, Zombie Commander, or Zombie Lord while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U25",
+        "attributeName": "Strong Arms",
+        "attributeEffect": "Your Axe gains +3–30  Sweep on throws",
+        "shardName": "Bambuleaf",
+        "wikiDescription": "Place Traps in Tranquility Sanctum (Spring or Summer)\nObtained from Pandas on Galatea",
+        "shardFamily": "Panda",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "U27",
+        "attributeName": "Life Recovery",
+        "attributeEffect": "Heals for +0.1%–1% of your max health each time you kill a mob. Cooldown: 0.5s",
+        "shardName": "Sycophant",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Revenant Sycophant while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U28",
+        "attributeName": "Mangrove Collector",
+        "attributeEffect": "Grants +1–10  Mangrove Fortune for every digit in your Mangrove Log collection. (Max 10M collection)",
+        "shardName": "Seagull",
+        "wikiDescription": "Unlocked from Mangrove Collection VII",
+        "shardFamily": "Bird",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U29",
+        "attributeName": "Woodland Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Woodland mobs",
+        "shardName": "Ent",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Ent while using Salts\nPlace Traps in Murkwater Depths (Underwater)\nPlace Traps in Murkwater Shallows (Underwater)",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U30",
+        "attributeName": "Combo",
+        "attributeEffect": "Deal +0.1%–1% more  Damage per Grandma Wolf Pet combo. (Max 50 combo)",
+        "shardName": "Soul of the Alpha",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Soul of the Alpha while using Salts\nPlace Traps in Howling Cave",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U31",
+        "attributeName": "Strong Legs",
+        "attributeEffect": "Your Axe gains +3–30  Sweep on melee",
+        "shardName": "Mochibear",
+        "wikiDescription": "Place Traps in Tranquility Sanctum (Autumn or Winter)\nObtained from Pandas on Galatea",
+        "shardFamily": "Panda",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U32",
+        "attributeName": "Infection",
+        "attributeEffect": "Increases the chance of catching corrupted Sea Creatures by +0.2%–2%",
+        "shardName": "Magma Slug",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Magma Slug while while using Salts\nObtained from Kuudra\nPlace Traps in Crimson Isle (Under lava)",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U33",
+        "attributeName": "Arthropod Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Arthropod mobs",
+        "shardName": "Flaming Spider",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Flaming Spider while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U34",
+        "attributeName": "Kat's Favorite",
+        "attributeEffect": "Kat takes +1%–10% less time to upgrade a Pet",
+        "shardName": "Kiwi",
+        "wikiDescription": "Fusing Bird Family with Uncommon or higher",
+        "shardFamily": "Bird",
+        "shardSkill": "Taming",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "U36",
+        "attributeName": "Ender Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Ender mobs",
+        "shardName": "Bruiser",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Zealot Bruiser while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    null,
+    {
+        "shardID": "U38",
+        "attributeName": "Magmatic Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Magmatic mobs",
+        "shardName": "Stridersurfer",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Strider Surfer or Strider while using Salts\nPlace Traps in Strider-Ember Fissure",
+        "shardFamily": "Drowned",
+        "shardSkill": "Combat",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U39",
+        "attributeName": "Battle Frog",
+        "attributeEffect": "Your Frog Pet gains +3–30  Strength",
+        "shardName": "Rana",
+        "wikiDescription": "Fusing Frog Family with Combat Category",
+        "shardFamily": "Amphibian, Frog",
+        "shardSkill": "Taming",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U40",
+        "attributeName": "Infiltration",
+        "attributeEffect": "Grants +3–30  Farming Fortune if your Garden Plot currently has a  Pest in it",
+        "shardName": "Termite",
+        "wikiDescription": "Fusing Bug Family with Mining Attribute Category",
+        "shardFamily": "Bug",
+        "shardSkill": "Farming",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U41",
+        "attributeName": "Golden Frog",
+        "attributeEffect": "Trophy Frogs are +0.5%–5% more likely to be GOLD",
+        "shardName": "Flipflopper",
+        "wikiDescription": "Catch with a Fishing Net\nFusing Water Category and Uncommon with Common or higher",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+        "shardID": "U59",
+        "attributeName": "Lily Puncher",
+        "attributeEffect": "Punching Exploding Lily Pads applies +5%–50% more force",
+        "shardName": "Tewtil",
+        "wikiDescription": "Place Traps in Lotus Atoll (On Land)\nPlace Traps in Lotus Atoll (Underwater)\nHunted in Lotus Atoll",
+        "shardFamily": "Reptile, Turtle",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    }
+]
