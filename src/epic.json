@@ -1,1 +1,363 @@
-[null,{"shardID":"E1\n","attributeName":"Earth Elemental\n","attributeEffect":"Grants +2–20  Health\n","shardName":"Terra","wikiDescription":"\nFusing Forest Category and Epic with Legendary or higher\n","shardFamily":"Elemental\n","shardSkill":"Global\n","shardCategory":"Forest\n"},{"shardID":"E2\n","attributeName":"Frost Elemental\n","attributeEffect":"Grants +1–10  Intelligence\n","shardName":"Cryo","wikiDescription":"\nFusing Water Category and Epic with Legendary or higher\n","shardFamily":"Elemental\n","shardSkill":"Global\n","shardCategory":"Water\n"},{"shardID":"E3\n","attributeName":"Wind Elemental\n","attributeEffect":"Grants +1–10  Strength\n","shardName":"Aero","wikiDescription":"\nFusing Combat Category and Epic with Legendary or higher\n","shardFamily":"Elemental\n","shardSkill":"Global\n","shardCategory":"Combat\n"},{"shardID":"E4\n","attributeName":"Foraging Wisdom\n","attributeEffect":"Grants +0.5–5 ☯ Foraging Wisdom\n","shardName":"Pandarai","wikiDescription":"\nFusing Panda Family with Rare or higher\n","shardFamily":"Panda\n","shardSkill":"Foraging\n","shardCategory":"Forest\n"},{"shardID":"E5\n","attributeName":"Excellent Karma\n","attributeEffect":"Grants +1–10  Hunter Fortune towards Epic Attributes\n","shardName":"Leviathan","wikiDescription":"\nFusing Lizard Family with Water Category and Rare or higher\n","shardFamily":"Lizard, Reptile\n","shardSkill":"Hunting\n","shardCategory":"Water\n"},{"shardID":"E6\n","attributeName":"Echo of Resistance\n","attributeEffect":"Your Resistance Attributes are +2%–20% stronger\n","shardName":"Alligator","wikiDescription":"\nFusing Crocodile Shard with Combat Category and Rare or higher\nPlace Traps in Backwater Bayou (Underwater)\nKill Alligator while using Salts\n","shardFamily":"Croco, Reptile\n","shardSkill":"Hunting\n","shardCategory":"Combat\n"},{"shardID":"E7\n","attributeName":"Berry Mogul\n","attributeEffect":"Your Salts last +1%–10% longer\n","shardName":"Fenlord","wikiDescription":"\nFusing Bullfrog Shard with Forest Category and Rare or higher\nPlace Traps in Galatea (On Land)\n","shardFamily":"Amphibian, Frog\n","shardSkill":"Hunting\n","shardCategory":"Water*\n"},{"shardID":"E8\n","attributeName":"Pickaxe Cooldown [AHN]\n","attributeEffect":"Reduces the cooldown of your Pickaxe Ability by +1%–10%\n","shardName":"Abyssal Miner","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"E9\n","attributeName":"Hunter's Suppress\n","attributeEffect":"Lassos deplete Stamina +2%–20% faster\n","shardName":"Basilisk","wikiDescription":"\nFusing King Cobra Shard with Combat Category and Rare or higher\n","shardFamily":"Reptile, Serpent\n","shardSkill":"Hunting\n","shardCategory":"Combat\n"},{"shardID":"E10\n","attributeName":"Echo of Atomized\n","attributeEffect":"Your Atomized Attributes are +2%–20% stronger\n","shardName":"Iguana","wikiDescription":"\nFusing Gecko Shard with Forest Category and Rare or higher\n","shardFamily":"Reptile, Scaled\n","shardSkill":"Hunting\n","shardCategory":"Forest\n"},{"shardID":"E11\n","attributeName":"Lucky Rod\n","attributeEffect":"Fish Treasure Shards are +1%–10% easier to find\n","shardName":"Moray Eel","wikiDescription":"\nFusing Eel Shard with Water Category and Rare or higher\n","shardFamily":"Amphibian, Eel\n","shardSkill":"Hunting\n","shardCategory":"Water\n"},{"shardID":"E12\n","attributeName":"Special Upgrades [AHN]\n","attributeEffect":"Summoning Eyes you drop have a +0.5%–5% chance to be recombobulated\n","shardName":"Special Zealot","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"E13\n","attributeName":"Lunar Power\n","attributeEffect":"Grants +5–50  Farming Fortune during the Night\n","shardName":"Lunar Moth","wikiDescription":"\nFusing Ladybug Shard with Bug Family and Rare or higher\n","shardFamily":"Bug\n","shardSkill":"Farming\n","shardCategory":"Forest\n"},{"shardID":"E14\n","attributeName":"Trophy Hunter\n","attributeEffect":"Grants +2–20  Trophy Chance\n","shardName":"Fire Eel","wikiDescription":"\nFusing Eel Shard with Moray Eel Shard\nFusing Moray Eel Shard with Firefly Shards\nCatch with Pocket Black Holes\nKill Fire Eel while using Salts\nObtained from Kuudra\n","shardFamily":"Amphibian, Eel\n","shardSkill":"Fishing\n","shardCategory":"Water\n"},{"shardID":"E15\n","attributeName":"Deep Technique\n","attributeEffect":"Each block you mine has a +1%–10% chance to grant 1 extra  Pristine for that block\n","shardName":"Bal","wikiDescription":"\nKill Bal while using Salts\n","shardFamily":"Cave Dweller\n","shardSkill":"Mining\n","shardCategory":"Combat\n"},{"shardID":"E16\n","attributeName":"Sack Size\n","attributeEffect":"Your sacks can hold +1%–10% more items\n","shardName":"Hideonsack","wikiDescription":"\nFusing Shulker Family and Rare or higher with Epic or higher\n","shardFamily":"Shulker\n","shardSkill":"Global\n","shardCategory":"Forest\n"},{"shardID":"E17\n","attributeName":"Fishing Speed\n","attributeEffect":"Grants +3–30  Fishing Speed\n","shardName":"Water Hydra","wikiDescription":"\nCatch with Pocket Black Holes\nKill Water Hydra while using Salts\n","shardFamily":"\n","shardSkill":"Fishing\n","shardCategory":"Water\n"},{"shardID":"E18\n","attributeName":"Infernal Ruler\n","attributeEffect":"Grants +3%–30% more  Damage against  Infernal mobs\n","shardName":"Flare","wikiDescription":"\nCatch with Pocket Black Hole\nKill Flare while using Salts\nObtained from Kuudra\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"E19\n","attributeName":"Sky High [AHN]\n","attributeEffect":"Increases the distance you can fall before taking fall damage by +0.5–5 blocks\n","shardName":"Murderwing","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"E20\n","attributeName":"Sea Wisdom\n","attributeEffect":"Grants +0.5–5 ☯ Fishing Wisdom\n","shardName":"Loch Emperor","wikiDescription":"\nCatch with Pocket Black Hole\nKill The Loch Emperor while using Salts\n","shardFamily":"\n","shardSkill":"Fishing\n","shardCategory":"Water\n"},{"shardID":"E21\n","attributeName":"Reborn\n","attributeEffect":"Killing a Prince has a +10%–100% chance to add 1 Bonus Score to your Dungeon Run. Limit of +1 Score per run\n","shardName":"Prince","wikiDescription":"\nKill Prince Bernhard, Prince Christian, Prince Pieter, Prince Nicholas, Prince Alexander, Prince Marius, Prince Valentin, or Prince Friedrich while using Salts\n","shardFamily":"\n","shardSkill":"Global\n","shardCategory":"Combat\n"},{"shardID":"E22\n","attributeName":"Echo of Essence\n","attributeEffect":"Your Essence Attributes are +2%–20% stronger\n","shardName":"Komodo Dragon","wikiDescription":"\nFusing Iguana Shard with Forest Category and Rare or higher\n","shardFamily":"Reptile, Scaled\n","shardSkill":"Hunting\n","shardCategory":"Forest\n"},{"shardID":"E23\n","attributeName":"Oustanding Fisher [AHN]\n","attributeEffect":"Treasure catches are +1%–10% more likely to be OUTSTANDING\n","shardName":"Blue Crab","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"E24\n","attributeName":"Faker\n","attributeEffect":"Dungeon Blessings are +1%–10% stronger on you\n","shardName":"Mimic","wikiDescription":"\nKill Mimic while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"E25\n","attributeName":"Slayer Progress [AHN]\n","attributeEffect":"Slayer Quests start +1%–10% complete\n","shardName":"Wolverine","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"E26\n","attributeName":"Shell\n","attributeEffect":"Gain a +10%–100% chance to negate knockback\n","shardName":"Shellwise","wikiDescription":"\nPlace Traps in Murkwater Depths (Underwater)\nCatch with a Fishing Net\n","shardFamily":"Reptile, Turtle\n","shardSkill":"Global\n","shardCategory":"Water\n"},{"shardID":"E27\n","attributeName":"Warrior\n","attributeEffect":"Increases melee damage dealt by +2.5%–25%\n","shardName":"Barbarian Duke X","wikiDescription":"\nCatch with Pocket Black Hole\nKill Barbarian Duke X while using Salts\nObtained from Kuudra\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"E28\n","attributeName":"Why Not More\n","attributeEffect":"Your pet's EXP Share grants +1%–10% more EXP\n","shardName":"Toucan","wikiDescription":"\nFusing Bird Family with Epic or higher\n","shardFamily":"Bird\n","shardSkill":"Taming\n","shardCategory":"Forest\n"},{"shardID":"E29\n","attributeName":"Attack Speed\n","attributeEffect":"Grants +1–10  Attack Speed\n","shardName":"Inferno Demonlord","wikiDescription":"\nObtained from the Inferno Demonlord III and IV\n","shardFamily":"Demon\n","shardSkill":"Combat\n","shardCategory":"Combat*\n"},{"shardID":"E30\n","attributeName":"Echo of Ruler\n","attributeEffect":"Your Ruler Attributes are +2%–20% stronger\n","shardName":"Caiman","wikiDescription":"\nFusing Alligator Shard with Combat Category and Rare or higher\n","shardFamily":"Croco, Reptile\n","shardSkill":"Hunting\n","shardCategory":"Combat\n"},{"shardID":"E31\n","attributeName":"Solar Power\n","attributeEffect":"Grants +5–50  Farming Fortune during the day\n","shardName":"Firefly","wikiDescription":"\nFusing Praying Mantis Shard with Bezal, Cinderbat, Flare, Lava Flame, Fire Eel, Bal, and Flaming Spider Shards\n","shardFamily":"Bug\n","shardSkill":"Farming\n","shardCategory":"Forest\n"},{"shardID":"E32\n","attributeName":"Echo of Hunter\n","attributeEffect":"Your Hunter Attributes are +2%–20% stronger\n","shardName":"Sea Serpent","wikiDescription":"\nFusing Moray Eel Shard with Water Category and Rare or higher\n","shardFamily":"Amphibian, Eel, Serpent\n","shardSkill":"Hunting\n","shardCategory":"Water\n"},{"shardID":"E33\n","attributeName":"Veil\n","attributeEffect":"Grants +1–10  True Defense\n","shardName":"Ghost","wikiDescription":"\nCatch with Pocket Black Hole\nKill Ghosts while using Salts\n","shardFamily":"Cave Dweller\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"E34\n","attributeName":"Mana Regeneration\n","attributeEffect":"Increases your Mana regeneration by +1%–10%\n","shardName":"XYZ","wikiDescription":"\nCatch with Lasso\nKill Atom while using Salts\nObtained from Kuudra\nPlace Traps in Mystic Marsh\nCaptured using an Atominizer\n","shardFamily":"\n","shardSkill":"Global\n","shardCategory":"Forest\n"},{"shardID":"E35\n","attributeName":"Hunt Wisdom\n","attributeEffect":"Grants +0.5–5 ☯ Hunting Wisdom\n","shardName":"Leatherback","wikiDescription":"\nFusing Shellwise Shard with Water Category and Rare or higher\n","shardFamily":"Reptile, Turtle\n","shardSkill":"Hunting\n","shardCategory":"Water\n"},{"shardID":"E36\n","attributeName":"Cavern Wisdom\n","attributeEffect":"Grants +0.5–5 ☯ Mining Wisdom\n","shardName":"Cavernshade","wikiDescription":"\nFusing Cave Dweller Family and Rare or higher with Cave Dweller Family and Epic or higher\n","shardFamily":"Cave Dweller\n","shardSkill":"Mining\n","shardCategory":"Combat\n"},{"shardID":"E37\n","attributeName":"Garden Wisdom\n","attributeEffect":"Grants +0.5–5 ☯ Farming Wisdom\n","shardName":"Dragonfly","wikiDescription":"\nFusing Firefly Shard with Dragon Family\n","shardFamily":"Bug\n","shardSkill":"Farming\n","shardCategory":"Forest\n"},null,{"shardID":"E39\n","attributeName":"Mythological Tracker\n","attributeEffect":"Grants +0.5–5  Tracking on Griffin Burrows\n","shardName":"Sphinx","wikiDescription":"\nCatch with Pocket Black Hole\nKill Exalted Sphinx or Empyrean Sphinx while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},null,null,{"shardID":"E42\n","attributeName":"King of Greed\n","attributeEffect":"Increases Coin gain from Griffin Burrows by +1%–10%\n","shardName":"King Minos","wikiDescription":"\nCatch with Pocket Black Hole\nKill Empyrean King Minos while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"E43\n","attributeName":"Ghastly Distraction [AHN]\n","attributeEffect":"Pacifies enemies for +1s–10s after mining Opal Gemstones in the Smoldering Tomb. Does not work on Slayer Bosses, Slayer Minibosses. Attacking an enemy ends the effect early\n","shardName":"Dive Ghast","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"E44\n","attributeName":"Forager's Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find while on Foraging Islands\n","shardName":"Silkbreeze","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"E45\n","attributeName":"Devouring Speed [AHN]\n","attributeEffect":"Grants +0.25–2.5  Gemstone Spread\n","shardName":"Gemzie","wikiDescription":"\n","shardFamily":"Arctic\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"E46\n","attributeName":"Divine Rabbit Luck [AHN]\n","attributeEffect":"Increases your chance of finding DIVINE Rabbits during Hoppity's Hunt by +1%–10%\n","shardName":"Rabbit Godmother","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"E47\n","attributeName":"Fisher's Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find while on Fishing Islands\n","shardName":"Giant Isopod","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},null,{"shardID":"E49\n","attributeName":"Honey Refill [AHN]\n","attributeEffect":"Honeyhives have a +0.5%–5% chance to refill instantly\n","shardName":"Queen Bee","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,{"shardID":"E51\n","attributeName":"Catacombs Explorer [AHN]\n","attributeEffect":"Grants +1%–10% more Catacombs XP\n","shardName":"Bonzo","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"E52\n","attributeName":"Lathering Greed [AHN]\n","attributeEffect":"Gain +10%–100% more Honeycomb from hunting mobs spawned from Trees lathered with Honeycomb\n","shardName":"Beeheemoth","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,null,null,null,null,{"shardID":"E58\n","attributeName":"Social Wisdom [AHN]\n","attributeEffect":"Grants +0.5–5 ☯ Social Wisdom\n","shardName":"Mountain Goat","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,{"shardID":"E60\n","attributeName":"Glossy Fortune [AHN]\n","attributeEffect":"Increases your chance of finding Glossy Gemstones during Mining Fiestas by +1%–10%\n","shardName":"Scatha","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},null,null,{"shardID":"E63\n","attributeName":"Royal Riches [AHN]\n","attributeEffect":"Grants +5–50  Mining Speed and +2.5–25  Ore Fortune while in the Mines of Divan\n","shardName":"Nilbog","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"}]
+[
+    null,
+    {
+        "shardID": "E1",
+        "attributeName": "Earth Elemental",
+        "attributeEffect": "Grants +2–20  Health",
+        "shardName": "Terra",
+        "wikiDescription": "Fusing Forest Category and Epic with Legendary or higher",
+        "shardFamily": "Elemental",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "E2",
+        "attributeName": "Frost Elemental",
+        "attributeEffect": "Grants +1–10  Intelligence",
+        "shardName": "Cryo",
+        "wikiDescription": "Fusing Water Category and Epic with Legendary or higher",
+        "shardFamily": "Elemental",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "E3",
+        "attributeName": "Wind Elemental",
+        "attributeEffect": "Grants +1–10  Strength",
+        "shardName": "Aero",
+        "wikiDescription": "Fusing Combat Category and Epic with Legendary or higher",
+        "shardFamily": "Elemental",
+        "shardSkill": "Global",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "E4",
+        "attributeName": "Foraging Wisdom",
+        "attributeEffect": "Grants +0.5–5 ☯ Foraging Wisdom",
+        "shardName": "Pandarai",
+        "wikiDescription": "Fusing Panda Family with Rare or higher",
+        "shardFamily": "Panda",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "E5",
+        "attributeName": "Excellent Karma",
+        "attributeEffect": "Grants +1–10  Hunter Fortune towards Epic Attributes",
+        "shardName": "Leviathan",
+        "wikiDescription": "Fusing Lizard Family with Water Category and Rare or higher",
+        "shardFamily": "Lizard, Reptile",
+        "shardSkill": "Hunting",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "E6",
+        "attributeName": "Echo of Resistance",
+        "attributeEffect": "Your Resistance Attributes are +2%–20% stronger",
+        "shardName": "Alligator",
+        "wikiDescription": "Fusing Crocodile Shard with Combat Category and Rare or higher\nPlace Traps in Backwater Bayou (Underwater)\nKill Alligator while using Salts",
+        "shardFamily": "Croco, Reptile",
+        "shardSkill": "Hunting",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "E7",
+        "attributeName": "Berry Mogul",
+        "attributeEffect": "Your Salts last +1%–10% longer",
+        "shardName": "Fenlord",
+        "wikiDescription": "Fusing Bullfrog Shard with Forest Category and Rare or higher\nPlace Traps in Galatea (On Land)",
+        "shardFamily": "Amphibian, Frog",
+        "shardSkill": "Hunting",
+        "shardCategory": "Water*"
+    },
+    null,
+    {
+        "shardID": "E9",
+        "attributeName": "Hunter's Suppress",
+        "attributeEffect": "Lassos deplete Stamina +2%–20% faster",
+        "shardName": "Basilisk",
+        "wikiDescription": "Fusing King Cobra Shard with Combat Category and Rare or higher",
+        "shardFamily": "Reptile, Serpent",
+        "shardSkill": "Hunting",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "E10",
+        "attributeName": "Echo of Atomized",
+        "attributeEffect": "Your Atomized Attributes are +2%–20% stronger",
+        "shardName": "Iguana",
+        "wikiDescription": "Fusing Gecko Shard with Forest Category and Rare or higher",
+        "shardFamily": "Reptile, Scaled",
+        "shardSkill": "Hunting",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "E11",
+        "attributeName": "Lucky Rod",
+        "attributeEffect": "Fish Treasure Shards are +1%–10% easier to find",
+        "shardName": "Moray Eel",
+        "wikiDescription": "Fusing Eel Shard with Water Category and Rare or higher",
+        "shardFamily": "Amphibian, Eel",
+        "shardSkill": "Hunting",
+        "shardCategory": "Water"
+    },
+    null,
+    {
+        "shardID": "E13",
+        "attributeName": "Lunar Power",
+        "attributeEffect": "Grants +5–50  Farming Fortune during the Night",
+        "shardName": "Lunar Moth",
+        "wikiDescription": "Fusing Ladybug Shard with Bug Family and Rare or higher",
+        "shardFamily": "Bug",
+        "shardSkill": "Farming",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "E14",
+        "attributeName": "Trophy Hunter",
+        "attributeEffect": "Grants +2–20  Trophy Chance",
+        "shardName": "Fire Eel",
+        "wikiDescription": "Fusing Eel Shard with Moray Eel Shard\nFusing Moray Eel Shard with Firefly Shards\nCatch with Pocket Black Holes\nKill Fire Eel while using Salts\nObtained from Kuudra",
+        "shardFamily": "Amphibian, Eel",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "E15",
+        "attributeName": "Deep Technique",
+        "attributeEffect": "Each block you mine has a +1%–10% chance to grant 1 extra  Pristine for that block",
+        "shardName": "Bal",
+        "wikiDescription": "Kill Bal while using Salts",
+        "shardFamily": "Cave Dweller",
+        "shardSkill": "Mining",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "E16",
+        "attributeName": "Sack Size",
+        "attributeEffect": "Your sacks can hold +1%–10% more items",
+        "shardName": "Hideonsack",
+        "wikiDescription": "Fusing Shulker Family and Rare or higher with Epic or higher",
+        "shardFamily": "Shulker",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "E17",
+        "attributeName": "Fishing Speed",
+        "attributeEffect": "Grants +3–30  Fishing Speed",
+        "shardName": "Water Hydra",
+        "wikiDescription": "Catch with Pocket Black Holes\nKill Water Hydra while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "E18",
+        "attributeName": "Infernal Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Infernal mobs",
+        "shardName": "Flare",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Flare while using Salts\nObtained from Kuudra",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    null,
+    {
+        "shardID": "E20",
+        "attributeName": "Sea Wisdom",
+        "attributeEffect": "Grants +0.5–5 ☯ Fishing Wisdom",
+        "shardName": "Loch Emperor",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill The Loch Emperor while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "E21",
+        "attributeName": "Reborn",
+        "attributeEffect": "Killing a Prince has a +10%–100% chance to add 1 Bonus Score to your Dungeon Run. Limit of +1 Score per run",
+        "shardName": "Prince",
+        "wikiDescription": "Kill Prince Bernhard, Prince Christian, Prince Pieter, Prince Nicholas, Prince Alexander, Prince Marius, Prince Valentin, or Prince Friedrich while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "E22",
+        "attributeName": "Echo of Essence",
+        "attributeEffect": "Your Essence Attributes are +2%–20% stronger",
+        "shardName": "Komodo Dragon",
+        "wikiDescription": "Fusing Iguana Shard with Forest Category and Rare or higher",
+        "shardFamily": "Reptile, Scaled",
+        "shardSkill": "Hunting",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "E24",
+        "attributeName": "Faker",
+        "attributeEffect": "Dungeon Blessings are +1%–10% stronger on you",
+        "shardName": "Mimic",
+        "wikiDescription": "Kill Mimic while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    null,
+    {
+        "shardID": "E26",
+        "attributeName": "Shell",
+        "attributeEffect": "Gain a +10%–100% chance to negate knockback",
+        "shardName": "Shellwise",
+        "wikiDescription": "Place Traps in Murkwater Depths (Underwater)\nCatch with a Fishing Net",
+        "shardFamily": "Reptile, Turtle",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "E27",
+        "attributeName": "Warrior",
+        "attributeEffect": "Increases melee damage dealt by +2.5%–25%",
+        "shardName": "Barbarian Duke X",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Barbarian Duke X while using Salts\nObtained from Kuudra",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "E28",
+        "attributeName": "Why Not More",
+        "attributeEffect": "Your pet's EXP Share grants +1%–10% more EXP",
+        "shardName": "Toucan",
+        "wikiDescription": "Fusing Bird Family with Epic or higher",
+        "shardFamily": "Bird",
+        "shardSkill": "Taming",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "E29",
+        "attributeName": "Attack Speed",
+        "attributeEffect": "Grants +1–10  Attack Speed",
+        "shardName": "Inferno Demonlord",
+        "wikiDescription": "Obtained from the Inferno Demonlord III and IV",
+        "shardFamily": "Demon",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat*"
+    },
+    {
+        "shardID": "E30",
+        "attributeName": "Echo of Ruler",
+        "attributeEffect": "Your Ruler Attributes are +2%–20% stronger",
+        "shardName": "Caiman",
+        "wikiDescription": "Fusing Alligator Shard with Combat Category and Rare or higher",
+        "shardFamily": "Croco, Reptile",
+        "shardSkill": "Hunting",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "E31",
+        "attributeName": "Solar Power",
+        "attributeEffect": "Grants +5–50  Farming Fortune during the day",
+        "shardName": "Firefly",
+        "wikiDescription": "Fusing Praying Mantis Shard with Bezal, Cinderbat, Flare, Lava Flame, Fire Eel, Bal, and Flaming Spider Shards",
+        "shardFamily": "Bug",
+        "shardSkill": "Farming",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "E32",
+        "attributeName": "Echo of Hunter",
+        "attributeEffect": "Your Hunter Attributes are +2%–20% stronger",
+        "shardName": "Sea Serpent",
+        "wikiDescription": "Fusing Moray Eel Shard with Water Category and Rare or higher",
+        "shardFamily": "Amphibian, Eel, Serpent",
+        "shardSkill": "Hunting",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "E33",
+        "attributeName": "Veil",
+        "attributeEffect": "Grants +1–10  True Defense",
+        "shardName": "Ghost",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Ghosts while using Salts",
+        "shardFamily": "Cave Dweller",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "E34",
+        "attributeName": "Mana Regeneration",
+        "attributeEffect": "Increases your Mana regeneration by +1%–10%",
+        "shardName": "XYZ",
+        "wikiDescription": "Catch with Lasso\nKill Atom while using Salts\nObtained from Kuudra\nPlace Traps in Mystic Marsh\nCaptured using an Atominizer",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "E35",
+        "attributeName": "Hunt Wisdom",
+        "attributeEffect": "Grants +0.5–5 ☯ Hunting Wisdom",
+        "shardName": "Leatherback",
+        "wikiDescription": "Fusing Shellwise Shard with Water Category and Rare or higher",
+        "shardFamily": "Reptile, Turtle",
+        "shardSkill": "Hunting",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "E36",
+        "attributeName": "Cavern Wisdom",
+        "attributeEffect": "Grants +0.5–5 ☯ Mining Wisdom",
+        "shardName": "Cavernshade",
+        "wikiDescription": "Fusing Cave Dweller Family and Rare or higher with Cave Dweller Family and Epic or higher",
+        "shardFamily": "Cave Dweller",
+        "shardSkill": "Mining",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "E37",
+        "attributeName": "Garden Wisdom",
+        "attributeEffect": "Grants +0.5–5 ☯ Farming Wisdom",
+        "shardName": "Dragonfly",
+        "wikiDescription": "Fusing Firefly Shard with Dragon Family",
+        "shardFamily": "Bug",
+        "shardSkill": "Farming",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "E39",
+        "attributeName": "Mythological Tracker",
+        "attributeEffect": "Grants +0.5–5  Tracking on Griffin Burrows",
+        "shardName": "Sphinx",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Exalted Sphinx or Empyrean Sphinx while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    null,
+    null,
+    {
+        "shardID": "E42",
+        "attributeName": "King of Greed",
+        "attributeEffect": "Increases Coin gain from Griffin Burrows by +1%–10%",
+        "shardName": "King Minos",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Empyrean King Minos while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    null,
+    null,
+    {
+        "shardID": "E45",
+        "attributeName": "Freezing Spread",
+        "attributeEffect": "Grants +0.5  Gemstone Spread for every 29–20  Cold Resistance",
+        "shardName": "Littlefoot",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Littlefoot while using Salts",
+        "shardFamily": "Arctic",
+        "shardSkill": "Mining",
+        "shardCategory": "Combat"
+    }
+]
