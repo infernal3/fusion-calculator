@@ -1,1 +1,517 @@
-[null,{"shardID":"R1\n","attributeName":"Forest Elemental\n","attributeEffect":"Grants +2–20  Health\n","shardName":"Sylvan","wikiDescription":"\nFusing Forest Category and Rare with Epic or higher\n","shardFamily":"Elemental\n","shardSkill":"Global\n","shardCategory":"Forest\n"},{"shardID":"R2\n","attributeName":"Torrent Elemental\n","attributeEffect":"Grants +1–10  Intelligence\n","shardName":"Cascade","wikiDescription":"\nFusing Water Category and Rare with Epic or higher\n","shardFamily":"Elemental\n","shardSkill":"Global\n","shardCategory":"Water\n"},{"shardID":"R3\n","attributeName":"Lightning Elemental\n","attributeEffect":"Grants +1–10  Strength\n","shardName":"Bolt","wikiDescription":"\nFusing Combat Category and Rare with Epic or higher\n","shardFamily":"Elemental\n","shardSkill":"Global\n","shardCategory":"Combat\n"},{"shardID":"R4\n","attributeName":"Animal Expertise\n","attributeEffect":"Grants +10–100  Foraging Fortune\n","shardName":"Bambloom","wikiDescription":"\nFusing Panda Family with Uncommon or higher\n","shardFamily":"Panda\n","shardSkill":"Foraging\n","shardCategory":"Forest\n"},{"shardID":"R5\n","attributeName":"Frog Legs\n","attributeEffect":"Frogs have a +10%–100% chance to jump 1 less time\n","shardName":"Toad","wikiDescription":"\nFusing Frog Family with Forest Category and Uncommon or higher\n","shardFamily":"Amphibian, Frog\n","shardSkill":"Hunting\n","shardCategory":"Water\n"},{"shardID":"R6\n","attributeName":"Essence of Ice\n","attributeEffect":"Gain +1%–10% more Ice Essence\n","shardName":"Glacite Walker","wikiDescription":"\nCatch with Pocket Black Hole\nKill Glacite Walker while using Salts\n","shardFamily":"\n","shardSkill":"Global\n","shardCategory":"Combat\n"},{"shardID":"R7\n","attributeName":"Beacon Zealot\n","attributeEffect":"The effects of Galatea's beacons are +10%–100% stronger on you. Gain a +0.1%–1% chance to find Signal Enhancers in Tree Gifts\n","shardName":"Beaconmite","wikiDescription":"\nObtained by Tuning the Moonglade Beacon\n","shardFamily":"Bug\n","shardSkill":"Foraging\n","shardCategory":"Forest\n"},{"shardID":"R8\n","attributeName":"Great Karma\n","attributeEffect":"Grants +1–10  Hunter Fortune towards Rare Attributes\n","shardName":"Lizard King","wikiDescription":"\nFusing Lizard Family with Water Category and Uncommon or higher\n","shardFamily":"Lizard, Reptile\n","shardSkill":"Hunting\n","shardCategory":"Water\n"},{"shardID":"R9\n","attributeName":"Hunter's Pressure\n","attributeEffect":"Your Black Holes capture creatures +5%–50% faster\n","shardName":"Python","wikiDescription":"\nFusing Viper Shard with Combat Category and Uncommon or higher\n","shardFamily":"Reptile, Serpent\n","shardSkill":"Hunting\n","shardCategory":"Combat\n"},{"shardID":"R10\n","attributeName":"Fancy Visit\n","attributeEffect":"RARE and above Garden Visitors have a +1%–10% higher chance to arrive\n","shardName":"Invisibug","wikiDescription":"\nPlace Traps in Galatea (On Land)\nFound in Grass on Galatea\n","shardFamily":"Bug\n","shardSkill":"Farming\n","shardCategory":"Forest\n"},{"shardID":"R11\n","attributeName":"Moonglade Serendipity\n","attributeEffect":"Increases the odds of finding rare items in Tree Gifts at Moonglade Marsh by +2%–20%\n","shardName":"Piranha","wikiDescription":"\nPlace Traps in Murkwater Depths (Underwater)\nPlace Traps in Murkwater Shallows (Underwater)\nCaught by Fishing in Moonglade Marsh\n","shardFamily":"Treasure Fish\n","shardSkill":"Global\n","shardCategory":"Water\n"},null,{"shardID":"R13\n","attributeName":"Catacombs Box\n","attributeEffect":"Increases the quality of boss rewards in The Catacombs by +1–10\n","shardName":"Hideongeon","wikiDescription":"\nFusing Shulker Family with Wither Shard\n","shardFamily":"Shulker\n","shardSkill":"Global\n","shardCategory":"Forest\n"},null,{"shardID":"R15\n","attributeName":"Bone Font\n","attributeEffect":"Grants a +2%–20% extra chance of finding Level 6+ books or higher in Superpairs\n","shardName":"Lapis Skeleton","wikiDescription":"\nFusing Lapis Zombie Shard with Rare or higher\n","shardFamily":"Lapis\n","shardSkill":"Enchanting\n","shardCategory":"Combat\n"},{"shardID":"R16\n","attributeName":"Crop Bug [AHN]\n","attributeEffect":"Grants +1–10  Overbloom which increases your chances of dropping Rare Crops\n","shardName":"Beetle","wikiDescription":"\n","shardFamily":"Bug\n","shardSkill":"\n","shardCategory":"Forest\n"},null,{"shardID":"R18\n","attributeName":"Humanoid Ruler\n","attributeEffect":"Grants +3%–30% more  Damage against  Humanoid mobs\n","shardName":"Drowned","wikiDescription":"\nCatch with Pocket Black Hole\nKill Seacurse, Hydrospear, or Tidetot while using Salts\nPlace Traps in Drowned Reliquary\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"R19\n","attributeName":"Helix Sharpening [AHN]\n","attributeEffect":"Grants +15–150  Sweep towards Helix Trees\n","shardName":"Vulture","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,{"shardID":"R21\n","attributeName":"Atomized Mithril\n","attributeEffect":"Gain +1%–10% extra Mithril Powder\n","shardName":"Star Sentry","wikiDescription":"\nCatch with Pocket Black Hole\nKill Star Sentry while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"R22\n","attributeName":"Kuudra's Box\n","attributeEffect":"Gives +5%–50% chance to have an extra Kuudra Teeth in the Paid Reward Chest\n","shardName":"Hideondra","wikiDescription":"\nFusing Shulker Family with Demon Family\n","shardFamily":"Shulker\n","shardSkill":"Global\n","shardCategory":"Forest\n"},{"shardID":"R23\n","attributeName":"Dwarven Serendipity\n","attributeEffect":"Increases the chance to find Golden and Diamond Goblins by +10%–100%\n","shardName":"Abyssal Lanternfish","wikiDescription":"\nPlace Traps in Dwarven Mines (Underwater)\nCaught by Fishing in Dwarven Mines\n","shardFamily":"Treasure Fish\n","shardSkill":"Global\n","shardCategory":"Water\n"},{"shardID":"R24\n","attributeName":"Essence of Arthropods\n","attributeEffect":"Gain +1%–10% more Spider Essence\n","shardName":"Arachne","wikiDescription":"\nKill Arachne while using Salts\nObtained from Arachne\n","shardFamily":"Spider\n","shardSkill":"Global\n","shardCategory":"Combat\n"},{"shardID":"R25\n","attributeName":"Cookie Eater\n","attributeEffect":"5%–50% of your Booster Cookie Bits are gained up front\n","shardName":"Bitbug","wikiDescription":"\nPurchased in the Bits Shop\n","shardFamily":"Bug\n","shardSkill":"Global\n","shardCategory":"Forest\n"},null,{"shardID":"R27\n","attributeName":"Essence of Crimson [AHN]\n","attributeEffect":"Gain +1%–10% more Crimson Essence\n","shardName":"Lava Leech","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water*\n"},null,{"shardID":"R29\n","attributeName":"Crystal Serendipity\n","attributeEffect":"Treasure Chests you find in the Crystal Hollows have a +1%–10% chance to double their loot\n","shardName":"Silentdepth","wikiDescription":"\nPlace Traps in Crystal Hollows (Underwater)\nCaught by Fishing in Crystal Hollows\n","shardFamily":"Treasure Fish\n","shardSkill":"Global\n","shardCategory":"Water\n"},{"shardID":"R30\n","attributeName":"Deadeye\n","attributeEffect":"Increases damage from ranged weapons by +2.5%–25%\n","shardName":"Skeletor","wikiDescription":"\nFusing Lapis Skeleton Shard with Rare or higher\nKill Skeletor while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"R31\n","attributeName":"Atomized Crystals\n","attributeEffect":"Gain +1%–10% extra Gemstone Powder\n","shardName":"Thyst","wikiDescription":"\nCatch with Pocket Black Hole\nKill Thyst while using Salts\nPlace Traps in Crystal Hollows Jungle\n","shardFamily":"Cave Dweller\n","shardSkill":"Combat\n","shardCategory":"Combat*\n"},{"shardID":"R32\n","attributeName":"Diamond Frog\n","attributeEffect":"Trophy Frogs are +0.5%–5% more likely to be DIAMOND\n","shardName":"Seashine","wikiDescription":"\nCatch with a Fishing Net\n","shardFamily":"Squid\n","shardSkill":"Fishing\n","shardCategory":"Water\n"},{"shardID":"R33\n","attributeName":"Quartz Speed\n","attributeEffect":" Mining Speed from events is increased by +10%–100%\n","shardName":"Quartzfang","wikiDescription":"\nFusing Troglobyte Shard with Cave Dweller Family or Abyssal Lanternfish Shard\n","shardFamily":"Cave Dweller\n","shardSkill":"Mining\n","shardCategory":"Combat\n"},{"shardID":"R34\n","attributeName":"Accessory Size\n","attributeEffect":"Grants +1–10 extra Accessory Bag slots\n","shardName":"Hideonring","wikiDescription":"\nFusing Shulker Family and Rare or higher with Rare or higher\n","shardFamily":"Shulker\n","shardSkill":"Global\n","shardCategory":"Forest\n"},{"shardID":"R35\n","attributeName":"Winter's Serendipity\n","attributeEffect":"Increases the odds of finding rare items in Winter Gifts by +2%–20%\n","shardName":"Snowfin","wikiDescription":"\nPlace Traps in Jerry's Workshop (Underwater)\n","shardFamily":"Treasure Fish\n","shardSkill":"Global\n","shardCategory":"Water\n"},{"shardID":"R36\n","attributeName":"Lifeline\n","attributeEffect":"When under 20% maximum HP, your  Damage and  Defense increase by +2.5%–25%\n","shardName":"Kada Knight","wikiDescription":"\nCatch with Pocket Black Hole\nKill Kada Knight while using Salts\nObtained from Kuudra\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},null,{"shardID":"R38\n","attributeName":"Rabbit Crew\n","attributeEffect":"Your Chocolate Factory gains +2–20 more Chocolate per second\n","shardName":"Carrot King","wikiDescription":"\nCatch with Pocket Black Hole\nKill Carrot King while using Salts\n","shardFamily":"\n","shardSkill":"Global\n","shardCategory":"Water\n"},{"shardID":"R39\n","attributeName":"Breeze\n","attributeEffect":"When you haven't been damaged in the last 5s or more, your mana costs are decreased by +1%–10%\n","shardName":"Wither Specter","wikiDescription":"\nCatch with Pocket Black Hole\nKill Wither Spectre while using Salts\nObtained from Kuudra\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"R40\n","attributeName":"Battle Tracker [AHN]\n","attributeEffect":"Grants +0.5–5  Tracking while on Combat Islands\n","shardName":"Badger","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,{"shardID":"R42\n","attributeName":"Ignition\n","attributeEffect":"Increases the duration of fire damage that you inflict on enemies by +30%–300%\n","shardName":"Matcho","wikiDescription":"\nCatch with Pocket Black Hole\nKill Matcho while using Salts\nObtained from Kuudra\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"R43\n","attributeName":"Pretty Clothes\n","attributeEffect":"Gain +1%–10% more Copper from Garden Visitors\n","shardName":"Ladybug","wikiDescription":"\nFusing Termite Shard with Invisibug Shard\n","shardFamily":"Bug\n","shardSkill":"Farming\n","shardCategory":"Forest\n"},{"shardID":"R44\n","attributeName":"Extreme Pressure\n","attributeEffect":"Grants +5–50  Pressure Resistance\n","shardName":"Lumisquid","wikiDescription":"\nPlace Traps in Squid Cave (Underwater)\nCatch with a Fishing Net\n","shardFamily":"Squid\n","shardSkill":"Global\n","shardCategory":"Water\n"},{"shardID":"R45\n","attributeName":"Pure Reptile\n","attributeEffect":"Grants a +2%–20% chance to double shards from a Reptile Fusion\n","shardName":"Crocodile","wikiDescription":"\nPurchased from Kiara's Shop\n","shardFamily":"Croco, Reptile\n","shardSkill":"Hunting\n","shardCategory":"Combat\n"},{"shardID":"R46\n","attributeName":"Berry Enjoyer\n","attributeEffect":"Berries have a +10%–100% chance to grant you double points in Starlyn Contests\n","shardName":"Bullfrog","wikiDescription":"\nFusing Frog Family with Forest Category and Rare or higher\n","shardFamily":"Amphibian, Frog\n","shardSkill":"Foraging\n","shardCategory":"Water*\n"},{"shardID":"R47\n","attributeName":"Glacial Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find against  Glacial mobs\n","shardName":"Undying Fossil","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"R48\n","attributeName":"Animal Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find against  Animal mobs\n","shardName":"Wild Hog","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest*\n"},{"shardID":"R49\n","attributeName":"Essence of the Forest\n","attributeEffect":"Gain +1%–10% more Forest Essence\n","shardName":"Dreadwing","wikiDescription":"\nFusing Phanpyre and Phanflare Shards with Rare or higher\nCatch with Pocket Black Hole\nCatch with Lasso\nKill Dreadwing while using Salts\nPlace Traps in Galatea (On Land)\nFound in Fig and Mangrove Tree Gifts\n","shardFamily":"Phantom\n","shardSkill":"Global\n","shardCategory":"Forest\n"},{"shardID":"R50\n","attributeName":"Deep Diving\n","attributeEffect":"Grants +5–50  Respiration\n","shardName":"Joydive","wikiDescription":"\nPlace Traps in Murkwater Depths (Underwater)\nCatch with a Fishing Net\n","shardFamily":"\n","shardSkill":"Global\n","shardCategory":"Water\n"},{"shardID":"R51\n","attributeName":"Atomized Glacite\n","attributeEffect":"Gain +1%–10% extra Glacite Powder\n","shardName":"Stalagmight","wikiDescription":"\nFusing Quartzfang Shard with Cave Dweller Family or Silentdepth Shard\n","shardFamily":"Cave Dweller\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"R52\n","attributeName":"Fungy Luck\n","attributeEffect":"Gain a +10%–100% chance to gain an additional Chisel charge upon starting the Fossil Excavator\n","shardName":"Fungloom","wikiDescription":"\nFusing Cave Dweller Family with Forest Category and Epic or higher\n","shardFamily":"Cave Dweller\n","shardSkill":"Combat\n","shardCategory":"Forest\n"},{"shardID":"R53\n","attributeName":"Eelastic\n","attributeEffect":"Increase Pull by +1–10 when using your Fishing Nets\n","shardName":"Eel","wikiDescription":"\nPurchased from Kiara's Shop\nCaught by Fishing in Moonglade Marsh\n","shardFamily":"Amphibian, Eel\n","shardSkill":"Hunting\n","shardCategory":"Water\n"},{"shardID":"R54\n","attributeName":"Hunter's Grasp\n","attributeEffect":"Your Black Holes gain +1%–10%  Hunter Fortune\n","shardName":"King Cobra","wikiDescription":"\nFusing Python Shard with Combat Category and Uncommon or higher\n","shardFamily":"Reptile, Serpent\n","shardSkill":"Hunting\n","shardCategory":"Combat\n"},{"shardID":"R55\n","attributeName":"Critter Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find against  Critter mobs\n","shardName":"Hewver","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"R56\n","attributeName":"Blazing Fortune\n","attributeEffect":"Grants +1–10  Magic Find on  Magmatic mobs\n","shardName":"Lava Flame","wikiDescription":"\nCatch with Pocket Black Hole\nKill Lava Flame while using Salts\nObtained from Kuudra\nPlace Traps in Crimson Isle (Under lava)\n","shardFamily":"\n","shardSkill":"Fishing\n","shardCategory":"Water\n"},{"shardID":"R57\n","attributeName":"Essence of Dragons\n","attributeEffect":"Gain +1%–10% more Dragon Essence\n","shardName":"Draconic","wikiDescription":"\nDropped by Dragons on The End\n","shardFamily":"Dragon\n","shardSkill":"Global\n","shardCategory":"Combat\n"},{"shardID":"R58\n","attributeName":"Battle Experience\n","attributeEffect":"Pets gain +1%–10% more EXP from Combat\n","shardName":"Falcon","wikiDescription":"\nFusing Bird Family with Rare or higher\n","shardFamily":"Bird\n","shardSkill":"Taming\n","shardCategory":"Forest\n"},{"shardID":"R59\n","attributeName":"Crimson Serendipity\n","attributeEffect":"Increase the odds of finding a Vanquisher by +2%–20%\n","shardName":"Inferno Koi","wikiDescription":"\nPlace Traps in Crimson Isle (Under lava)\nCaught by Fishing in Crimson Isle\n","shardFamily":"Treasure Fish\n","shardSkill":"Global\n","shardCategory":"Water\n"},{"shardID":"R60\n","attributeName":"Essence of Wither\n","attributeEffect":"Gain +1%–10% more Wither Essence\n","shardName":"Wither","wikiDescription":"\nObtained from Catacombs Floor VII and Master Catacombs Floor VII\n","shardFamily":"\n","shardSkill":"Global\n","shardCategory":"Combat\n"},{"shardID":"R61\n","attributeName":"Echo of Sharpening\n","attributeEffect":"Your Sharpening Attributes are +2%–20% stronger\n","shardName":"Gecko","wikiDescription":"\nPurchased from Kiara's Shop\n","shardFamily":"Reptile, Scaled\n","shardSkill":"Hunting\n","shardCategory":"Forest\n"},{"shardID":"R62\n","attributeName":"Construct Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find on ︎ Construct mobs\n","shardName":"Wiki Tiki","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"R63\n","attributeName":"Mythological Fortune\n","attributeEffect":"Grants +0.5–5  Magic Find against  Mythological mobs\n","shardName":"Minotaur","wikiDescription":"\nCatch with Pocket Black Hole\nCatch Exalted Minotaur, Venerable Minotaur, or Empyrean Minotaur while using Salts\n","shardFamily":"\n","shardSkill":"Combat\n","shardCategory":"Combat\n"},{"shardID":"R64\n","attributeName":"Cubic Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find on  Cubic mobs\n","shardName":"Hivethief","wikiDescription":"\n","shardFamily":"Bird\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"R65\n","attributeName":"Boot Fisher [AHN]\n","attributeEffect":"Just catches are +1%–10% more likely to be OUTSTANDING\n","shardName":"Maggot","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"R66\n","attributeName":"Sleepy Spread [AHN]\n","attributeEffect":"Grants +1–10  Mining Spread\n","shardName":"Snoozle","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"R67\n","attributeName":"Flying Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find on  Airborne mobs\n","shardName":"Parakeet","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"R68\n","attributeName":"Thunder Speed [AHN]\n","attributeEffect":"Your Thunder, Storm, and Hurricane Bottles fill +1%–10% faster\n","shardName":"Thunder","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"R69\n","attributeName":"Cavernous Tracker [AHN]\n","attributeEffect":"Grants +0.5–5  Tracking while on Mining Islands\n","shardName":"Rockmite","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},null,{"shardID":"R71\n","attributeName":"Frozen Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find on  Frozen mobs\n","shardName":"Billygoat","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat*\n"},{"shardID":"R72\n","attributeName":"Scrap Chance [AHN]\n","attributeEffect":"Increases your chance of finding a Suspicious Scrap while mining in the  Glacite Mineshafts by +1%–10%\n","shardName":"Scrappy","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"R73\n","attributeName":"Elusive Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find on  Elusive mobs\n","shardName":"Hideyho","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"R74\n","attributeName":"Great Treasure [AHN]\n","attributeEffect":"Treasure catches are +1%–10% more likely to be GREAT\n","shardName":"Mantis Shrimp","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"R75\n","attributeName":"Subterranean Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find on  Subterranean mobs\n","shardName":"Chuckwalla","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"R76\n","attributeName":"Woodland Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find on  Woodlands mobs\n","shardName":"Hideonfloor","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"R77\n","attributeName":"Greedy Goblin [AHN]\n","attributeEffect":"Your Goblin Pet gains +1–10  Ore Fortune\n","shardName":"Gimmiegold","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},null,{"shardID":"R79\n","attributeName":"Arcane Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find on  Arcane mobs\n","shardName":"Hideonwall","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"R80\n","attributeName":"Underwater Tracker [AHN]\n","attributeEffect":"Grants +0.5–5  Tracking while on Fishing Islands\n","shardName":"Nozzlenose","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},{"shardID":"R81\n","attributeName":"Refined Luck [AHN]\n","attributeEffect":"Increases your chance of finding Refined Minerals during Mining Fiestas by +1%–10%\n","shardName":"Stoneworm","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Combat\n"},{"shardID":"R82\n","attributeName":"Foraging Tracker [AHN]\n","attributeEffect":"Grants +0.5–5  Tracking while on Foraging Islands\n","shardName":"Fluffling","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"R83\n","attributeName":"Torrhus Serendipity [AHN]\n","attributeEffect":"Increases the odds of finding rare items in Tree Gifts at Torrhus Canyon by +2%–20%\n","shardName":"Stingray","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},null,{"shardID":"R85\n","attributeName":"Forest Serendipity [AHN]\n","attributeEffect":"Grants a +0.1%–1% chance for Tree Gifts to contain double loot\n","shardName":"Puck","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"R86\n","attributeName":"Echo of Buckets [AHN]\n","attributeEffect":"Your \"Bucket\" Attributes are +2%–20% stronger\n","shardName":"Goldolot","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},null,{"shardID":"R88\n","attributeName":"Atomized Whispers [AHN]\n","attributeEffect":"Gain +1%–10% extra Forest Whispers\n","shardName":"Pangolin","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"R89\n","attributeName":"Aquatic Fortune [AHN]\n","attributeEffect":"Grants +0.5–5  Magic Find against  Aquatic mobs\n","shardName":"Giant Water Bug","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},null,{"shardID":"R91\n","attributeName":"Rekindle [AHN]\n","attributeEffect":"Killing a Bat has a +10%–100% chance to add 1 Bonus Score to your Dungeon Run\n","shardName":"Murkbat","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},null,null,{"shardID":"R94\n","attributeName":"Mythic Rabbit Luck [AHN]\n","attributeEffect":"Increases your chance of finding MYTHIC Rabbits during Hoppity's Hunt by +1%–10%\n","shardName":"Rabbit Neighbor","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"},{"shardID":"R95\n","attributeName":"First Sweep [AHN]\n","attributeEffect":"Your first  Sweep on each Tree is +1%–10% more effective\n","shardName":"Torrid","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Water\n"},null,{"shardID":"R97\n","attributeName":"Axe Cooldown [AHN]\n","attributeEffect":"Reduces the cooldown of throwing your Axe by +1%–10%\n","shardName":"Drybark","wikiDescription":"\n","shardFamily":"\n","shardSkill":"\n","shardCategory":"Forest\n"}]
+[
+    null,
+    {
+        "shardID": "R1",
+        "attributeName": "Forest Elemental",
+        "attributeEffect": "Grants +2–20  Health",
+        "shardName": "Sylvan",
+        "wikiDescription": "Fusing Forest Category and Rare with Epic or higher",
+        "shardFamily": "Elemental",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R2",
+        "attributeName": "Torrent Elemental",
+        "attributeEffect": "Grants +1–10  Intelligence",
+        "shardName": "Cascade",
+        "wikiDescription": "Fusing Water Category and Rare with Epic or higher",
+        "shardFamily": "Elemental",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R3",
+        "attributeName": "Lightning Elemental",
+        "attributeEffect": "Grants +1–10  Strength",
+        "shardName": "Bolt",
+        "wikiDescription": "Fusing Combat Category and Rare with Epic or higher",
+        "shardFamily": "Elemental",
+        "shardSkill": "Global",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R4",
+        "attributeName": "Animal Expertise",
+        "attributeEffect": "Grants +10–100  Foraging Fortune",
+        "shardName": "Bambloom",
+        "wikiDescription": "Fusing Panda Family with Uncommon or higher",
+        "shardFamily": "Panda",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R5",
+        "attributeName": "Frog Legs",
+        "attributeEffect": "Frogs have a +10%–100% chance to jump 1 less time",
+        "shardName": "Toad",
+        "wikiDescription": "Fusing Frog Family with Forest Category and Uncommon or higher",
+        "shardFamily": "Amphibian, Frog",
+        "shardSkill": "Hunting",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R6",
+        "attributeName": "Essence of Ice",
+        "attributeEffect": "Gain +1%–10% more Ice Essence",
+        "shardName": "Glacite Walker",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Glacite Walker while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R7",
+        "attributeName": "Beacon Zealot",
+        "attributeEffect": "The effects of Galatea's beacons are +10%–100% stronger on you. Gain a +0.1%–1% chance to find Signal Enhancers in Tree Gifts",
+        "shardName": "Beaconmite",
+        "wikiDescription": "Obtained by Tuning the Moonglade Beacon",
+        "shardFamily": "Bug",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R8",
+        "attributeName": "Great Karma",
+        "attributeEffect": "Grants +1–10  Hunter Fortune towards Rare Attributes",
+        "shardName": "Lizard King",
+        "wikiDescription": "Fusing Lizard Family with Water Category and Uncommon or higher",
+        "shardFamily": "Lizard, Reptile",
+        "shardSkill": "Hunting",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R9",
+        "attributeName": "Hunter's Pressure",
+        "attributeEffect": "Your Black Holes capture creatures +5%–50% faster",
+        "shardName": "Python",
+        "wikiDescription": "Fusing Viper Shard with Combat Category and Uncommon or higher",
+        "shardFamily": "Reptile, Serpent",
+        "shardSkill": "Hunting",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R10",
+        "attributeName": "Fancy Visit",
+        "attributeEffect": "RARE and above Garden Visitors have a +1%–10% higher chance to arrive",
+        "shardName": "Invisibug",
+        "wikiDescription": "Place Traps in Galatea (On Land)\nFound in Grass on Galatea",
+        "shardFamily": "Bug",
+        "shardSkill": "Farming",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R11",
+        "attributeName": "Moonglade Serendipity",
+        "attributeEffect": "Increases the odds of finding rare items in Tree Gifts at Moonglade Marsh by +2%–20%",
+        "shardName": "Piranha",
+        "wikiDescription": "Place Traps in Murkwater Depths (Underwater)\nPlace Traps in Murkwater Shallows (Underwater)\nCaught by Fishing in Moonglade Marsh",
+        "shardFamily": "Treasure Fish",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    null,
+    {
+        "shardID": "R13",
+        "attributeName": "Catacombs Box",
+        "attributeEffect": "Increases the quality of boss rewards in The Catacombs by +1–10",
+        "shardName": "Hideongeon",
+        "wikiDescription": "Fusing Shulker Family with Wither Shard",
+        "shardFamily": "Shulker",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "R15",
+        "attributeName": "Bone Font",
+        "attributeEffect": "Grants a +2%–20% extra chance of finding Level 6+ books or higher in Superpairs",
+        "shardName": "Lapis Skeleton",
+        "wikiDescription": "Fusing Lapis Zombie Shard with Rare or higher",
+        "shardFamily": "Lapis",
+        "shardSkill": "Enchanting",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R16",
+        "attributeName": "Crop Bug",
+        "attributeEffect": "Grants +1–10  Overbloom which increases your chances of dropping Rare Crops",
+        "shardName": "Cropeetle",
+        "wikiDescription": "Fusing Termite Shard with Praying Mantis Shard",
+        "shardFamily": "Bug",
+        "shardSkill": "Farming",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "R18",
+        "attributeName": "Humanoid Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Humanoid mobs",
+        "shardName": "Drowned",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Seacurse, Hydrospear, or Tidetot while using Salts\nPlace Traps in Drowned Reliquary",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    null,
+    null,
+    {
+        "shardID": "R21",
+        "attributeName": "Atomized Mithril",
+        "attributeEffect": "Gain +1%–10% extra Mithril Powder",
+        "shardName": "Star Sentry",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Star Sentry while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R22",
+        "attributeName": "Kuudra's Box",
+        "attributeEffect": "Gives +5%–50% chance to have an extra Kuudra Teeth in the Paid Reward Chest",
+        "shardName": "Hideondra",
+        "wikiDescription": "Fusing Shulker Family with Demon Family",
+        "shardFamily": "Shulker",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R23",
+        "attributeName": "Dwarven Serendipity",
+        "attributeEffect": "Increases the chance to find Golden and Diamond Goblins by +10%–100%",
+        "shardName": "Abyssal Lanternfish",
+        "wikiDescription": "Place Traps in Dwarven Mines (Underwater)\nCaught by Fishing in Dwarven Mines",
+        "shardFamily": "Treasure Fish",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R24",
+        "attributeName": "Essence of Arthropods",
+        "attributeEffect": "Gain +1%–10% more Spider Essence",
+        "shardName": "Arachne",
+        "wikiDescription": "Kill Arachne while using Salts\nObtained from Arachne",
+        "shardFamily": "Spider",
+        "shardSkill": "Global",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R25",
+        "attributeName": "Cookie Eater",
+        "attributeEffect": "5%–50% of your Booster Cookie Bits are gained up front",
+        "shardName": "Bitbug",
+        "wikiDescription": "Purchased in the Bits Shop",
+        "shardFamily": "Bug",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "R27",
+        "attributeName": "Essence of Unliving",
+        "attributeEffect": "Gain +1%–10% more Undead Essence",
+        "shardName": "Revenant",
+        "wikiDescription": "Dropped by Revenant Horror",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Combat"
+    },
+    null,
+    {
+        "shardID": "R29",
+        "attributeName": "Crystal Serendipity",
+        "attributeEffect": "Treasure Chests you find in the Crystal Hollows have a +1%–10% chance to double their loot",
+        "shardName": "Silentdepth",
+        "wikiDescription": "Place Traps in Crystal Hollows (Underwater)\nCaught by Fishing in Crystal Hollows",
+        "shardFamily": "Treasure Fish",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R30",
+        "attributeName": "Deadeye",
+        "attributeEffect": "Increases damage from ranged weapons by +2.5%–25%",
+        "shardName": "Skeletor",
+        "wikiDescription": "Fusing Lapis Skeleton Shard with Rare or higher\nKill Skeletor while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R31",
+        "attributeName": "Atomized Crystals",
+        "attributeEffect": "Gain +1%–10% extra Gemstone Powder",
+        "shardName": "Thyst",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Thyst while using Salts\nPlace Traps in Crystal Hollows Jungle",
+        "shardFamily": "Cave Dweller",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat*"
+    },
+    {
+        "shardID": "R32",
+        "attributeName": "Diamond Frog",
+        "attributeEffect": "Trophy Frogs are +0.5%–5% more likely to be DIAMOND",
+        "shardName": "Seashine",
+        "wikiDescription": "Catch with a Fishing Net",
+        "shardFamily": "Squid",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R33",
+        "attributeName": "Quartz Speed",
+        "attributeEffect": " Mining Speed from events is increased by +10%–100%",
+        "shardName": "Quartzfang",
+        "wikiDescription": "Fusing Troglobyte Shard with Cave Dweller Family or Abyssal Lanternfish Shard",
+        "shardFamily": "Cave Dweller",
+        "shardSkill": "Mining",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R34",
+        "attributeName": "Accessory Size",
+        "attributeEffect": "Grants +1–10 extra Accessory Bag slots",
+        "shardName": "Hideonring",
+        "wikiDescription": "Fusing Shulker Family and Rare or higher with Rare or higher",
+        "shardFamily": "Shulker",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R35",
+        "attributeName": "Winter's Serendipity",
+        "attributeEffect": "Increases the odds of finding rare items in Winter Gifts by +2%–20%",
+        "shardName": "Snowfin",
+        "wikiDescription": "Place Traps in Jerry's Workshop (Underwater)",
+        "shardFamily": "Treasure Fish",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R36",
+        "attributeName": "Lifeline",
+        "attributeEffect": "When under 20% maximum HP, your  Damage and  Defense increase by +2.5%–25%",
+        "shardName": "Kada Knight",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Kada Knight while using Salts\nObtained from Kuudra",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    null,
+    {
+        "shardID": "R38",
+        "attributeName": "Rabbit Crew",
+        "attributeEffect": "Your Chocolate Factory gains +2–20 more Chocolate per second",
+        "shardName": "Carrot King",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Carrot King while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R39",
+        "attributeName": "Breeze",
+        "attributeEffect": "When you haven't been damaged in the last 5s or more, your mana costs are decreased by +1%–10%",
+        "shardName": "Wither Specter",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Wither Spectre while using Salts\nObtained from Kuudra",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    null,
+    null,
+    {
+        "shardID": "R42",
+        "attributeName": "Ignition",
+        "attributeEffect": "Increases the duration of fire damage that you inflict on enemies by +30%–300%",
+        "shardName": "Matcho",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Matcho while using Salts\nObtained from Kuudra",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R43",
+        "attributeName": "Pretty Clothes",
+        "attributeEffect": "Gain +1%–10% more Copper from Garden Visitors",
+        "shardName": "Ladybug",
+        "wikiDescription": "Fusing Termite Shard with Invisibug Shard",
+        "shardFamily": "Bug",
+        "shardSkill": "Farming",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R44",
+        "attributeName": "Extreme Pressure",
+        "attributeEffect": "Grants +5–50  Pressure Resistance",
+        "shardName": "Lumisquid",
+        "wikiDescription": "Place Traps in Squid Cave (Underwater)\nCatch with a Fishing Net",
+        "shardFamily": "Squid",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R45",
+        "attributeName": "Pure Reptile",
+        "attributeEffect": "Grants a +2%–20% chance to double shards from a Reptile Fusion",
+        "shardName": "Crocodile",
+        "wikiDescription": "Purchased from Kiara's Shop",
+        "shardFamily": "Croco, Reptile",
+        "shardSkill": "Hunting",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R46",
+        "attributeName": "Berry Enjoyer",
+        "attributeEffect": "Berries have a +10%–100% chance to grant you double points in Starlyn Contests",
+        "shardName": "Bullfrog",
+        "wikiDescription": "Fusing Frog Family with Forest Category and Rare or higher",
+        "shardFamily": "Amphibian, Frog",
+        "shardSkill": "Foraging",
+        "shardCategory": "Water*"
+    },
+    null,
+    null,
+    {
+        "shardID": "R49",
+        "attributeName": "Essence of the Forest",
+        "attributeEffect": "Gain +1%–10% more Forest Essence",
+        "shardName": "Dreadwing",
+        "wikiDescription": "Fusing Phanpyre and Phanflare Shards with Rare or higher\nCatch with Pocket Black Hole\nCatch with Lasso\nKill Dreadwing while using Salts\nPlace Traps in Galatea (On Land)\nFound in Fig and Mangrove Tree Gifts",
+        "shardFamily": "Phantom",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R50",
+        "attributeName": "Deep Diving",
+        "attributeEffect": "Grants +5–50  Respiration",
+        "shardName": "Joydive",
+        "wikiDescription": "Place Traps in Murkwater Depths (Underwater)\nCatch with a Fishing Net",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R51",
+        "attributeName": "Atomized Glacite",
+        "attributeEffect": "Gain +1%–10% extra Glacite Powder",
+        "shardName": "Stalagmight",
+        "wikiDescription": "Fusing Quartzfang Shard with Cave Dweller Family or Silentdepth Shard",
+        "shardFamily": "Cave Dweller",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R52",
+        "attributeName": "Fungy Luck",
+        "attributeEffect": "Gain a +10%–100% chance to gain an additional Chisel charge upon starting the Fossil Excavator",
+        "shardName": "Fungloom",
+        "wikiDescription": "Fusing Cave Dweller Family with Forest Category and Epic or higher",
+        "shardFamily": "Cave Dweller",
+        "shardSkill": "Combat",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R53",
+        "attributeName": "Eelastic",
+        "attributeEffect": "Increase Pull by +1–10 when using your Fishing Nets",
+        "shardName": "Eel",
+        "wikiDescription": "Purchased from Kiara's Shop\nCaught by Fishing in Moonglade Marsh",
+        "shardFamily": "Amphibian, Eel",
+        "shardSkill": "Hunting",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R54",
+        "attributeName": "Hunter's Grasp",
+        "attributeEffect": "Your Black Holes gain +1%–10%  Hunter Fortune",
+        "shardName": "King Cobra",
+        "wikiDescription": "Fusing Python Shard with Combat Category and Uncommon or higher",
+        "shardFamily": "Reptile, Serpent",
+        "shardSkill": "Hunting",
+        "shardCategory": "Combat"
+    },
+    null,
+    {
+        "shardID": "R56",
+        "attributeName": "Blazing Fortune",
+        "attributeEffect": "Grants +1–10  Magic Find on  Magmatic mobs",
+        "shardName": "Lava Flame",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Lava Flame while using Salts\nObtained from Kuudra\nPlace Traps in Crimson Isle (Under lava)",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R57",
+        "attributeName": "Essence of Dragons",
+        "attributeEffect": "Gain +1%–10% more Dragon Essence",
+        "shardName": "Draconic",
+        "wikiDescription": "Dropped by Dragons on The End",
+        "shardFamily": "Dragon",
+        "shardSkill": "Global",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R58",
+        "attributeName": "Battle Experience",
+        "attributeEffect": "Pets gain +1%–10% more EXP from Combat",
+        "shardName": "Falcon",
+        "wikiDescription": "Fusing Bird Family with Rare or higher",
+        "shardFamily": "Bird",
+        "shardSkill": "Taming",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R59",
+        "attributeName": "Crimson Serendipity",
+        "attributeEffect": "Increase the odds of finding a Vanquisher by +2%–20%",
+        "shardName": "Inferno Koi",
+        "wikiDescription": "Place Traps in Crimson Isle (Under lava)\nCaught by Fishing in Crimson Isle",
+        "shardFamily": "Treasure Fish",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R60",
+        "attributeName": "Essence of Wither",
+        "attributeEffect": "Gain +1%–10% more Wither Essence",
+        "shardName": "Wither",
+        "wikiDescription": "Obtained from Catacombs Floor VII and Master Catacombs Floor VII",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R61",
+        "attributeName": "Echo of Sharpening",
+        "attributeEffect": "Your Sharpening Attributes are +2%–20% stronger",
+        "shardName": "Gecko",
+        "wikiDescription": "Purchased from Kiara's Shop",
+        "shardFamily": "Reptile, Scaled",
+        "shardSkill": "Hunting",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "R63",
+        "attributeName": "Mythological Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find against  Mythological mobs",
+        "shardName": "Minotaur",
+        "wikiDescription": "Catch with Pocket Black Hole\nCatch Exalted Minotaur, Venerable Minotaur, or Empyrean Minotaur while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R64",
+        "attributeName": "Chop",
+        "attributeEffect": "Grants a +10%–100% chance to Chop an extra log, on top of the ones you swept",
+        "shardName": "Hummingbird",
+        "wikiDescription": "Found by Fig and Mangrove Tree Gifts",
+        "shardFamily": "Bird",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    }
+]
