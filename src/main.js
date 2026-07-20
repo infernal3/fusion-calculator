@@ -1,14 +1,17 @@
 const el = e => getElementById(e);
 
 var calculateFusionResult = function(ShardTable, ShardA, ShardB) {
-    // Usage: ShardA should be a Shard ID. ShardB should be a Shard ID.
-    var ChameleonShardID = "L4";
-    if (ShardA == ChameleonShardID) {
+    // Chameleon-fusion overrides all other fusion type. Check for the presence of a Chameleon.
+    if (ShardA == "L4") {
         return calculateChameleonFusionResult(ShardTable, ShardB);
     }
-    if (ShardB == ChameleonShardID) {
+    if (ShardB == "L4") {
         return calculateChameleonFusionResult(ShardTable, ShardA);
     }
+    // Now the remaining shard spaces are free-form between Special Fusion and ID Fusion. Priority: Special Fusion(s) > ID Fusion (Shard A) > ID Fusion (Shard B).
+    // candidateA and candidateB are the ID fusion results for Shard A and Shard B.
+    var candidateA = calculateIDFusionResult(ShardTable, ShardA);
+    var candidateB = calculateIDFusionResult(ShardTable, ShardB);
 }
 
 var getNextTierShardLetter = function(ShardLetter) {
@@ -23,6 +26,38 @@ var getNextTierShardLetter = function(ShardLetter) {
             return "L";
         default:
             return "Z";
+    }
+}
+
+var getRarityCuteName = function(ShardLetter) {
+    switch(ShardLetter) {
+        case "C":
+            return "common";
+        case "U":
+            return "uncommon";
+        case "R":
+            return "rare";
+        case "E":
+            return "epic";
+        case "L":
+            return "legendary";
+        default:
+            return "unsorted";
+    }
+}
+
+var calculateIDFusionResult = function(ShardTable, Shard) {
+    var ShardLetter = Shard.slice(0, 1);
+    var ShardNumber = parseInt(Shard.slice(1));
+    var ShardTableOfRarity = ShardTable[getRarityCuteName(ShardLetter)];
+    var ShardCategory = ShardTableOfRarity[ShardNumber].shardCategory;
+    console.log(ShardTableOfRarity[ShardNumber]);
+    console.log(Shard);
+    var index = ShardNumber;
+    while (true) {
+        index++;
+        if (ShardTableOfRarity[index] == undefined || index >= 200) return "empty slot";
+        if (ShardCategory == ShardTableOfRarity[index].shardCategory) return ShardLetter + index;
     }
 }
 
@@ -51,9 +86,9 @@ var calculateChameleonFusionResult = function(ShardTable, NonChameleonShard) {
     }].filter((item) => {
         return !item.shardID.includes("Z");
     }).filter((item) => {
-        return item.shardID != "L4"; // Chameleon fusion cannot output a Chameleon
+        return item.shardID != "L4"; // Chameleon Fusion will never output a Chameleon
     }).filter((item) => {
-        return item.shardID != NonChameleonShard; // Should never trigger. But just in case.
+        return item.shardID != NonChameleonShard; // Chameleon Fusion will never output the non-chameleon shard used
     });
 }
 
