@@ -111,6 +111,10 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
     // Each Special Fusion has its own combination, and they can check for rarity, family, category, etc:
     var specialCandidates = calculateAllSpecialFusions(ShardTable, ShardA, ShardB);
 
+    if (specialCandidates.length > 2) {
+        candidateB = "empty slot";
+    }
+    
     // Merge Special Fusion and ID Fusion candidates into one array. Purge duplicates and invalid results:
     var candidates = Array.from(new Set(specialCandidates.concat(candidateA, candidateB)))
         .filter((item) => {
@@ -121,8 +125,14 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
         })
         .filter((item) => {
             return item.shardID != ShardB;
+        })
+        .sort((a, b) => {
+            if (a.shardID.slice(0, 1) != b.shardID.slice(0, 1)) {
+                return getRarityIndex(b.shardID.slice(0, 1)) - getRarityIndex(a.shardID.slice(0, 1));
+            }
+            return parseInt(a.shardID.slice(1)) - parseInt(b.shardID.slice(1));
         });
-
+    
     // If there are more than 3 candidates remaining after purging, omit lower priority candidates:
     while (candidates.length > 3) {
         candidates.pop();
@@ -207,14 +217,13 @@ var calculateIDFusionResult = function (ShardTable, Shard) {
     var ShardNumber = parseInt(Shard.slice(1));
     var ShardTableOfRarity = ShardTable[getRarityCuteName(ShardLetter)];
     var ShardCategory = ShardTableOfRarity[ShardNumber].shardCategory;
-    console.log(ShardTableOfRarity[ShardNumber]);
-    console.log(Shard);
     var index = ShardNumber;
-    while (true) {
-        index++;
-        if (ShardTableOfRarity[index] == undefined || index >= 200) return "empty slot";
-        if (ShardCategory == ShardTableOfRarity[index].shardCategory) return { shardID: ShardLetter + index, amount: 1 };
+    for (var index = ShardNumber + 1; index < 100; index++) {
+        if (ShardCategory == ShardTableOfRarity[index]?.shardCategory) {
+            return { shardID: ShardLetter + index, amount: 1 };
+        }
     }
+    return "empty slot";
 };
 
 var calculateChameleonFusionResult = function (ShardTable, NonChameleonShard) {
