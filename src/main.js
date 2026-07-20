@@ -1,17 +1,47 @@
 const el = e => getElementById(e);
-
+// ShardA and ShardB should be Shard ID, not the shard name or the processed shard object.
 var calculateFusionResult = function(ShardTable, ShardA, ShardB) {
-    // Chameleon-fusion overrides all other fusion type. Check for the presence of a Chameleon.
+    // Chameleon-fusion overrides all other fusion type. Check for the presence of a Chameleon:
     if (ShardA == "L4") {
         return calculateChameleonFusionResult(ShardTable, ShardB);
     }
     if (ShardB == "L4") {
         return calculateChameleonFusionResult(ShardTable, ShardA);
     }
-    // Now the remaining shard spaces are free-form between Special Fusion and ID Fusion. Priority: Special Fusion(s) > ID Fusion (Shard A) > ID Fusion (Shard B).
-    // candidateA and candidateB are the ID fusion results for Shard A and Shard B.
+    
+    // candidateA and candidateB are the ID Fusion results for Shard A and Shard B:
     var candidateA = calculateIDFusionResult(ShardTable, ShardA);
     var candidateB = calculateIDFusionResult(ShardTable, ShardB);
+
+    // Special Fusions. Each special fusion has its own combination, and they can check for rarity, family, category, etc. Fetch rarity, family, category for both of the shards:
+    var ShardObjectA = ShardTable[getRarityCuteName(ShardA.slice(0, 1))][parseInt(ShardA.slice(1))];
+    var ShardObjectB = ShardTable[getRarityCuteName(ShardB.slice(0, 1))][parseInt(ShardB.slice(1))];
+
+    var specialFusionRecipes = [
+        // Fusion recipes for Common Shards
+        {id: "C1", predicate: (A, B) => A.shardCategory == "Forest" && A.shardID.slice(0, 1) == "C" && getRarityIndex(B.shardID.slice(0, 1)) >= 2},
+        {id: "C2", predicate: (A, B) => A.shardCategory == "Water" && A.shardID.slice(0, 1) == "C" && getRarityIndex(B.shardID.slice(0, 1)) >= 2},
+        {id: "C3", predicate: (A, B) => A.shardCategory == "Combat" && A.shardID.slice(0, 1) == "C" && getRarityIndex(B.shardID.slice(0, 1)) >= 2},
+        {id: "C16", predicate: (A, B) => A.shardFamily == "Shulker" && getRarityIndex(B.shardID.slice(0, 1)) >= 1},
+        {id: "C24", predicate: (A, B) => A.shardFamily == "Bird" && B.shardCategory == "Combat"},
+        {id: "C34", predicate: (A, B) => A.shardFamily == "Bird" && getRarityIndex(B.shardID.slice(0, 1)) >= 1},
+        {id: "C35", predicate: (A, B) => A.shardFamily == "Axolotl" && B.shardCategory == "Water"},
+        // Fusion recipes for Uncommon Shards
+        {id: "U1", predicate: (A, B) => A.shardCategory == "Forest" && A.shardID.slice(0, 1) == "U" && getRarityIndex(B.shardID.slice(0, 1)) >= 3},
+        {id: "U2", predicate: (A, B) => A.shardCategory == "Water" && A.shardID.slice(0, 1) == "U" && getRarityIndex(B.shardID.slice(0, 1)) >= 3},
+        {id: "U3", predicate: (A, B) => A.shardCategory == "Combat" && A.shardID.slice(0, 1) == "U" && getRarityIndex(B.shardID.slice(0, 1)) >= 3},
+        {id: "U5", predicate: (A, B) => A.shardName == "Golden Ghoul" && B.shardCategory == "Water"},
+        {id: "U6", predicate: (A, B) => A.shardFamily == "Cave Dweller" && B.shardCategory == "Combat"},
+        {id: "U7", predicate: (A, B) => A.shardFamily == "Shulker" && B.shardFamily == "Cave Dweller"},
+        {id: "U8", predicate: (A, B) => A.shardName == "Newt" && B.shardCategory == "Water"},
+        {id: "U9", predicate: (A, B) => A.shardFamily == "Shulker" && B.shardFamily == "Reptile"},
+        {id: "U11", predicate: (A, B) => A.shardName == "Tadgang" && B.shardCategory == "Forest"},
+        {id: "U21", predicate: (A, B) => A.shardName == "Cuboa" && B.shardCategory == "Combat"},
+        {id: "U22", predicate: (A, B) => A.shardName == "Pest" && B.shardCategory == "Combat"},
+        {id: "U34", predicate: (A, B) => A.shardFamily == "Bird" && getRarityIndex(B.shardID.slice(0, 1)) >= 2},
+        {id: "U39", predicate: (A, B) => A.shardFamily == "Frog" && B.shardCategory == "Combat"},
+        {id: "U41", predicate: (A, B) => A.shardCategory == "Water" && A.shardID.slice(0, 1) == "U" && getRarityIndex(B.shardID.slice(0, 1)) >= 1},
+    ];
 }
 
 var getNextTierShardLetter = function(ShardLetter) {
@@ -43,6 +73,23 @@ var getRarityCuteName = function(ShardLetter) {
             return "legendary";
         default:
             return "unsorted";
+    }
+}
+
+var getRarityIndex = function(ShardLetter) {
+    switch(ShardLetter) {
+        case "C":
+            return 1;
+        case "U":
+            return 2;
+        case "R":
+            return 3;
+        case "E":
+            return 4;
+        case "L":
+            return 5;
+        default:
+            return -1;
     }
 }
 
