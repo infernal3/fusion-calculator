@@ -41,6 +41,16 @@ var calculateFusionResult = function(ShardTable, ShardA, ShardB) {
         {id: "U34", predicate: (A, B) => A.shardFamily == "Bird" && getRarityIndex(B.shardID.slice(0, 1)) >= 2},
         {id: "U39", predicate: (A, B) => A.shardFamily == "Frog" && B.shardCategory == "Combat"},
         {id: "U41", predicate: (A, B) => A.shardCategory == "Water" && A.shardID.slice(0, 1) == "U" && getRarityIndex(B.shardID.slice(0, 1)) >= 1},
+        // Fusion recipes for Rare Shards
+        {id: "R1", predicate: (A, B) => A.shardCategory == "Forest" && A.shardID.slice(0, 1) == "R" && getRarityIndex(B.shardID.slice(0, 1)) >= 4},
+        {id: "R2", predicate: (A, B) => A.shardCategory == "Water" && A.shardID.slice(0, 1) == "R" && getRarityIndex(B.shardID.slice(0, 1)) >= 4},
+        {id: "R3", predicate: (A, B) => A.shardCategory == "Combat" && A.shardID.slice(0, 1) == "R" && getRarityIndex(B.shardID.slice(0, 1)) >= 4},
+        {id: "R4", predicate: (A, B) => A.shardFamily == "Panda" && getRarityIndex(B.shardID.slice(0, 1)) >= 2},
+        {id: "R5", predicate: (A, B) => A.shardFamily == "Frog" && B.shardCategory == "Forest" && getRarityIndex(B.shardID.slice(0, 1)) >= 2},
+        {id: "R8", predicate: (A, B) => A.shardFamily == "Lizard" && B.shardCategory == "Water" && getRarityIndex(B.shardID.slice(0, 1)) >= 2},
+        {id: "R9", predicate: (A, B) => A.shardName == "Viper" && B.shardCategory == "Combat" && getRarityIndex(B.shardID.slice(0, 1)) >= 2},
+        {id: "R13", predicate: (A, B) => A.shardFamily == "Shulker" && B.shardName == "Wither"},
+        {id: "R15", predicate: (A, B) => A.shardName == "Lapis Zombie" && getRarityIndex(B.shardID.slice(0, 1)) >= 3},
     ];
 }
 
