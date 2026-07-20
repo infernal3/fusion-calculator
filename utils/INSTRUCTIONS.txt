@@ -11,16 +11,22 @@ I am scalping the data from a wiki that literally anyone can edit. Hypixel doesn
 this script is so terribly coded. it's literally just parse the html nodes and text content. what am i doing.
 */
 var SHARD_TABLE = $0, NEW_SHARD_TABLE = [];
+function sanitize(string) {
+    if(string.startsWith("\n")) string = string.slice(1);
+    if(string.endsWith("\n")) string = string.slice(0, string.length - 1);
+    return string;
+}
 Array.from(SHARD_TABLE.children).forEach((index) => {
     var html = Array.from(index.childNodes),
-    shardID = html[3].textContent,
-    attributeName = html[5].textContent,
-    attributeEffect = html[7].textContent,
-    shardName = html[9].textContent.split(" Shard")[0],
-    wikiDescription = html[11].textContent,
-    shardFamily = html[13].textContent,
-    shardSkill = html[15].textContent,
-    shardCategory = html[17].textContent;
+    shardID = sanitize(html[3].textContent),
+    attributeName = sanitize(html[5].textContent),
+    attributeEffect = sanitize(html[7].textContent),
+    shardName = sanitize(html[9].textContent.split(" Shard")[0]),
+    wikiDescription = sanitize(html[11].textContent),
+    shardFamily = sanitize(html[13].textContent),
+    shardSkill = sanitize(html[15].textContent),
+    shardCategory = sanitize(html[17].textContent);
+    if (attributeName.includes("[AHN]")) return;
     NEW_SHARD_TABLE[parseInt(shardID.split( "C" )[1])] = { // change this value C/U/R/E/L accordingly.
         shardID: shardID,
         attributeName: attributeName,
