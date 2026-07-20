@@ -111,7 +111,7 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
     // Each Special Fusion has its own combination, and they can check for rarity, family, category, etc:
     var specialCandidates = calculateAllSpecialFusions(ShardTable, ShardA, ShardB);
 
-    if (specialCandidates.length > 2) {
+    if (specialCandidates.length >= 1) {
         candidateB = "empty slot";
     }
     
