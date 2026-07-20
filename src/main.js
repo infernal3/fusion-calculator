@@ -23,7 +23,7 @@ var specialFusionRecipes = [
     { id: "U34", predicate: (A, B) => A.shardFamily == "Bird" && getRarityIndex(B.shardID.slice(0, 1)) >= 2 },
     { id: "U39", predicate: (A, B) => A.shardFamily == "Frog" && B.shardCategory == "Combat" },
     { id: "U40", predicate: (A, B) => A.shardFamily == "Bug" && B.shardSkill == "Mining" },
-    { id: "U41", predicate: (A, B) => A.shardCategory == "Water" && A.shardID.slice(0, 1) == "U" && getRarityIndex(B.shardID.slice(0, 1)) >= 1 },
+  //{ id: "U41", predicate: (A, B) => A.shardCategory == "Water" && A.shardID.slice(0, 1) == "U" && getRarityIndex(B.shardID.slice(0, 1)) >= 1 },
     // Fusion recipes for Rare Shards
     { id: "R1", predicate: (A, B) => A.shardCategory == "Forest" && A.shardID.slice(0, 1) == "R" && getRarityIndex(B.shardID.slice(0, 1)) >= 4 },
     { id: "R2", predicate: (A, B) => A.shardCategory == "Water" && A.shardID.slice(0, 1) == "R" && getRarityIndex(B.shardID.slice(0, 1)) >= 4 },
