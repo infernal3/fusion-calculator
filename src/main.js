@@ -35,7 +35,7 @@ var specialFusionRecipes = [
     { id: "R13", predicate: (A, B) => A.shardFamily.includes("Shulker") && B.shardName == "Wither" },
     { id: "R15", predicate: (A, B) => A.shardName == "Lapis Zombie" && getRarityIndex(B.shardID.slice(0, 1)) >= 3 },
     { id: "R16", predicate: (A, B) => A.shardName == "Termite" && B.shardName == "Praying Mantis" },
-    { id: "R22", predicate: (A, B) => A.shardFamily.includes("Shulker") && B.shardFamily == "Demon" },
+    { id: "R22", predicate: (A, B) => A.shardFamily.includes("Shulker") && B.shardFamily.includes("Demon") },
     { id: "R30", predicate: (A, B) => A.shardName == "Lapis Skeleton" && getRarityIndex(B.shardID.slice(0, 1)) >= 3 },
     { id: "R33", predicate: (A, B) => A.shardName == "Troglobyte" && (B.shardFamily.includes("Cave Dweller") || B.shardName == "Abyssal Lanternfish") },
     { id: "R34", predicate: (A, B) => A.shardFamily.includes("Shulker") && getRarityIndex(A.shardID.slice(0, 1)) >= 3 && getRarityIndex(B.shardID.slice(0, 1)) >= 3 },
