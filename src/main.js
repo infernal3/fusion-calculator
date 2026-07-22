@@ -346,4 +346,5 @@ loadManyShardConstants()
     })
     .then(() => {
         Loading = false;
+        el("loading").style = "display: none";
     });
