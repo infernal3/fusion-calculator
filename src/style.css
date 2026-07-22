@@ -1,0 +1,89 @@
+div {
+    display: block;
+}
+#app {
+    direction: ltr;
+    unicode-bidi: isolate;
+    line-height: 1.95;
+    font-size: 14px;
+}
+.fusionbox {
+    display: inline-block;
+    position: relative;
+    background-color: "#c6c6c6";
+    margin: 12px 0;
+    padding: 6px;
+    width: fit-content;
+    text-align: left;
+    user-select: none;
+    -webkit-user-select: none;
+    white-space: nowrap;
+    vertical-align: bottom;
+    border-style: solid;
+    border-width: 8px;
+    background-clip: padding-box;
+}
+.fusionbox > .fusionbox-header {
+    margin-top: -10.5px;
+}
+.fusionbox-header {
+    display: block;
+    font-size: 16px;
+    color: "#3f3f3f";
+    letter-spacing: 0.2px;
+    text-overflow: clip;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 1px;
+    min-width: 100%;
+}
+.fusionbox > * {
+    vertical-align: top;
+}
+.fusionbox .fusionbox-row {
+    display: flex;
+}
+.fusionbox-slot {
+    display: inline-block;
+    position: relative;
+    border: 2px solid;
+    border-top-color: "#373737";
+    border-right-color: "#fff";
+    border-bottom-color: "#fff";
+    border-left-color: "#373737";
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-color: "#8b8b8b";
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: bottom;
+    box-sizing: content-box;
+}
+.fusionbox-slot-item {
+    position: relative;
+    display: block;
+    background-origin: content-box;
+    background-clip: content-box;
+    width: 32px;
+    height: 32px;
+    top: -2px;
+    left: -2px;
+    padding: 2px;
+}
+.fusionbox-slot::before {
+    bottom: -2px;
+    left: -2px;
+}
+.fusionbox-slot::before, .fusionbox-slot::after {
+    content: "";
+    position: absolute;
+    background-color: "#8b8b8b";
+    height: 2px;
+    width: 2px;
+    pointer-events: none;
+}
