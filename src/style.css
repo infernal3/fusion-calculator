@@ -1,6 +1,13 @@
 div {
     display: block;
 }
+@font-face {
+  font-family: 'Minecraft';
+  src: url('assets/minecraftfont.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
 #app {
     direction: ltr;
     unicode-bidi: isolate;
@@ -27,6 +34,7 @@ div {
     margin-top: -10.5px;
 }
 .fusionbox-header {
+    font-family: "Minecraft", monospace, sans-serif;
     display: block;
     font-size: 16px;
     color: "#3f3f3f";
