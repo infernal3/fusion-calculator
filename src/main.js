@@ -303,11 +303,11 @@ var loadOneShardConstant = async function (resource) {
 };
 
 var loadManyShardConstants = async function () {
-    var common = await loadOneShardConstant("../src/common.json");
-    var uncommon = await loadOneShardConstant("../src/uncommon.json");
-    var rare = await loadOneShardConstant("../src/rare.json");
-    var epic = await loadOneShardConstant("../src/epic.json");
-    var legendary = await loadOneShardConstant("../src/legendary.json");
+    var common = await loadOneShardConstant("../src/lib/common.json");
+    var uncommon = await loadOneShardConstant("../src/lib/uncommon.json");
+    var rare = await loadOneShardConstant("../src/lib/rare.json");
+    var epic = await loadOneShardConstant("../src/lib/epic.json");
+    var legendary = await loadOneShardConstant("../src/lib/legendary.json");
     return {
         common: common,
         uncommon: uncommon,
