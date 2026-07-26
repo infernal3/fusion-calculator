@@ -34,7 +34,7 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
         })
         .sort((a, b) => {
             if (a.shardID.slice(0, 1) != b.shardID.slice(0, 1)) {
-                return getRarityIndex(b.shardID.slice(0, 1)) - getRarityIndex(a.shardID.slice(0, 1));
+                return getInfoForShardLetter(b.shardID.slice(0, 1)).index - getInfoForShardLetter(a.shardID.slice(0, 1)).index;
             }
             return parseInt(a.shardID.slice(1)) - parseInt(b.shardID.slice(1));
         });
@@ -48,8 +48,8 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
 
 var calculateAllSpecialFusions = function (ShardTable, ShardA, ShardB) {
     // Fetch rarity, family, category, name for both of the shards:
-    var ShardObjectA = ShardTable[getRarityCuteName(ShardA.slice(0, 1))][parseInt(ShardA.slice(1))];
-    var ShardObjectB = ShardTable[getRarityCuteName(ShardB.slice(0, 1))][parseInt(ShardB.slice(1))];
+    var ShardObjectA = ShardTable[getInfoForShardLetter(ShardA.slice(0, 1)).cuteName][parseInt(ShardA.slice(1))];
+    var ShardObjectB = ShardTable[getInfoForShardLetter(ShardB.slice(0, 1)).cuteName][parseInt(ShardB.slice(1))];
     var array = [];
 
     // Iterate through all of the special fusion recipes and check if any apply
@@ -69,59 +69,27 @@ var calculateAllSpecialFusions = function (ShardTable, ShardA, ShardB) {
     });
 };
 
-var getNextTierShardLetter = function (ShardLetter) {
+var getInfoForShardLetter = function (ShardLetter) {
     switch (ShardLetter) {
         case "C":
-            return "U";
+            return {nextTier: "U", cuteName: "common", index: 1};
         case "U":
-            return "R";
+            return {nextTier: "R", cuteName: "uncommon", index: 2};
         case "R":
-            return "E";
+            return {nextTier: "E", cuteName: "rare", index: 3};
         case "E":
-            return "L";
-        default:
-            return "Z";
-    }
-};
-
-var getRarityCuteName = function (ShardLetter) {
-    switch (ShardLetter) {
-        case "C":
-            return "common";
-        case "U":
-            return "uncommon";
-        case "R":
-            return "rare";
-        case "E":
-            return "epic";
+            return {nextTier: "L", cuteName: "epic", index: 4};
         case "L":
-            return "legendary";
+            return {nextTier: "Z", cuteName: "legendary", index: 5};
         default:
-            return "unsorted";
+            return {nextTier: "Z", cuteName: "unsorted", index: -1};
     }
-};
-
-var getRarityIndex = function (ShardLetter) {
-    switch (ShardLetter) {
-        case "C":
-            return 1;
-        case "U":
-            return 2;
-        case "R":
-            return 3;
-        case "E":
-            return 4;
-        case "L":
-            return 5;
-        default:
-            return -1;
-    }
-};
+}
 
 var calculateIDFusionResult = function (ShardTable, Shard) {
     var ShardLetter = Shard.slice(0, 1);
     var ShardNumber = parseInt(Shard.slice(1));
-    var ShardTableOfRarity = ShardTable[getRarityCuteName(ShardLetter)];
+    var ShardTableOfRarity = ShardTable[getInfoForShardLetter(ShardLetter).cuteName];
     var ShardCategory = ShardTableOfRarity[ShardNumber].shardCategory;
     var index = ShardNumber;
     for (var index = ShardNumber + 1; index < 100; index++) {
@@ -143,7 +111,7 @@ var calculateChameleonFusionResult = function (ShardTable, NonChameleonShard) {
         if (checkIfShardIDExists(ShardTable, candidate)) {
             return candidate;
         }
-        return getNextTierShardLetter(ShardLetter) + ++missingCandidates;
+        return getInfoForShardLetter(ShardLetter).nextTier + (++missingCandidates);
     };
     return [
         {
