@@ -1,6 +1,16 @@
 div {
     display: block;
 }
+
+button {
+    user-select: none;
+    -webkit-user-select: none;
+    padding: 3px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: center;
+}
+
 @font-face {
   font-family: 'Minecraft';
   src: url('../assets/minecraftfont.woff') format('woff');
