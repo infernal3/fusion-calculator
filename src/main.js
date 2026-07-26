@@ -20,7 +20,7 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
     if (specialCandidates.length >= 1) {
         candidateB = "empty slot";
     }
-    
+
     // Merge Special Fusion and ID Fusion candidates into one array. Purge duplicates and invalid results:
     var candidates = Array.from(new Set(specialCandidates.concat(candidateA, candidateB)))
         .filter((item) => {
@@ -38,12 +38,22 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
             }
             return parseInt(a.shardID.slice(1)) - parseInt(b.shardID.slice(1));
         });
-    
+
     // If there are more than 3 candidates remaining after purging, omit lower priority candidates:
     while (candidates.length > 3) {
         candidates.pop();
     }
     return candidates;
+};
+
+var getShardIDFromName = function (ShardTable, ShardName) {
+    ShardTable.sorted.forEach((item) => {
+        if (item.shardName == ShardName) {
+            return item.shardID;
+        }
+    });
+    // Could not find a shard ID. Return a valid (but junk) shard ID to avoid things breaking.
+    return "C1";
 };
 
 var calculateAllSpecialFusions = function (ShardTable, ShardA, ShardB) {
@@ -72,19 +82,19 @@ var calculateAllSpecialFusions = function (ShardTable, ShardA, ShardB) {
 var getInfoForShardLetter = function (ShardLetter) {
     switch (ShardLetter) {
         case "C":
-            return {nextTier: "U", cuteName: "common", index: 1};
+            return { nextTier: "U", cuteName: "common", index: 1 };
         case "U":
-            return {nextTier: "R", cuteName: "uncommon", index: 2};
+            return { nextTier: "R", cuteName: "uncommon", index: 2 };
         case "R":
-            return {nextTier: "E", cuteName: "rare", index: 3};
+            return { nextTier: "E", cuteName: "rare", index: 3 };
         case "E":
-            return {nextTier: "L", cuteName: "epic", index: 4};
+            return { nextTier: "L", cuteName: "epic", index: 4 };
         case "L":
-            return {nextTier: "Z", cuteName: "legendary", index: 5};
+            return { nextTier: "Z", cuteName: "legendary", index: 5 };
         default:
-            return {nextTier: "Z", cuteName: "unsorted", index: -1};
+            return { nextTier: "Z", cuteName: "unsorted", index: -1 };
     }
-}
+};
 
 var calculateIDFusionResult = function (ShardTable, Shard) {
     var ShardLetter = Shard.slice(0, 1);
@@ -111,7 +121,7 @@ var calculateChameleonFusionResult = function (ShardTable, NonChameleonShard) {
         if (checkIfShardIDExists(ShardTable, candidate)) {
             return candidate;
         }
-        return getInfoForShardLetter(ShardLetter).nextTier + (++missingCandidates);
+        return getInfoForShardLetter(ShardLetter).nextTier + ++missingCandidates;
     };
     return [
         {
@@ -163,12 +173,12 @@ var getShardNamesWithPrefix = function (ShardTable, Prefix) {
             array.push(item);
             continue;
         }
-        if (([Prefix, item.shardName.toLowerCase()].sort())[1] != Prefix) {
+        if ([Prefix, item.shardName.toLowerCase()].sort()[1] != Prefix) {
             return array;
         }
     }
     return array;
-}
+};
 
 var loadOneShardConstant = async function (resource) {
     var response = await fetch(new Request(resource));

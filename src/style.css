@@ -12,10 +12,10 @@ button {
 }
 
 @font-face {
-  font-family: 'Minecraft';
-  src: url('../assets/minecraftfont.woff') format('woff');
-  font-style: normal;
-  font-display: swap;
+    font-family: "Minecraft";
+    src: url("../assets/minecraftfont.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
 }
 
 #app {
@@ -123,7 +123,8 @@ div.loading {
     bottom: -2px;
     left: -2px;
 }
-.fusionbox-slot::before, .fusionbox-slot::after {
+.fusionbox-slot::before,
+.fusionbox-slot::after {
     content: "";
     position: absolute;
     background-color: "#8b8b8b";
