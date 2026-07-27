@@ -1,4 +1,4 @@
-const el = (e) => getElementById(e);
+const el = (e) => document.getElementById(e);
 
 // ShardA and ShardB should be Shard ID, not the shard name or the processed shard object.
 var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
