@@ -1,3 +1,7 @@
+:root {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
 div {
     display: block;
 }
@@ -15,6 +19,14 @@ button {
     font-family: "Minecraft";
     src: url("../assets/minecraftfont.woff") format("woff");
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../assets/Ubuntu-Bold_min.ttf") format("ttf");
+    font-style: normal;
+    font-weight: 700;
     font-display: swap;
 }
 
