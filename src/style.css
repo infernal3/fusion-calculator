@@ -18,6 +18,11 @@ button {
     font-display: swap;
 }
 
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 #app {
     direction: ltr;
     unicode-bidi: isolate;

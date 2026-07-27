@@ -231,4 +231,24 @@ loadManyShardConstants()
     .then(() => {
         Loading = false;
         el("loading").style = "display: none";
+        el("calculate").addEventListener("click", () => {
+            var input1 = "" + el("input1").value;
+            var input2 = "" + el("input2").value;
+            console.log(`call function: calculate(${input1}, ${input2})`);
+            if (getInfoForShardLetter(input1.slice(0, 1)).index == -1 || getInfoForShardLetter(input2.slice(0, 1)).index == -1) {
+                el("results").innerHTML = `An error occurred: Input must be a shard ID.<br>Your inputs: <span style="color: #f00">[${input1}], [${input2}].</span>`;
+                console.log("Invalid input to calculation function.");
+                return;
+            }
+            try {
+                var result = calculateFusionResult(ShardTable, input1, input2);
+                el("results").innerHTML = JSON.stringify(result);
+                console.log(result);
+            } catch (error) {
+                el("results").innerHTML = `<span style="color: #f00">${error}</span>`;
+                console.error(error);
+            } finally {
+                console.log("Calculation complete.");
+            }
+        });
     });
