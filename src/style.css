@@ -136,6 +136,19 @@ div.loading {
     left: -2px;
     padding: 2px;
 }
+
+.fusionbox-slot-item.black-stained-glass-pane {
+    background-image: url("https://infernal3.github.io/fusion-calculator/assets/vanilla/Black_Stained_Glass_Pane.png");
+}
+
+.fusionbox-slot-item.barrier {
+    background-image: url("https://infernal3.github.io/fusion-calculator/assets/vanilla/Barrier.webp");
+}
+
+.fusionbox-slot-item.fusionbox-skull {
+    background-image: url("https://infernal3.github.io/fusion-calculator/assets/favicon-32x32.png");
+}
+
 .fusionbox-slot::before {
     bottom: -2px;
     left: -2px;
