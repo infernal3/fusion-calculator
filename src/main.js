@@ -96,6 +96,10 @@ var getInfoForShardLetter = function (ShardLetter) {
     }
 };
 
+var getRarityIndex = function (ShardLetter) {
+    return getInfoForShardLetter(ShardLetter).index;
+};
+
 var calculateIDFusionResult = function (ShardTable, Shard) {
     var ShardLetter = Shard.slice(0, 1);
     var ShardNumber = parseInt(Shard.slice(1));
