@@ -24,7 +24,7 @@ button {
 
 @font-face {
     font-family: "Ubuntu";
-    src: url("../assets/Ubuntu-Bold_min.ttf") format("ttf");
+    src: url("../assets/Ubuntu-Bold_min.ttf") format("truetype");
     font-style: normal;
     font-weight: 700;
     font-display: swap;
