@@ -225,7 +225,21 @@ var generateHTMLResults = function (ShardTable, results) {
         tempHTML += `<span class="minecraft-font mc7">${object.shardID} </span>`;
         tempHTML += `<span class="minecraft-font ${cssClass}">${object.shardName} Shard <span class="mcf">x${element.amount}</span></span>`;
         tempHTML += `<span class="minecraft-font mcf"> (<span class="${cssClass}">${object.attributeName}</span>)</span><br />`;
-        tempHTML += `<span class="minecraft-font mc7">${object.attributeEffect}</span><br />`;
+        var families = object.shardFamily.split(", ");
+
+        if (families.length > 2) {
+            var temp2 = ", and " + families[families.length - 1] + " Family";
+            for (var index = families.length - 2; index > 0; index--) {
+                temp2 = ", " + families[index] + temp2;
+            }
+            tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${temp2.slice(2)}</span><br />`;
+        } else if (families.length == 2) {
+            tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${families[0]} and ${families[1]} Family</span><br />`;
+        } else if (families.length == 1) {
+            tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${families[0]} Family</span><br />`;
+        }
+        tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${object.shardSkill} Attribute Category, ${object.shardCategory} Shard</span><br />`;
+        tempHTML += `<span class="minecraft-font mcf">${object.attributeEffect}</span><br />`;
         html += tempHTML + `</div><br />`;
     });
     return html;
@@ -234,78 +248,79 @@ var generateHTMLResults = function (ShardTable, results) {
 var Loading = true;
 var InputsValidated = false;
 var ShardTable = {};
+(function () {
+    loadManyShardConstants()
+        .then((result) => {
+            ShardTable = result;
+        })
+        .then(() => {
+            ShardTable.sorted = ShardTable.unsorted.toSorted((a, b) => {
+                if (a == null) {
+                    return 1;
+                }
+                if (b == null) {
+                    return -1;
+                }
+                var genericSort = [a.shardName, b.shardName].sort();
 
-loadManyShardConstants()
-    .then((result) => {
-        ShardTable = result;
-    })
-    .then(() => {
-        ShardTable.sorted = ShardTable.unsorted.toSorted((a, b) => {
-            if (a == null) {
+                if (genericSort[0] == genericSort[1]) {
+                    return 0;
+                }
+                if (genericSort[0] == a.shardName) {
+                    return -1;
+                }
                 return 1;
-            }
-            if (b == null) {
-                return -1;
-            }
-            var genericSort = [a.shardName, b.shardName].sort();
-
-            if (genericSort[0] == genericSort[1]) {
-                return 0;
-            }
-            if (genericSort[0] == a.shardName) {
-                return -1;
-            }
-            return 1;
-        });
-    })
-    .then(() => {
-        Loading = false;
-        el("loading").style = "display: none";
-        el("calculate").addEventListener("click", () => {
-            el("results").innerHTML = "";
-            var input1 = "" + el("input1").value;
-            var input2 = "" + el("input2").value;
-            console.log(`call function: calculate(${input1}, ${input2})`);
-            if (true) {
-                var shard1 = "empty slot",
-                    shard2 = "empty slot";
-                if (checkIfShardIDExists(ShardTable, input1)) {
-                    shard1 = input1;
-                } else {
-                    var temp1 = getShardIDFromName(ShardTable, input1);
-                    if (temp1 != "C0") {
-                        shard1 = temp1;
+            });
+        })
+        .then(() => {
+            Loading = false;
+            el("loading").style = "display: none";
+            el("calculate").addEventListener("click", () => {
+                el("results").innerHTML = "";
+                var input1 = "" + el("input1").value;
+                var input2 = "" + el("input2").value;
+                console.log(`call function: calculate(${input1}, ${input2})`);
+                if (true) {
+                    var shard1 = "empty slot",
+                        shard2 = "empty slot";
+                    if (checkIfShardIDExists(ShardTable, input1.toUpperCase())) {
+                        shard1 = input1.toUpperCase();
                     } else {
-                        el("results").innerHTML = `<span style="color: #f00">Failed validation: "${input1}" is not a valid Shard ID or name.</span>`;
-                        return;
+                        var temp1 = getShardIDFromName(ShardTable, input1);
+                        if (temp1 != "C0") {
+                            shard1 = temp1;
+                        } else {
+                            el("results").innerHTML = `<span style="color: #f00">Failed validation: "${input1}" is not a valid Shard ID or name.</span>`;
+                            return;
+                        }
+                    }
+                    if (checkIfShardIDExists(ShardTable, input2.toUpperCase())) {
+                        shard2 = input2.toUpperCase();
+                    } else {
+                        var temp2 = getShardIDFromName(ShardTable, input2);
+                        if (temp2 != "C0") {
+                            shard2 = temp2;
+                        } else {
+                            el("results").innerHTML = `<span style="color: #f00">Failed validation: "${input2}" is not a valid Shard ID or name.</span>`;
+                            return;
+                        }
                     }
                 }
-                if (checkIfShardIDExists(ShardTable, input2)) {
-                    shard2 = input2;
-                } else {
-                    var temp2 = getShardIDFromName(ShardTable, input2);
-                    if (temp2 != "C0") {
-                        shard2 = temp2;
-                    } else {
-                        el("results").innerHTML = `<span style="color: #f00">Failed validation: "${input2}" is not a valid Shard ID or name.</span>`;
-                        return;
-                    }
+                if (getInfoForShardLetter(shard1.slice(0, 1)).index == -1 || getInfoForShardLetter(shard2.slice(0, 1)).index == -1) {
+                    el("results").innerHTML = `<span style="color: #f00">An unexpected error occurred. Your inputs: ["${input1}]", "[${input2}]".</span>`;
+                    console.log("Invalid input to calculation function.");
+                    return;
                 }
-            }
-            if (getInfoForShardLetter(shard1.slice(0, 1)).index == -1 || getInfoForShardLetter(shard2.slice(0, 1)).index == -1) {
-                el("results").innerHTML = `<span style="color: #f00">An unexpected error occurred. Your inputs: ["${input1}]", "[${input2}]".</span>`;
-                console.log("Invalid input to calculation function.");
-                return;
-            }
-            try {
-                var result = calculateFusionResult(ShardTable, shard1, shard2);
-                el("results").innerHTML = generateHTMLResults(ShardTable, result);
-                console.log(result);
-            } catch (error) {
-                el("results").innerHTML = `<span style="color: #f00">An unexpected error occurred: ${error}</span>`;
-                console.error(error);
-            } finally {
-                console.log("Calculation complete.");
-            }
+                try {
+                    var result = calculateFusionResult(ShardTable, shard1, shard2);
+                    el("results").innerHTML = generateHTMLResults(ShardTable, result);
+                    console.log(result);
+                } catch (error) {
+                    el("results").innerHTML = `<span style="color: #f00">An unexpected error occurred: ${error}</span>`;
+                    console.error(error);
+                } finally {
+                    console.log("Calculation complete.");
+                }
+            });
         });
-    });
+})();

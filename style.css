@@ -9,7 +9,11 @@ div {
 button {
     user-select: none;
     -webkit-user-select: none;
-    padding: 3px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 8px;
     border: 1px solid black;
     text-align: center;
     vertical-align: center;
