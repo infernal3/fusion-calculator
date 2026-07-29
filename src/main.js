@@ -40,9 +40,9 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
         });
 
     // If there are more than 3 candidates remaining after purging, omit lower priority candidates:
-    while (candidates.length > 3) {
+    /*while (candidates.length > 3) {
         candidates.pop();
-    }
+    }*/
     return candidates;
 };
 
@@ -89,17 +89,17 @@ var calculateAllSpecialFusions = function (ShardTable, ShardA, ShardB) {
 var getInfoForShardLetter = function (ShardLetter) {
     switch (ShardLetter) {
         case "C":
-            return { nextTier: "U", cuteName: "common", index: 1 };
+            return { cssClass: "mcf", nextTier: "U", cuteName: "common", index: 1 };
         case "U":
-            return { nextTier: "R", cuteName: "uncommon", index: 2 };
+            return { cssClass: "mca", nextTier: "R", cuteName: "uncommon", index: 2 };
         case "R":
-            return { nextTier: "E", cuteName: "rare", index: 3 };
+            return { cssClass: "mc9", nextTier: "E", cuteName: "rare", index: 3 };
         case "E":
-            return { nextTier: "L", cuteName: "epic", index: 4 };
+            return { cssClass: "mc5", nextTier: "L", cuteName: "epic", index: 4 };
         case "L":
-            return { nextTier: "Z", cuteName: "legendary", index: 5 };
+            return { cssClass: "mc6", nextTier: "Z", cuteName: "legendary", index: 5 };
         default:
-            return { nextTier: "Z", cuteName: "unsorted", index: -1 };
+            return { cssClass: "mc4", nextTier: "Z", cuteName: "unsorted", index: -1 };
     }
 };
 
@@ -213,6 +213,24 @@ var loadManyShardConstants = async function () {
     };
 };
 
+var generateHTMLResults = function (ShardTable, results) {
+    if (!results || !(typeof results === "object") || !("length" in results)) {
+        return `<span style="color: #f00">An unexpected error occurred: "results" argument in generateHTMLResults is not an array</span>`;
+    }
+    var html = "";
+    results.forEach((element) => {
+        var tempHTML = `<div class="fusion-result-box">`;
+        var object = ShardTable[getInfoForShardLetter(element.shardID.slice(0, 1)).cuteName][element.shardID.slice(1)];
+        var cssClass = getInfoForShardLetter(element.shardID.slice(0, 1)).cssClass;
+        tempHTML += `<span class="minecraft-font mc7">${object.shardID} </span>`;
+        tempHTML += `<span class="minecraft-font ${cssClass}">${object.shardName} Shard <span class="mcf">x${element.amount}</span></span>`;
+        tempHTML += `<span class="minecraft-font mcf"> (<span class="${cssClass}">${object.attributeName}</span>)</span><br />`;
+        tempHTML += `<span class="minecraft-font mc7">${object.attributeEffect}</span><br />`;
+        html += tempHTML + `</div><br />`;
+    });
+    return html;
+};
+
 var Loading = true;
 var InputsValidated = false;
 var ShardTable = {};
@@ -281,7 +299,7 @@ loadManyShardConstants()
             }
             try {
                 var result = calculateFusionResult(ShardTable, shard1, shard2);
-                el("results").innerHTML = JSON.stringify(result);
+                el("results").innerHTML = generateHTMLResults(ShardTable, result);
                 console.log(result);
             } catch (error) {
                 el("results").innerHTML = `<span style="color: #f00">An unexpected error occurred: ${error}</span>`;

@@ -114,6 +114,14 @@ div.loading {
     vertical-align: bottom;
     box-sizing: content-box;
 }
+
+.fusion-result-box {
+    background-color: rgb(23, 8, 23);
+    display: block;
+    padding: 4px;
+    padding-left: 8px;
+}
+
 .fusionbox-slot-item {
     position: relative;
     display: block;
