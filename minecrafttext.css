@@ -5,9 +5,16 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "HypixelSkyBlock";
+    src: url("assets/hypixelskyblock.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
 .minecraft-font,
 .fusionbox-header {
-    font-family: "Minecraft", monospace, sans-serif;
+    font-family: "HypixelSkyBlock", "Minecraft", monospace, sans-serif;
     font-size: 16px;
     color: #3f3f3f;
     letter-spacing: 0.2px;
