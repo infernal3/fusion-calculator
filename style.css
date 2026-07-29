@@ -17,14 +17,14 @@ button {
 
 @font-face {
     font-family: "Minecraft";
-    src: url("../assets/minecraftfont.woff") format("woff");
+    src: url("assets/minecraftfont.woff") format("woff");
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Ubuntu";
-    src: url("../assets/Ubuntu-Bold_min.ttf") format("truetype");
+    src: url("assets/Ubuntu-Bold_min.ttf") format("truetype");
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -70,7 +70,7 @@ div.loading {
 .fusionbox {
     display: inline-block;
     position: relative;
-    background-color: "#c6c6c6";
+    background-color: #c6c6c6;
     margin: 12px 0;
     padding: 6px;
     width: fit-content;
@@ -86,13 +86,18 @@ div.loading {
 .fusionbox > .fusionbox-header {
     margin-top: -10.5px;
 }
+
+.minecraft-font,
 .fusionbox-header {
     font-family: "Minecraft", monospace, sans-serif;
-    display: block;
     font-size: 16px;
-    color: "#3f3f3f";
+    color: #3f3f3f;
     letter-spacing: 0.2px;
     text-overflow: clip;
+}
+
+.fusionbox-header {
+    display: block;
     overflow-x: auto;
     overflow-y: hidden;
     width: 1px;
@@ -108,15 +113,15 @@ div.loading {
     display: inline-block;
     position: relative;
     border: 2px solid;
-    border-top-color: "#373737";
-    border-right-color: "#fff";
-    border-bottom-color: "#fff";
-    border-left-color: "#373737";
+    border-top-color: #373737;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    border-left-color: #373737;
     background-position-x: center;
     background-position-y: center;
     background-size: 32px 32px;
     background-repeat: no-repeat;
-    background-color: "#8b8b8b";
+    background-color: #8b8b8b;
     width: 32px;
     height: 32px;
     font-size: 16px;
@@ -130,6 +135,8 @@ div.loading {
     display: block;
     background-origin: content-box;
     background-clip: content-box;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 32px;
     height: 32px;
     top: -2px;
@@ -138,15 +145,15 @@ div.loading {
 }
 
 .fusionbox-slot-item.black-stained-glass-pane {
-    background-image: url("https://infernal3.github.io/fusion-calculator/assets/vanilla/Black_Stained_Glass_Pane.png");
+    background-image: url("assets/vanilla/Black_Stained_Glass_Pane.png");
 }
 
 .fusionbox-slot-item.barrier {
-    background-image: url("https://infernal3.github.io/fusion-calculator/assets/vanilla/Barrier.webp");
+    background-image: url("assets/vanilla/Barrier.webp");
 }
 
 .fusionbox-slot-item.fusionbox-skull {
-    background-image: url("https://infernal3.github.io/fusion-calculator/assets/favicon-32x32.png");
+    background-image: url("assets/favicon-32x32.png");
 }
 
 .fusionbox-slot::before {
@@ -157,7 +164,7 @@ div.loading {
 .fusionbox-slot::after {
     content: "";
     position: absolute;
-    background-color: "#8b8b8b";
+    background-color: #8b8b8b;
     height: 2px;
     width: 2px;
     pointer-events: none;

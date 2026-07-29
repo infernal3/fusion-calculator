@@ -47,13 +47,20 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
 };
 
 var getShardIDFromName = function (ShardTable, ShardName) {
+    var result = "C0";
     ShardTable.sorted.forEach((item) => {
-        if (item.shardName == ShardName) {
-            return item.shardID;
+        if (!item || !("shardName" in item)) {
+            return;
+        }
+        if (item.shardName.toLowerCase() == ShardName.toLowerCase()) {
+            result = item.shardID;
         }
     });
-    // Could not find a shard ID. Return a valid (but junk) shard ID to avoid things breaking.
-    return "C1";
+    if (result == "C0") {
+        // Could not find a shard ID. Return a valid-seeming (but junk) shard ID to avoid things breaking.
+        console.log("Could not find a shard ID.");
+    }
+    return result;
 };
 
 var calculateAllSpecialFusions = function (ShardTable, ShardA, ShardB) {
@@ -191,11 +198,11 @@ var loadOneShardConstant = async function (resource) {
 };
 
 var loadManyShardConstants = async function () {
-    var common = await loadOneShardConstant("../src/lib/common.json");
-    var uncommon = await loadOneShardConstant("../src/lib/uncommon.json");
-    var rare = await loadOneShardConstant("../src/lib/rare.json");
-    var epic = await loadOneShardConstant("../src/lib/epic.json");
-    var legendary = await loadOneShardConstant("../src/lib/legendary.json");
+    var common = await loadOneShardConstant("src/lib/common.json");
+    var uncommon = await loadOneShardConstant("src/lib/uncommon.json");
+    var rare = await loadOneShardConstant("src/lib/rare.json");
+    var epic = await loadOneShardConstant("src/lib/epic.json");
+    var legendary = await loadOneShardConstant("src/lib/legendary.json");
     return {
         common: common,
         uncommon: uncommon,
@@ -207,6 +214,7 @@ var loadManyShardConstants = async function () {
 };
 
 var Loading = true;
+var InputsValidated = false;
 var ShardTable = {};
 
 loadManyShardConstants()
@@ -236,20 +244,47 @@ loadManyShardConstants()
         Loading = false;
         el("loading").style = "display: none";
         el("calculate").addEventListener("click", () => {
+            el("results").innerHTML = "";
             var input1 = "" + el("input1").value;
             var input2 = "" + el("input2").value;
             console.log(`call function: calculate(${input1}, ${input2})`);
-            if (getInfoForShardLetter(input1.slice(0, 1)).index == -1 || getInfoForShardLetter(input2.slice(0, 1)).index == -1) {
-                el("results").innerHTML = `An error occurred: Input must be a shard ID.<br>Your inputs: <span style="color: #f00">[${input1}], [${input2}].</span>`;
+            if (true) {
+                var shard1 = "empty slot",
+                    shard2 = "empty slot";
+                if (checkIfShardIDExists(ShardTable, input1)) {
+                    shard1 = input1;
+                } else {
+                    var temp1 = getShardIDFromName(ShardTable, input1);
+                    if (temp1 != "C0") {
+                        shard1 = temp1;
+                    } else {
+                        el("results").innerHTML = `<span style="color: #f00">Failed validation: "${input1}" is not a valid Shard ID or name.</span>`;
+                        return;
+                    }
+                }
+                if (checkIfShardIDExists(ShardTable, input2)) {
+                    shard2 = input2;
+                } else {
+                    var temp2 = getShardIDFromName(ShardTable, input2);
+                    if (temp2 != "C0") {
+                        shard2 = temp2;
+                    } else {
+                        el("results").innerHTML = `<span style="color: #f00">Failed validation: "${input2}" is not a valid Shard ID or name.</span>`;
+                        return;
+                    }
+                }
+            }
+            if (getInfoForShardLetter(shard1.slice(0, 1)).index == -1 || getInfoForShardLetter(shard2.slice(0, 1)).index == -1) {
+                el("results").innerHTML = `<span style="color: #f00">An unexpected error occurred. Your inputs: ["${input1}]", "[${input2}]".</span>`;
                 console.log("Invalid input to calculation function.");
                 return;
             }
             try {
-                var result = calculateFusionResult(ShardTable, input1, input2);
+                var result = calculateFusionResult(ShardTable, shard1, shard2);
                 el("results").innerHTML = JSON.stringify(result);
                 console.log(result);
             } catch (error) {
-                el("results").innerHTML = `<span style="color: #f00">${error}</span>`;
+                el("results").innerHTML = `<span style="color: #f00">An unexpected error occurred: ${error}</span>`;
                 console.error(error);
             } finally {
                 console.log("Calculation complete.");
