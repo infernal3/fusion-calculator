@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Minecraft";
+    src: url("assets/minecraftfont.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
+}
+
+.minecraft-font,
+.fusionbox-header {
+    font-family: "Minecraft", monospace, sans-serif;
+    font-size: 16px;
+    color: #3f3f3f;
+    letter-spacing: 0.2px;
+    text-overflow: clip;
+}
+
+.mc0 {
+    color: rgb(0, 0, 0);
+}
+.mc1 {
+    color: rgb(0, 0, 170);
+}
+.mc2 {
+    color: rgb(0, 170, 0);
+}
+.mc3 {
+    color: rgb(0, 170, 170);
+}
+.mc4 {
+    color: rgb(170, 0, 0);
+}
+.mc5 {
+    color: rgb(170, 0, 170);
+}
+.mc6 {
+    color: rgb(255, 0, 170);
+}
+.mc7 {
+    color: rgb(170, 170, 170);
+}
+.mc8 {
+    color: rgb(85, 85, 85);
+}
+.mc9 {
+    color: rgb(85, 85, 255);
+}
+.mca {
+    color: rgb(85, 255, 85);
+}
+.mcb {
+    color: rgb(85, 255, 255);
+}
+.mcc {
+    color: rgb(255, 85, 85);
+}
+.mcd {
+    color: rgb(255, 85, 255);
+}
+.mce {
+    color: rgb(255, 255, 85);
+}
+.mcf {
+    color: rgb(255, 255, 255);
+}

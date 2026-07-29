@@ -16,13 +16,6 @@ button {
 }
 
 @font-face {
-    font-family: "Minecraft";
-    src: url("assets/minecraftfont.woff") format("woff");
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: "Ubuntu";
     src: url("assets/Ubuntu-Bold_min.ttf") format("truetype");
     font-style: normal;
@@ -85,15 +78,6 @@ div.loading {
 }
 .fusionbox > .fusionbox-header {
     margin-top: -10.5px;
-}
-
-.minecraft-font,
-.fusionbox-header {
-    font-family: "Minecraft", monospace, sans-serif;
-    font-size: 16px;
-    color: #3f3f3f;
-    letter-spacing: 0.2px;
-    text-overflow: clip;
 }
 
 .fusionbox-header {
