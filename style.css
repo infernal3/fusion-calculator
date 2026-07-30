@@ -43,8 +43,9 @@ button {
 div.loading > h1 {
     font-size: 48px;
     text-align: center;
-    vertical-align: center;
-    padding-top: calc(50% - 64px);
+    vertical-align: middle;
+    padding-top: calc(25% - 64px);
+    padding-bottom: 0;
     color: white;
 }
 
