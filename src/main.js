@@ -235,7 +235,7 @@ var generateHTMLResults = function (ShardTable, results) {
             tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${temp2.slice(2)}</span><br />`;
         } else if (families.length == 2) {
             tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${families[0]} and ${families[1]} Family</span><br />`;
-        } else if (families.length == 1) {
+        } else if (object.shardFamily != "") {
             tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${families[0]} Family</span><br />`;
         }
         tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${object.shardSkill} Attribute Category, ${object.shardCategory} Shard</span><br />`;
