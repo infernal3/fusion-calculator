@@ -70,7 +70,16 @@
         "shardSkill": "Hunting",
         "shardCategory": "Water*"
     },
-    null,
+    {
+        "shardID": "E8",
+        "attributeName": "Pickaxe Cooldown",
+        "attributeEffect": "Reduces the cooldown of your Pickaxe Ability by +1%–10%",
+        "shardName": "Abyssal Miner",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
     {
         "shardID": "E9",
         "attributeName": "Hunter's Suppress",
@@ -101,7 +110,16 @@
         "shardSkill": "Hunting",
         "shardCategory": "Water"
     },
-    null,
+    {
+        "shardID": "E12",
+        "attributeName": "Special Upgrades",
+        "attributeEffect": "Summoning Eyes you drop have a +0.5%–5% chance to be recombobulated",
+        "shardName": "Special Zealot",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Combat"
+    },
     {
         "shardID": "E13",
         "attributeName": "Lunar Power",
@@ -162,7 +180,16 @@
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "E19",
+        "attributeName": "Sky High",
+        "attributeEffect": "Increases the distance you can fall before taking fall damage by +0.5–5 blocks",
+        "shardName": "Murderwing",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "E20",
         "attributeName": "Sea Wisdom",
@@ -193,7 +220,16 @@
         "shardSkill": "Hunting",
         "shardCategory": "Forest"
     },
-    null,
+    {
+        "shardID": "E23",
+        "attributeName": "Oustanding Fisher",
+        "attributeEffect": "Treasure catches are +1%–10% more likely to be OUTSTANDING",
+        "shardName": "Blue Crab",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
     {
         "shardID": "E24",
         "attributeName": "Faker",
@@ -204,7 +240,16 @@
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "E25",
+        "attributeName": "Slayer Progress",
+        "attributeEffect": "Slayer Quests start +1%–10% complete",
+        "shardName": "Wolverine",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "E26",
         "attributeName": "Shell",
@@ -320,7 +365,7 @@
         "attributeName": "Garden Wisdom",
         "attributeEffect": "Grants +0.5–5 ☯ Farming Wisdom",
         "shardName": "Dragonfly",
-        "wikiDescription": "Fusing Firefly Shard with Dragon Family",
+        "wikiDescription": "",
         "shardFamily": "Bug",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
@@ -348,10 +393,130 @@
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
+    {
+        "shardID": "E43",
+        "attributeName": "Ghastly Distraction",
+        "attributeEffect": "Pacifies enemies for +1s–10s after mining Opal Gemstones in the Smoldering Tomb. Does not work on Slayer Bosses, Slayer Minibosses. Attacking an enemy ends the effect early",
+        "shardName": "Dive Ghast",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "E44",
+        "attributeName": "Forager's Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find while on Foraging Islands",
+        "shardName": "Silkbreeze",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "E45",
+        "attributeName": "Devouring Spread",
+        "attributeEffect": "Grants +0.25–2.5  Gemstone Spread",
+        "shardName": "Gemzie",
+        "wikiDescription": "Catch a Gemzie with a Critter Capsule in the Cavern Biome of the Critter Safari",
+        "shardFamily": "Arctic",
+        "shardSkill": "Mining",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "E46",
+        "attributeName": "Divine Rabbit Luck",
+        "attributeEffect": "Increases your chance of finding DIVINE Rabbits during Hoppity's Hunt by +1%–10%",
+        "shardName": "Rabbit Godmother",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "E47",
+        "attributeName": "Fisher's Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find while on Fishing Islands",
+        "shardName": "Giant Isopod",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    null,
+    {
+        "shardID": "E49",
+        "attributeName": "Honey Refill",
+        "attributeEffect": "Honeyhives have a +0.5%–5% chance to refill instantly",
+        "shardName": "Queen Bee",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "E51",
+        "attributeName": "Catacombs Explorer",
+        "attributeEffect": "Grants +1%–10% more Catacombs XP",
+        "shardName": "Bonzo",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "E52",
+        "attributeName": "Lathering Greed",
+        "attributeEffect": "Gain +10%–100% more Honeycomb from hunting mobs spawned from Trees lathered with Honeycomb",
+        "shardName": "Beeheemoth",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    null,
     null,
     null,
     {
-        "shardID": "E45",
+        "shardID": "E58",
+        "attributeName": "Social Wisdom",
+        "attributeEffect": "Grants +0.5–5 ☯ Social Wisdom",
+        "shardName": "Mountain Goat",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "E60",
+        "attributeName": "Glossy Fortune",
+        "attributeEffect": "Increases your chance of finding Glossy Gemstones during Mining Fiestas by +1%–10%",
+        "shardName": "Scatha",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Combat"
+    },
+    null,
+    null,
+    {
+        "shardID": "E63",
+        "attributeName": "Royal Riches",
+        "attributeEffect": "Grants +5–50  Mining Speed and +2.5–25  Ore Fortune while in the Mines of Divan",
+        "shardName": "Nilbog",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Combat"
+    },
+    null,
+    null,
+    {
+        "shardID": "E66",
         "attributeName": "Freezing Spread",
         "attributeEffect": "Grants +0.5  Gemstone Spread for every 29–20  Cold Resistance",
         "shardName": "Littlefoot",

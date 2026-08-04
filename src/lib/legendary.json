@@ -90,7 +90,16 @@
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "L10",
+        "attributeName": "Egg Finder",
+        "attributeEffect": "Finds a Hitman Egg every 750s during Hoppity's Hunt",
+        "shardName": "Rabbit Godfather",
+        "wikiDescription": "Fusing Rabbit Godmother Shard with Combat Category and Legendary or higher",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "L11",
         "attributeName": "Charmed",
@@ -134,7 +143,7 @@
     {
         "shardID": "L15",
         "attributeName": "Vitality",
-        "attributeEffect": "Grants +2–20  Vitality",
+        "attributeEffect": "Grants +1–10  Vitality",
         "shardName": "Kraken",
         "wikiDescription": "Obtained from Kuudra",
         "shardFamily": "Demon",
@@ -173,8 +182,26 @@
         "shardSkill": "Global",
         "shardCategory": "Water"
     },
-    null,
-    null,
+    {
+        "shardID": "L21",
+        "attributeName": "Echo of Tracking",
+        "attributeEffect": "Your \"Tracker\" Attributes are +2%–20% stronger",
+        "shardName": "Doomspiral",
+        "wikiDescription": "Catch a Doomspiral with a Critter Capsule in the Haunted Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "L22",
+        "attributeName": "Splendor",
+        "attributeEffect": "Grants a +0.01%–0.1% chance to drop a Rainbow Feather when hunting a mob",
+        "shardName": "Macaw",
+        "wikiDescription": "Catch a Macaw with a Critter Capsule in the Forest Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Hunting",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "L23",
         "attributeName": "Help From Above",
@@ -287,15 +314,24 @@
     },
     {
         "shardID": "L34",
-        "attributeName": "Rare Bird",
-        "attributeEffect": "Grants +1–10  Pet Luck",
+        "attributeName": "Tracking",
+        "attributeEffect": "Grants +0.5–5  Tracking",
         "shardName": "Dodo",
         "wikiDescription": "Fusing Condor Shard with Legendary or higher",
         "shardFamily": "Bird",
-        "shardSkill": "Taming",
+        "shardSkill": "Global",
         "shardCategory": "Forest"
     },
-    null,
+    {
+        "shardID": "L35",
+        "attributeName": "Queenly Echo",
+        "attributeEffect": "Your \"Visitor\" Attributes are +5%–50% stronger",
+        "shardName": "Queen Snake",
+        "wikiDescription": "Fusing Queen Bee Shard with Queen Ant Shard",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
     {
         "shardID": "L36",
         "attributeName": "Unlimited Power",
@@ -318,7 +354,16 @@
         "shardSkill": "Global",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "L40",
+        "attributeName": "Tough Claws",
+        "attributeEffect": "Whenever you cut down a Tree, reduce its Toughness by +0.1–1",
+        "shardName": "Grizzly Bear",
+        "wikiDescription": "Catch with Pocket Black Hole\nCatch with Lasso\nKill Grizzly Bear while using Salts\nFound in Helix Tree Gifts",
+        "shardFamily": "",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "L41",
         "attributeName": "Ultimate DNA",
@@ -350,13 +395,22 @@
         "shardSkill": "Global",
         "shardCategory": "Water"
     },
-    null,
+    {
+        "shardID": "L45",
+        "attributeName": "Cocoon Chance",
+        "attributeEffect": "Increases the chance of The Primordial cocooning Slayer Bosses and Slayer Minibosses by +0.5%–5%",
+        "shardName": "Primordial",
+        "wikiDescription": "Dropped by Primordial Broodfather",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
     {
         "shardID": "L46",
         "attributeName": "Groovy Radar",
         "attributeEffect": " Pests have a +2.5%–25% chance to drop a second Vinyl",
         "shardName": "Cocoaleech",
-        "wikiDescription": "Crafted using Designer Coffee Beans",
+        "wikiDescription": "Crafted using Designer Coffee Beans and Devourer",
         "shardFamily": "Bug",
         "shardSkill": "Hunting",
         "shardCategory": "Forest"
@@ -381,7 +435,16 @@
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "L49",
+        "attributeName": "Miracle Chance",
+        "attributeEffect": "Increases your chance of finding Dyes by 0.1%-1%",
+        "shardName": "Rainbug",
+        "wikiDescription": "Ring all 7 Bells in the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
     null,
     {
         "shardID": "L51",
@@ -391,6 +454,42 @@
         "wikiDescription": "Obtained from Master Catacombs Floor II",
         "shardFamily": "",
         "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    null,
+    null,
+    {
+        "shardID": "L54",
+        "attributeName": "Slayer Discount",
+        "attributeEffect": "Grants a +0.5%–5% discount on starting Slayer Quests",
+        "shardName": "Paragon",
+        "wikiDescription": "Dropped by Tier IV/V Slayer Bosses (except Riftstalker Bloodfiend) at Slayer LVL 5.",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    null,
+    null,
+    {
+        "shardID": "L57",
+        "attributeName": "Greenhouse Speed",
+        "attributeEffect": "Grants +0.5%–5% Growth Speed in your Greenhouse",
+        "shardName": "Timestalk Clone",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Timestalk Clone while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Farming",
+        "shardCategory": "Combat"
+    },
+    null,
+    null,
+    {
+        "shardID": "L60",
+        "attributeName": "Cold Resistance",
+        "attributeEffect": "Grants +0.5–5  Cold Resistance",
+        "shardName": "Wumpa",
+        "wikiDescription": "Catch a Wumpa with a Critter Capsule in the Icy Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Global",
         "shardCategory": "Combat"
     }
 ]

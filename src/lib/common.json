@@ -50,7 +50,16 @@
         "shardSkill": "Fishing",
         "shardCategory": "Water"
     },
-    null,
+    {
+        "shardID": "C6",
+        "attributeName": "Animal Resistance",
+        "attributeEffect": "Grants +4–40  Defense against  Animal mobs",
+        "shardName": "Howling Spirit",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Howling Spirit while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Forest*"
+    },
     {
         "shardID": "C7",
         "attributeName": "Moonglade Mastery",
@@ -61,7 +70,16 @@
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
     },
-    null,
+    {
+        "shardID": "C8",
+        "attributeName": "Aquatic Resistance",
+        "attributeEffect": "Grants +4–40  Defense against  Aquatic mobs",
+        "shardName": "Dumpster Diver",
+        "wikiDescription": "Kill Dumpster Diver while using Salts\nPlace Traps in Backwater Bayou (Underwater)",
+        "shardFamily": "Squid[Confirm]",
+        "shardSkill": "Combat",
+        "shardCategory": "Water"
+    },
     {
         "shardID": "C9",
         "attributeName": "Experience",
@@ -102,7 +120,16 @@
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "C13",
+        "attributeName": "Fortunate Farmer",
+        "attributeEffect": "Grants +2.5–25  Farming Fortune",
+        "shardName": "Fly",
+        "wikiDescription": "Catch with Lasso\nKill Fly while using Salts",
+        "shardFamily": "",
+        "shardSkill": "Farming",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "C14",
         "attributeName": "Creature Fisher",
@@ -183,7 +210,16 @@
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "C22",
+        "attributeName": "Hitman Cooldown",
+        "attributeEffect": "The cooldown of the Rabbit Hitman is reduced by +2.5%–25%",
+        "shardName": "Rabbit Mafioso",
+        "wikiDescription": "Purchased in Chocolate Shop",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "C23",
         "attributeName": "Bucket Lover",
@@ -234,7 +270,16 @@
         "shardSkill": "Global",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "C28",
+        "attributeName": "Crop Speed",
+        "attributeEffect": "Grants +1–10 Crop Growth while in The Garden",
+        "shardName": "Locust",
+        "wikiDescription": "Catch with Lasso\nKill Locust while using Salts",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "C29",
         "attributeName": "Forest Strength",
@@ -255,7 +300,16 @@
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "C31",
+        "attributeName": "Woodland Resistance",
+        "attributeEffect": "Grants +4–40  Defense against  Woodland mobs",
+        "shardName": "Stag Beetle",
+        "wikiDescription": "Catch with Lasso\nLather Honeycomb on Mangrove Trees",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "C32",
         "attributeName": "Fisherman",
@@ -306,8 +360,26 @@
         "shardSkill": "Mining",
         "shardCategory": "Combat"
     },
-    null,
-    null,
+    {
+        "shardID": "C37",
+        "attributeName": "Fortunate Miner",
+        "attributeEffect": "Grants +2.5–25  Mining Fortune",
+        "shardName": "Flitter",
+        "wikiDescription": "Catch a Flitter with a Critter Capsule in the Cavern Biome of the Critter Safari\nFloor Drop in Cavern Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Mining",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "C38",
+        "attributeName": "Lake Fishing",
+        "attributeEffect": "Grants +3–30  Fishing Speed while on Fishing Islands",
+        "shardName": "Tepid",
+        "wikiDescription": "Catch a Tepid with a Critter Capsule in the Icy Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
     {
         "shardID": "C39",
         "attributeName": "Mythological Resistance",
@@ -317,5 +389,177 @@
         "shardFamily": "",
         "shardSkill": "",
         "shardCategory": "Combat"
+    },
+    {
+        "shardID": "C40",
+        "attributeName": "Queen Tracker",
+        "attributeEffect": "Grants +0.5–5  Tracking towards Queen Ants",
+        "shardName": "Ant",
+        "wikiDescription": "Kill Ant while using Salts\nPlace Hunting Traps in Ant's Cave",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "C41",
+        "attributeName": "Cave Fishing",
+        "attributeEffect": "Grants +3–30  Fishing Speed while on Mining Islands",
+        "shardName": "Cavernfish",
+        "wikiDescription": "Catch a Cavernfish with a Critter Capsule in the Cavern Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "C42",
+        "attributeName": "Frozen Resistance",
+        "attributeEffect": "Grants +4–40  Defense against  Frozen mobs",
+        "shardName": "Strongarm",
+        "wikiDescription": "Catch a Strongarm with a Critter Capsule in the Icy Biome of the Critter Safari\nFloor Drop in Icy Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "C43",
+        "attributeName": "Gold Box",
+        "attributeEffect": "Grants +5–50  Ore Fortune",
+        "shardName": "Hideonsun",
+        "wikiDescription": "Hunted in the Torrhus Canyon",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "C44",
+        "attributeName": "Skeletal Resistance",
+        "attributeEffect": "Grants +4–40  Defense against  Skeletal mobs",
+        "shardName": "Haggard",
+        "wikiDescription": "Kill Haggard while using Salts\nCatch with a Fishing Nets",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "C45",
+        "attributeName": "Honey Speed",
+        "attributeEffect": "Trees lathered with Honeycomb attract mobs +1%–10% faster",
+        "shardName": "Honeyhog",
+        "wikiDescription": "Catch with Lasso\nLather Honeycomb on Fig Trees",
+        "shardFamily": "",
+        "shardSkill": "Foraging",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "C46",
+        "attributeName": "Subterranean Resistance",
+        "attributeEffect": "Grants +4–40  Defense against  Subterranean mobs",
+        "shardName": "Shyworm",
+        "wikiDescription": "Catch a Shyworm with a Critter Capsule in the Cavern Biome of the Critter Safari\nFloor Drop in Cavern Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "C47",
+        "attributeName": "Arcane Resistance",
+        "attributeEffect": "Grants +4–40  Defense against  Arcane mobs",
+        "shardName": "Brineling",
+        "wikiDescription": "Kill Brineling while using Salts\nCatch with a Fishing Net",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    null,
+    {
+        "shardID": "C49",
+        "attributeName": "Foraging Speed",
+        "attributeEffect": "Grants +3–30  Speed while on Foraging Islands",
+        "shardName": "Foxtrot",
+        "wikiDescription": "Catch a Foxtrot with a Critter Capsule in the Forest Biome of the Critter Safari\nFloor Drop in Forest Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "C52",
+        "attributeName": "Torrhus Mastery",
+        "attributeEffect": "Grants +10–100  Helix Fortune",
+        "shardName": "Firefox",
+        "wikiDescription": "Catch with Lasso\nFound in Helix Tree Gifts",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "C55",
+        "attributeName": "Diurnal Animal",
+        "attributeEffect": "Grants +1–10  Sweep during the day",
+        "shardName": "Groundhog",
+        "wikiDescription": "Catch with Lasso\nFound in Helix Tree Gifts",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "C56",
+        "attributeName": "Torrhus Diver",
+        "attributeEffect": "Grants +0.5–5  Pressure Resistance while on Torrhus Canyon",
+        "shardName": "Timil",
+        "wikiDescription": "Catch with a Fishing Net\nPlace Hunting Traps in Spring Path (Underwater)",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    null,
+    {
+        "shardID": "C58",
+        "attributeName": "Airborne Resistance",
+        "attributeEffect": "Grants +4–40  Defense against  Airborne mobs",
+        "shardName": "Blue Jay",
+        "wikiDescription": "Catch with Lasso",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "C61",
+        "attributeName": "Chocolate Speed",
+        "attributeEffect": "Increases your Chocolate Factory speed by +0.25%–2.5%",
+        "shardName": "Bunbun",
+        "wikiDescription": "Catch with Lasso\nPlace Traps in Torrhus Canyon (On Land)",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "C64",
+        "attributeName": "Honey Haul",
+        "attributeEffect": "Honeyhives have a +2.5%–25% chance to contain double the Honeycomb",
+        "shardName": "Honeybuzz",
+        "wikiDescription": "Catch with Lasso\nFound in Honeyhives",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "C67",
+        "attributeName": "Honey Luck",
+        "attributeEffect": "Trees lathered with Honeycomb have a +5%–50% chance to attract a second mob",
+        "shardName": "Pollendart",
+        "wikiDescription": "Catch with Lasso\nLather Honeycomb on Helix Trees",
+        "shardFamily": "",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
     }
 ]

@@ -93,11 +93,11 @@
     {
         "shardID": "U10",
         "attributeName": "Pest Luck",
-        "attributeEffect": "Grants +2–20  Overbloom towards  Pests",
-        "shardName": "Pest",
-        "wikiDescription": "Catch with Lasso\nKill Dragonfly, Praying Mantis, Mosquito, Firefly, Cricket, Fly, Beetle, Earthworm, Locust, Slug, Moth, Rat, or Mite while using Salts",
+        "attributeEffect": "Grants +0.5–5  Overbloom on  Pests",
+        "shardName": "Field Mouse",
+        "wikiDescription": "",
         "shardFamily": "Bug",
-        "shardSkill": "Farming",
+        "shardSkill": "",
         "shardCategory": "Forest"
     },
     {
@@ -121,7 +121,16 @@
         "shardCategory": "Combat"
     },
     null,
-    null,
+    {
+        "shardID": "U14",
+        "attributeName": "Humanoid Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Humanoid mobs",
+        "shardName": "Wetwing",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
     {
         "shardID": "U15",
         "attributeName": "Dragon Shortbow Improvement",
@@ -142,7 +151,16 @@
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
     },
-    null,
+    {
+        "shardID": "U17",
+        "attributeName": "Witch's Fortune",
+        "attributeEffect": "Increases your chance of dropping Ingredients during the Year of the Witch by +1%–10%",
+        "shardName": "Sea Witch",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
     {
         "shardID": "U18",
         "attributeName": "Speed",
@@ -153,7 +171,16 @@
         "shardSkill": "Global",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "U19",
+        "attributeName": "Pest Fortune",
+        "attributeEffect": "Grants +5–50  Farming Fortune on  Pests",
+        "shardName": "Cricket",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "U20",
         "attributeName": "Lost and Found",
@@ -214,7 +241,16 @@
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
     },
-    null,
+    {
+        "shardID": "U26",
+        "attributeName": "Dwarven Training",
+        "attributeEffect": "Gain +1%–10% more Heart of the Mountain Exp",
+        "shardName": "Treasure Hoarder",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
     {
         "shardID": "U27",
         "attributeName": "Life Recovery",
@@ -300,10 +336,10 @@
         "shardID": "U36",
         "attributeName": "Ender Ruler",
         "attributeEffect": "Grants +3%–30% more  Damage against  Ender mobs",
-        "shardName": "Bruiser",
-        "wikiDescription": "Catch with Pocket Black Hole\nKill Zealot Bruiser while using Salts",
+        "shardName": "Zealot Bruiser",
+        "wikiDescription": "",
         "shardFamily": "",
-        "shardSkill": "Combat",
+        "shardSkill": "",
         "shardCategory": "Combat"
     },
     null,
@@ -331,10 +367,10 @@
         "shardID": "U40",
         "attributeName": "Infiltration",
         "attributeEffect": "Grants +3–30  Farming Fortune if your Garden Plot currently has a  Pest in it",
-        "shardName": "Termite",
-        "wikiDescription": "Fusing Bug Family with Mining Attribute Category",
+        "shardName": "Earthworm",
+        "wikiDescription": "",
         "shardFamily": "Bug",
-        "shardSkill": "Farming",
+        "shardSkill": "",
         "shardCategory": "Forest"
     },
     {
@@ -347,23 +383,167 @@
         "shardSkill": "Fishing",
         "shardCategory": "Water"
     },
+    {
+        "shardID": "U42",
+        "attributeName": "Frozen Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Frozen mobs",
+        "shardName": "Polaris",
+        "wikiDescription": "Catch a Polaris with a Critter Capsule in the Icy Biome of the Critter Safari\nFloor Drop in Icy Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U43",
+        "attributeName": "Foraging Frog",
+        "attributeEffect": "Your Frog Pet gains +1–10  Foraging Fortune",
+        "shardName": "Treefrog",
+        "wikiDescription": "Catch a Treefrog with a Critter Capsule in the Forest Biome of the Critter Safari\nFloor Drop in Forest Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U44",
+        "attributeName": "Compost Speed",
+        "attributeEffect": "Your Composter works +1%–10% faster",
+        "shardName": "Bayou Sludge",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U45",
+        "attributeName": "Battle Arachnid",
+        "attributeEffect": "Your Spider Pet and Tarantula Pet gain +2–20  Crit Damage",
+        "shardName": "Areita",
+        "wikiDescription": "Catch a Areita with a Critter Capsule in the Haunted Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Taming",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U46",
+        "attributeName": "Airborne Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Airborne mobs",
+        "shardName": "Bluebird",
+        "wikiDescription": "Catch a Bluebird with a Critter Capsule in the Forest Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U47",
+        "attributeName": "Flexible Fisher",
+        "attributeEffect": "Increases your chance of catching Flexbones by +2.5%–25% while in the Tomb Floodway",
+        "shardName": "Osedax",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U48",
+        "attributeName": "Arcane Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Arcane mobs",
+        "shardName": "Duplico",
+        "wikiDescription": "Catch a Duplico with a Critter Capsule in the Haunted Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U49",
+        "attributeName": "Buckle Fisher",
+        "attributeEffect": "Junk catches are +1%–10% more likely to be GREAT",
+        "shardName": "Litterbug",
+        "wikiDescription": "Catch a Litterbug with a Critter Capsule in the Haunted Biome of the Critter Safari\nFloor Drop in Haunted Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U50",
+        "attributeName": "Titanoboa Tracker",
+        "attributeEffect": "Grants +0.5–5  Tracking towards Tianoboa",
+        "shardName": "Water Snake",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U51",
+        "attributeName": "Zealot Tracker",
+        "attributeEffect": "Grants +0.5–5  Tracking towards Special Zealots",
+        "shardName": "Gazer",
+        "wikiDescription": "Catch a Gazer with a Critter Capsule in the Haunted Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U52",
+        "attributeName": "Visitor Honey",
+        "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring Honey Jar",
+        "shardName": "Honeybug",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U53",
+        "attributeName": "Yeti Tracker",
+        "attributeEffect": "Grants +0.5–5  Tracking towards Yeti",
+        "shardName": "Shuddersquid",
+        "wikiDescription": "Catch a Shuddersquid with a Critter Capsule in the Icy Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    {
+        "shardID": "U55",
+        "attributeName": "Soul Snatcher",
+        "attributeEffect": "Mobs are +1%–10% more likely to drop their soul when killed",
+        "shardName": "Solsnatcher",
+        "wikiDescription": "Catch a Solsnatcher with a Critter Capsule in the Haunted Biome of the Critter Safari\nFloor Drop in Haunted Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U56",
+        "attributeName": "Bucket Greed",
+        "attributeEffect": "Your Chums give +10%–100% extra Coins when deposited into any bucket",
+        "shardName": "Sepialot",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U57",
+        "attributeName": "Honey Serendipity",
+        "attributeEffect": "Grants a +0.5%–5% chance to instantly attract a mob when lathering a Tree with Honeycomb",
+        "shardName": "Honey Badger",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U58",
+        "attributeName": "Subterranean Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Subterranean mobs",
+        "shardName": "Driftling",
+        "wikiDescription": "Catch a Driftling with a Critter Capsule in the Cavern Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "U59",
         "attributeName": "Lily Puncher",
@@ -373,5 +553,277 @@
         "shardFamily": "Reptile, Turtle",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
+    },
+    {
+        "shardID": "U60",
+        "attributeName": "Mythological Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Mythological mobs",
+        "shardName": "Minos Hunter",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U61",
+        "attributeName": "Builder Discount",
+        "attributeEffect": "Reduces the cost of items in the Builder's Shop by +1%–10%",
+        "shardName": "Woodchucker",
+        "wikiDescription": "Catch a Woodchucker with a Critter Capsule in the Forest Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U62",
+        "attributeName": "Starlyn Training",
+        "attributeEffect": "Gain +1%–10% more points in Starlyn Contests",
+        "shardName": "Solar",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U63",
+        "attributeName": "Visitor Compost",
+        "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring Compost",
+        "shardName": "Parched",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Honeymite while using Salts\nLather Honeycomb on Helix Trees",
+        "shardFamily": "",
+        "shardSkill": "Farming",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U64",
+        "attributeName": "Bartender Discount",
+        "attributeEffect": "Reduces the cost of items in the Bartender's Shop by +1%–10%",
+        "shardName": "Bloodbat",
+        "wikiDescription": "Catch a Bloodbat with a Critter Capsule in the Haunted Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U65",
+        "attributeName": "Combat Trap",
+        "attributeEffect": "Combat Shards get caught by Traps +1%–10% faster",
+        "shardName": "Dustybit",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    null,
+    {
+        "shardID": "U67",
+        "attributeName": "Visitor Cheese",
+        "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring Tasty Cheese",
+        "shardName": "Woodlouse",
+        "wikiDescription": "Catch with Lasso\nLather Honeycomb on Mangrove Trees",
+        "shardFamily": "",
+        "shardSkill": "Farming",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U68",
+        "attributeName": "Galatea Training",
+        "attributeEffect": "Gain +1%–10% more Heart of the Forest Exp",
+        "shardName": "Ember",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U69",
+        "attributeName": "Bayou Treasure",
+        "attributeEffect": "Grants +0.1–1  Treasure Chance while in the Backwater Bayou",
+        "shardName": "Cheeky Tiki",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U70",
+        "attributeName": "Visitor Plant",
+        "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring Plant Matter",
+        "shardName": "Red Panda",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "U71",
+        "attributeName": "Animal Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Animal mobs",
+        "shardName": "Sprawl",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "U72",
+        "attributeName": "Tiki Tracker",
+        "attributeEffect": "Grants +0.5–5  Tracking towards Wiki Tiki",
+        "shardName": "Sneaky Tiki",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Combat"
+    },
+    null,
+    null,
+    {
+        "shardID": "U75",
+        "attributeName": "Construct Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against ︎ Construct mobs",
+        "shardName": "Shrieky Tiki",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U76",
+        "attributeName": "Forest Felling",
+        "attributeEffect": "Grants +0.1%–1% chance to fell an entire tree!",
+        "shardName": "Woodpecker",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    {
+        "shardID": "U78",
+        "attributeName": "Mite Spawner",
+        "attributeEffect": "Grants a +2.5%–25% chance to spawn an additional Nest Endermite when mining Ender Nodes",
+        "shardName": "Honeymite",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Honeymite while using Salts\nLather Honeycomb on Fig Trees",
+        "shardFamily": "",
+        "shardSkill": "Mining",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "U79",
+        "attributeName": "Elusive Ruler",
+        "attributeEffect": "Grants +3%–30% more  Damage against  Elusive mobs",
+        "shardName": "Queen Ant",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "U82",
+        "attributeName": "Helix Collector",
+        "attributeEffect": "Grants +1–10  Helix Fortune for every digit in your Helix Log Collection. (Max 10M collection)",
+        "shardName": "Hawk",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "U85",
+        "attributeName": "Ticket Discount",
+        "attributeEffect": "Upgrading Safari Tickets at the Safari Manager costs +1%–10% less Forest Essence",
+        "shardName": "June Bug",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "U88",
+        "attributeName": "Visitor Dung",
+        "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring Dung",
+        "shardName": "Dung Beetle",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "U91",
+        "attributeName": "Sprayonator Serendipity",
+        "attributeEffect": "Grants a +1%–10% chance for  Pests to drop an extra Sprayonator Material",
+        "shardName": "Rat",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "U94",
+        "attributeName": "Bonus Pest Chance",
+        "attributeEffect": "Grants +1–10  Bonus Pest Chance",
+        "shardName": "Keeled Slug",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "U97",
+        "attributeName": "Filter Upgrade",
+        "attributeEffect": "Increases the effects of your Atmospheric Filter by +2%–20%",
+        "shardName": "Mite",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "U100",
+        "attributeName": "Pest Cooldown",
+        "attributeEffect": "Reduces the spawn cooldown of  Pests by 0.5s",
+        "shardName": "Moth",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "U103",
+        "attributeName": "Enchanted Farmer",
+        "attributeEffect": "Grants a +0.001%–0.01% chance to find an Enchanted Crop while Farming",
+        "shardName": "Mosquito",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "U106",
+        "attributeName": "Legendary Rabbit Luck",
+        "attributeEffect": "Increases your chance of finding LEGENDARY Rabbits during Hoppity's Hunt by +1%–10%",
+        "shardName": "Rabbit Cat",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
     }
 ]

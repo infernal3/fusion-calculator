@@ -136,10 +136,10 @@
         "shardID": "R16",
         "attributeName": "Crop Bug",
         "attributeEffect": "Grants +1–10  Overbloom which increases your chances of dropping Rare Crops",
-        "shardName": "Cropeetle",
-        "wikiDescription": "Fusing Termite Shard with Praying Mantis Shard",
+        "shardName": "Beetle",
+        "wikiDescription": "",
         "shardFamily": "Bug",
-        "shardSkill": "Farming",
+        "shardSkill": "",
         "shardCategory": "Forest"
     },
     null,
@@ -153,7 +153,16 @@
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "R19",
+        "attributeName": "Helix Sharpening",
+        "attributeEffect": "Grants +15–150  Sweep towards Helix Trees",
+        "shardName": "Vulture",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
     null,
     {
         "shardID": "R21",
@@ -205,7 +214,16 @@
         "shardSkill": "Global",
         "shardCategory": "Forest"
     },
-    null,
+    {
+        "shardID": "R26",
+        "attributeName": "Essence of Crimson",
+        "attributeEffect": "Gain +1%–10% more Crimson Essence",
+        "shardName": "Lava Leech",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
     {
         "shardID": "R27",
         "attributeName": "Essence of Unliving",
@@ -297,7 +315,16 @@
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "R37",
+        "attributeName": "Chop",
+        "attributeEffect": "Grants a +10%–100% chance to Chop an extra log, on top of the ones you swept",
+        "shardName": "Hummingbird",
+        "wikiDescription": "Found by Fig and Mangrove Tree Gifts",
+        "shardFamily": "Bird",
+        "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "R38",
         "attributeName": "Rabbit Crew",
@@ -312,13 +339,22 @@
         "shardID": "R39",
         "attributeName": "Breeze",
         "attributeEffect": "When you haven't been damaged in the last 5s or more, your mana costs are decreased by +1%–10%",
-        "shardName": "Wither Specter",
+        "shardName": "Wither Spectre",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Wither Spectre while using Salts\nObtained from Kuudra",
         "shardFamily": "",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "R40",
+        "attributeName": "Battle Tracker",
+        "attributeEffect": "Grants +0.5–5  Tracking while on Combat Islands",
+        "shardName": "Badger",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
     null,
     {
         "shardID": "R42",
@@ -370,8 +406,26 @@
         "shardSkill": "Foraging",
         "shardCategory": "Water*"
     },
-    null,
-    null,
+    {
+        "shardID": "R47",
+        "attributeName": "Glacial Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find against  Glacial mobs",
+        "shardName": "Undying Fossil",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R48",
+        "attributeName": "Animal Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find against  Animal mobs",
+        "shardName": "Wild Hog",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest*"
+    },
     {
         "shardID": "R49",
         "attributeName": "Essence of the Forest",
@@ -432,7 +486,16 @@
         "shardSkill": "Hunting",
         "shardCategory": "Combat"
     },
-    null,
+    {
+        "shardID": "R55",
+        "attributeName": "Critter Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find against ︎ Critter mobs",
+        "shardName": "Hewver",
+        "wikiDescription": "Catch with Lasso\nLather Honeycomb on Fig Trees",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Forest"
+    },
     {
         "shardID": "R56",
         "attributeName": "Blazing Fortune",
@@ -493,7 +556,16 @@
         "shardSkill": "Hunting",
         "shardCategory": "Forest"
     },
-    null,
+    {
+        "shardID": "R62",
+        "attributeName": "Construct Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find on ︎ Construct mobs",
+        "shardName": "Wiki Tiki",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
     {
         "shardID": "R63",
         "attributeName": "Mythological Fortune",
@@ -506,12 +578,270 @@
     },
     {
         "shardID": "R64",
-        "attributeName": "Chop",
-        "attributeEffect": "Grants a +10%–100% chance to Chop an extra log, on top of the ones you swept",
-        "shardName": "Hummingbird",
-        "wikiDescription": "Found by Fig and Mangrove Tree Gifts",
-        "shardFamily": "Bird",
+        "attributeName": "Cubic Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find on  Cubic mobs",
+        "shardName": "Hivethief",
+        "wikiDescription": "Catch with Lasso\nLather Honeycomb on Helix Trees",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R65",
+        "attributeName": "Boot Fisher",
+        "attributeEffect": "Junk catches are +1%–10% more likely to be OUTSTANDING",
+        "shardName": "Maggot",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R66",
+        "attributeName": "Sleepy Spread",
+        "attributeEffect": "Grants +1–10  Mining Spread",
+        "shardName": "Snoozle",
+        "wikiDescription": "Catch a Snoozle with a Critter Capsule in the Cavern Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Mining",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R67",
+        "attributeName": "Flying Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find on  Airborne mobs",
+        "shardName": "Parakeet",
+        "wikiDescription": "Catch a Parakeet with a Critter Capsule in the Forest Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R68",
+        "attributeName": "Thunder Speed",
+        "attributeEffect": "Your Thunder, Storm, and Hurricane Bottles fill +1%–10% faster",
+        "shardName": "Thunder",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R69",
+        "attributeName": "Cavernous Tracker",
+        "attributeEffect": "Grants +0.5–5  Tracking while on Mining Islands",
+        "shardName": "Rockmite",
+        "wikiDescription": "Catch a Rockmite with a Critter Capsule in the Cavern Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Hunting",
+        "shardCategory": "Combat"
+    },
+    null,
+    {
+        "shardID": "R71",
+        "attributeName": "Frozen Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find on  Frozen mobs",
+        "shardName": "Billygoat",
+        "wikiDescription": "Catch a Billygoat with a Critter Capsule in the Icy Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat*"
+    },
+    {
+        "shardID": "R72",
+        "attributeName": "Scrap Chance",
+        "attributeEffect": "Increases your chance of finding a Suspicious Scrap while mining in the  Glacite Mineshafts by +1%–10%",
+        "shardName": "Scrappy",
+        "wikiDescription": "Catch a Scrappy with a Critter Capsule in the Cavern Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Mining",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R73",
+        "attributeName": "Elusive Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find on  Elusive mobs",
+        "shardName": "Hideyho",
+        "wikiDescription": "Play Hide and Seek with Hideyho in the Haunted Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R74",
+        "attributeName": "Great Treasure",
+        "attributeEffect": "Treasure catches are +1%–10% more likely to be GREAT",
+        "shardName": "Mantis Shrimp",
+        "wikiDescription": "Catch a Mantis Shrimp with a Critter Capsule in the Icy Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Fishing",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R75",
+        "attributeName": "Subterranean Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find on  Subterranean mobs",
+        "shardName": "Chuckwalla",
+        "wikiDescription": "Catch a Chuckwalla with a Critter Capsule in the Cavern Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R76",
+        "attributeName": "Woodland Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find on  Woodlands mobs",
+        "shardName": "Hideonfloor",
+        "wikiDescription": "Catch a Hideonfloor with a Critter Capsule in the Forest Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R77",
+        "attributeName": "Greedy Goblin",
+        "attributeEffect": "Your Goblin Pet gains +1–10  Ore Fortune",
+        "shardName": "Gimmiegold",
+        "wikiDescription": "Catch a Gimmiegold with a Critter Capsule in the Haunted Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Taming",
+        "shardCategory": "Water"
+    },
+    null,
+    {
+        "shardID": "R79",
+        "attributeName": "Arcane Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find on  Arcane mobs",
+        "shardName": "Hideonwall",
+        "wikiDescription": "Catch a Hideonwall with a Critter Capsule in the Haunted Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R80",
+        "attributeName": "Underwater Tracker",
+        "attributeEffect": "Grants +0.5–5  Tracking while on Fishing Islands",
+        "shardName": "Nozzlenose",
+        "wikiDescription": "Catch a Nozzlenose with a Critter Capsule in the Icy Biome of the Critter Safari",
+        "shardFamily": "",
+        "shardSkill": "Hunting",
+        "shardCategory": "Water"
+    },
+    {
+        "shardID": "R81",
+        "attributeName": "Refined Luck",
+        "attributeEffect": "Increases your chance of finding Refined Minerals during Mining Fiestas by +1%–10%",
+        "shardName": "Stoneworm",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Combat"
+    },
+    {
+        "shardID": "R82",
+        "attributeName": "Foraging Tracker",
+        "attributeEffect": "Grants +0.5–5  Tracking while on Foraging Islands",
+        "shardName": "Fluffling",
+        "wikiDescription": "Catch a Fluffling with a Critter Capsule in the Forest Biome of the Critter Safari",
+        "shardFamily": "",
         "shardSkill": "Foraging",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R83",
+        "attributeName": "Torrhus Serendipity",
+        "attributeEffect": "Increases the odds of finding rare items in Tree Gifts at Torrhus Canyon by +2%–20%",
+        "shardName": "Stingray",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    null,
+    {
+        "shardID": "R85",
+        "attributeName": "Forest Serendipity",
+        "attributeEffect": "Grants a +0.1%–1% chance for Tree Gifts to contain double loot",
+        "shardName": "Puck",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R86",
+        "attributeName": "Echo of Buckets",
+        "attributeEffect": "Your \"Bucket\" Attributes are +2%–20% stronger",
+        "shardName": "Goldolot",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    null,
+    {
+        "shardID": "R88",
+        "attributeName": "Atomized Whispers",
+        "attributeEffect": "Gain +1%–10% extra Forest Whispers",
+        "shardName": "Pangolin",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R89",
+        "attributeName": "Aquatic Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find against  Aquatic mobs",
+        "shardName": "Giant Water Bug",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    null,
+    {
+        "shardID": "R91",
+        "attributeName": "Rekindle",
+        "attributeEffect": "Killing a Bat has a +10%–100% chance to add 1 Bonus Score to your Dungeon Run",
+        "shardName": "Murkbat",
+        "wikiDescription": "Catch with Lasso\nLather Honeycomb on Mangrove Trees",
+        "shardFamily": "",
+        "shardSkill": "Global",
+        "shardCategory": "Forest"
+    },
+    null,
+    null,
+    {
+        "shardID": "R94",
+        "attributeName": "Mythic Rabbit Luck",
+        "attributeEffect": "Increases your chance of finding MYTHIC Rabbits during Hoppity's Hunt by +1%–10%",
+        "shardName": "Rabbit Neighbor",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Forest"
+    },
+    {
+        "shardID": "R95",
+        "attributeName": "First Sweep",
+        "attributeEffect": "Your first  Sweep on each Tree is +1%–10% more effective",
+        "shardName": "Torrid",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
+        "shardCategory": "Water"
+    },
+    null,
+    {
+        "shardID": "R97",
+        "attributeName": "Axe Cooldown",
+        "attributeEffect": "Reduces the cooldown of throwing your Axe by +1%–10%",
+        "shardName": "Drybark",
+        "wikiDescription": "",
+        "shardFamily": "",
+        "shardSkill": "",
         "shardCategory": "Forest"
     }
 ]
