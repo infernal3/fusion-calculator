@@ -17,9 +17,9 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
     // Each Special Fusion has its own combination, and they can check for rarity, family, category, etc:
     var specialCandidates = calculateAllSpecialFusions(ShardTable, ShardA, ShardB);
 
-    if (specialCandidates.length >= 1) {
+    /*if (specialCandidates.length >= 1) {
         candidateB = "empty slot";
-    }
+    }*/
 
     // Merge Special Fusion and ID Fusion candidates into one array. Purge duplicates and invalid results:
     var candidates = Array.from(new Set(specialCandidates.concat(candidateA, candidateB)))
@@ -50,7 +50,7 @@ var calculateInverseResult = function (ShardTable, Shard) {
     var candidates = [];
     // Add the Special Fusion recipe, if it exists:
     var specialCandidate = calculateInverseSpecialFusions(ShardTable, Shard);
-    if (specialCandidate != "no recipe" && ("shape" in specialCandidate)) {
+    if (specialCandidate != "no recipe" && "shape" in specialCandidate) {
         if ("length" in specialCandidate.shape) {
             candidates = candidates.concat(specialCandidate.shape);
         } else {
@@ -327,7 +327,8 @@ var generateInverseHTMLResults = function (ShardTable, results) {
     }
     results.forEach((element) => {
         var tempHTML = `<div class="fusion-result-box">`;
-        var amountA = 5, amountB = 5;
+        var amountA = 5,
+            amountB = 5;
         tempHTML += `<span class="minecraft-font mcf">(${element.amount}&nbsp;Shard${element.amount == 1 ? "" : "s"})</span>&nbsp;`;
         if (element.A.shardID == "shape") {
             tempHTML += `<span class="minecraft-font mcc">[${element.A.shape}]</span>`;
@@ -470,10 +471,14 @@ var shardViewerCallback = function () {
     console.log(`call function: calculate_viewer(${input1})`);
     var shard1 = "empty slot";
 
-    if(input1.toUpperCase() == "EVERYTHING" || (input1.toLowerCase() in ShardTable)) {
-        ShardTable[input1.toUpperCase() == "EVERYTHING" ? "unsorted" : input1.toLowerCase()].forEach((element) => {
+    if (input1.toUpperCase() == "EVERYTHING" || input1.toLowerCase() in ShardTable) {
+        // TODO: refactor this weird spaghetti code
+        var temp = input1.toLowerCase();
+        if (input1.toUpperCase() == "EVERYTHING") {
+            temp = "unsorted";
+        }
+        ShardTable[temp].forEach((element) => {
             if (!element || !("shardID" in element)) return;
-            
             window.requestAnimationFrame(() => {
                 el("results-viewer").innerHTML += generateDirectHTMLResults(ShardTable, [{ shardID: element.shardID, amount: 1 }]);
             });

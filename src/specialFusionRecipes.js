@@ -347,7 +347,7 @@ var specialFusionRecipes = [
         shape: { A: { shardID: "shape", shape: "Legendary Water Shard" }, B: { shardID: "shape", shape: "Epic or Higher Elemental Family" }, amount: 2 },
     },
     {
-        id: "L3", 
+        id: "L3",
         predicate: (A, B) => A.shardCategory == "Combat" && A.shardID.slice(0, 1) == "L" && B.shardFamily.includes("Elemental") && getRarityIndex(B.shardID.slice(0, 1)) >= 4,
         shape: { A: { shardID: "shape", shape: "Legendary Combat Shard" }, B: { shardID: "shape", shape: "Epic or Higher Elemental Family" }, amount: 2 },
     },
@@ -357,7 +357,7 @@ var specialFusionRecipes = [
         shape: { A: { shardID: "E30" }, B: { shardID: "shape", shape: "Epic or Higher Combat Shard" }, amount: 2 },
     },
     {
-        id: "L7", 
+        id: "L7",
         predicate: (A, B) => A.shardName == "Komodo Dragon" && B.shardCategory == "Forest" && getRarityIndex(B.shardID.slice(0, 1)) >= 4,
         shape: { A: { shardID: "E22" }, B: { shardID: "shape", shape: "Epic or Higher Forest Shard" }, amount: 2 },
     },
@@ -372,25 +372,25 @@ var specialFusionRecipes = [
         shape: { A: { shardID: "E32" }, B: { shardID: "shape", shape: "Epic or Higher Water Shard" }, amount: 2 },
     },
     {
-        id: "L12", 
+        id: "L12",
         predicate: (A, B) => A.shardName == "Lapis Skeleton" && (B.shardName == "Ghost" || getRarityIndex(B.shardID.slice(0, 1)) >= 5),
         shape: [
-            {A: {shardID: "R15"}, B: {shardID:"E33"}, amount:2},
-            {A: {shardID: "R15"}, B: {shardID:"shape", shape: "Legendary Shard"}, amount:2},
+            { A: { shardID: "R15" }, B: { shardID: "E33" }, amount: 2 },
+            { A: { shardID: "R15" }, B: { shardID: "shape", shape: "Legendary Shard" }, amount: 2 },
         ],
     },
     {
-        id: "L13", 
+        id: "L13",
         predicate: (A, B) => A.shardName == "Dragonfly" && B.shardName == "Lunar Moth",
-        shape: {A: {shardID:"E37"},B:{shardID:"E13"},amount:2}
+        shape: { A: { shardID: "E37" }, B: { shardID: "E13" }, amount: 2 },
     },
     {
-        id: "L18", 
+        id: "L18",
         predicate: (A, B) => A.shardName == "Kraken" && B.shardName == "Kraken",
-        shape: {A: {shardID:"L15"},B:{shardID:"L15"},amount:2}
+        shape: { A: { shardID: "L15" }, B: { shardID: "L15" }, amount: 2 },
     },
     {
-        id: "L20", 
+        id: "L20",
         predicate: (A, B) => A.shardName == "Kraken" && B.shardCategory == "Water",
         shape: { A: { shardID: "L15" }, B: { shardID: "shape", shape: "Water Shard" }, amount: 2 },
     },
@@ -458,7 +458,7 @@ var specialFusionRecipes = [
         shape: { A: { shardID: "L32" }, B: { shardID: "L32" }, amount: 2 },
     },
     {
-        id: "L42", 
+        id: "L42",
         predicate: (A, B) => A.shardName == "Etherdrake" && B.shardName == "Jormung",
         shape: { A: { shardID: "L36" }, B: { shardID: "L39" }, amount: 2 },
     },

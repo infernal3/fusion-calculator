@@ -32,9 +32,9 @@
         </div>
         <div class="sticky">
             <nav class="navigation-bar" role="navigation">
-                <button id="tab-click-1" style="background-color: #bbb"></button>
-                <button id="tab-click-2"></button>
-                <button id="tab-click-3"></button>
+                <button id="tab-click-1" aria-label="Direct Fusion Tab" style="background-color: #bbb"></button>
+                <button id="tab-click-2" aria-label="Inverse Fusion Tab"></button>
+                <button id="tab-click-3" aria-label="Shard View Tab"></button>
             </nav>
         </div>
         <main id="app" role="main">
@@ -42,7 +42,7 @@
                 <h1>Fusion Calculator</h1>
                 <p>The Direct Fusion Calculator will output the shards as if the two inputs were put into the ingame Fusion Box.</p>
 
-                <p>Examples of valid calculator inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc5">Ghost</span>, <span class="minecraft-font mc6">Apex Dragon</span></p>
+                <p>Examples of valid calculator inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc9">Hideonwall</span>, <span class="minecraft-font mc5">Ghost</span></p>
                 <div class="fusionbox" id="fusionbox">
                     <div class="fusionbox-header" id="fusionbox-header">Fusion Box</div>
                     <div class="fusionbox-row">
@@ -124,7 +124,7 @@
             <div id="tab2" style="display: none">
                 <h1>Fusion Calculator</h1>
                 <p>The Inverse Fusion Calculator will output all fusion combinations that create a particular shard.</p>
-                <p>Examples of valid calculator inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc5">Ghost</span>, <span class="minecraft-font mc6">Apex Dragon</span></p>
+                <p>Examples of valid calculator inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc9">Hideonwall</span>, <span class="minecraft-font mc5">Ghost</span></p>
                 <label class="no-select">Input a shard ID or name here: <input type="text" class="minecraft-font" id="input3" /></label>
                 <br />
                 <button id="calculate-reverse" class="minecraft-font">Calculate</button>
@@ -134,8 +134,8 @@
             <div id="tab3" style="display: none">
                 <h1>Shard and Attribute Viewer</h1>
                 <p>Insert a shard name or shard ID to view information about it.</p>
-                <p>Examples of valid inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc5">Ghost</span>, <span class="minecraft-font mc6">Apex Dragon</span></p>
-                <p>Or, use <span class="minecraft-font mcc">everything</span> as the input to output the information for every shard.</p>
+                <p>Examples of valid inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc9">Hideonwall</span>, <span class="minecraft-font mc5">Ghost</span></p>
+                <p>Or, use <span class="minecraft-font mcc">everything</span> or a rarity name as the input to output the information for multiple shards.</p>
                 <label class="no-select">Input a shard ID or name here: <input type="text" class="minecraft-font" id="input4" /></label>
                 <br />
                 <button id="clickable-viewer" class="minecraft-font">View Shard Info</button>
@@ -147,6 +147,7 @@
             <br />
             <hr />
             <a href="https://github.com/infernal3/fusion-calculator/">View Source on GitHub</a>
+            <br />
             <br />
             <a href="https://infernal3.github.io/">Return to homepage</a>
             <br />
