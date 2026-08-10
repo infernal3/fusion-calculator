@@ -68,12 +68,14 @@ var calculateInverseResult = function (ShardTable, Shard) {
     }
     // Add the Special Fusion recipe, if it exists:
     var specialCandidate = calculateInverseSpecialFusions(ShardTable, Shard);
-    if (specialCandidate != "no recipe") {
+    if (specialCandidate != "no recipe" && ("shape" in specialCandidate)) {
         // TODO: add shape properties to specialFusionRecipes.js
         // should follow {A: {shardID: "shape", shape: ...} B: {shardID: "shape", shape: ...}, amount: 2};
-        /*
-        candidates.push(specialCandidate.shape);
-        */
+        if ("length" in specialCandidate.shape) {
+            candidates = candidates.concat(specialCandidate.shape);
+        } else {
+            candidates.push(specialCandidate.shape);
+        }
     }
     // Purge duplicates
     return Array.from(new Set(candidates));
@@ -322,17 +324,22 @@ var generateInverseHTMLResults = function (ShardTable, results) {
         return `<span style="color: #f00">An unexpected error occurred: "results" argument in generateHTMLResults is not an array</span>`;
     }
     var html = "";
+    if (results.length == 0) {
+        return `<div class="fusion result-box minecraft-font mcc">Couldn't find any fusion recipes for this shard.</div>`;
+    }
     results.forEach((element) => {
         var tempHTML = `<div class="fusion-result-box">`;
-
-        // TODO: change amountA/B to 2 if reptile, or elemental, and 1, if chameleon.
-        var amountA = 5;
-        var amountB = 5;
+        var amountA = 5, amountB = 5;
         if (element.A.shardID == "shape") {
             tempHTML += `<span class="minecraft-font mcc">[${element.A.shape}]</span>`;
         } else {
             var objectA = ShardTable[getInfoForShardLetter(element.A.shardID.slice(0, 1)).cuteName][element.A.shardID.slice(1)];
             var cssClassA = getInfoForShardLetter(element.A.shardID.slice(0, 1)).cssClass;
+            if (element.A.shardID == "L4") {
+                amountA = 1;
+            } else if (objectA.shardFamily.includes("Reptile") || objectA.shardFamily.includes("Elemental")) {
+                amountA = 2;
+            }
             tempHTML += `<span class="minecraft-font mc7">${objectA.shardID} </span>`;
             tempHTML += `<span class="minecraft-font ${cssClassA}">${objectA.shardName} Shard`;
             tempHTML += `&nbsp;<span class="mcf">x${amountA}</span></span>`;
@@ -344,6 +351,11 @@ var generateInverseHTMLResults = function (ShardTable, results) {
         } else {
             var objectB = ShardTable[getInfoForShardLetter(element.B.shardID.slice(0, 1)).cuteName][element.B.shardID.slice(1)];
             var cssClassB = getInfoForShardLetter(element.B.shardID.slice(0, 1)).cssClass;
+            if (element.B.shardID == "L4") {
+                amountB = 1;
+            } else if (objectB.shardFamily.includes("Reptile") || objectB.shardFamily.includes("Elemental")) {
+                amountB = 2;
+            }
             tempHTML += `<span class="minecraft-font mc7">${objectB.shardID} </span>`;
             tempHTML += `<span class="minecraft-font ${cssClassB}">${objectB.shardName} Shard`;
             tempHTML += `&nbsp;<span class="mcf">x${amountB}</span></span>`;
@@ -356,7 +368,7 @@ var generateInverseHTMLResults = function (ShardTable, results) {
 
 var flushCalculatorResults = function () {
     el("results-direct").innerHTML = "";
-    //el("results-reverse").innerHTML = "";
+    el("results-reverse").innerHTML = "";
     el("results-viewer").innerHTML = "";
     console.log("cleared calculator results");
 };
