@@ -46,6 +46,39 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
     return candidates;
 };
 
+var calculateInverseResult = function (ShardTable, Shard) {
+    var candidates = [];
+    // Add any possible Chameleon Fusions that can create this shard:
+    var candidate1 = Shard.slice(0, 1) + (parseInt(Shard.slice(1)) - 1);
+    var candidate2 = Shard.slice(0, 1) + (parseInt(Shard.slice(1)) - 2);
+    var candidate3 = Shard.slice(0, 1) + (parseInt(Shard.slice(1)) - 3);
+    if (checkIfShardIDExists(ShardTable, candidate1)) {
+        candidates.push({ A: { shardID: candidate1 }, B: { shardID: "L4" }, amount: 1 });
+    }
+    if (checkIfShardIDExists(ShardTable, candidate2)) {
+        candidates.push({ A: { shardID: candidate2 }, B: { shardID: "L4" }, amount: 1 });
+    }
+    if (checkIfShardIDExists(ShardTable, candidate3)) {
+        candidates.push({ A: { shardID: candidate3 }, B: { shardID: "L4" }, amount: 1 });
+    }
+    // Add the ID Fusion that can create this shard:
+    var idCandidate = calculateInverseIDFusionResult(ShardTable, Shard);
+    if (checkIfShardIDExists(ShardTable, idCandidate)) {
+        candidates.push({ A: { shardID: idCandidate }, B: { shardID: "shape", shape: "Any Shard" }, amount: 1 });
+    }
+    // Add the Special Fusion recipe, if it exists:
+    var specialCandidate = calculateInverseSpecialFusions(ShardTable, Shard);
+    if (specialCandidate != "no recipe") {
+        // TODO: add shape properties to specialFusionRecipes.js
+        // should follow {A: {shardID: "shape", shape: ...} B: {shardID: "shape", shape: ...}, amount: 2};
+        /*
+        candidates.push(specialCandidate.shape);
+        */
+    }
+    // Purge duplicates
+    return Array.from(new Set(candidates));
+};
+
 var getShardIDFromName = function (ShardTable, ShardName) {
     var result = "C0";
     ShardTable.sorted.forEach((item) => {
@@ -60,6 +93,16 @@ var getShardIDFromName = function (ShardTable, ShardName) {
         // Could not find a shard ID. Return a valid-seeming (but junk) shard ID to avoid things breaking.
         console.log("Could not find a shard ID.");
     }
+    return result;
+};
+
+var calculateInverseSpecialFusions = function (ShardTable, Shard) {
+    var result = "no recipe";
+    specialFusionRecipes.forEach((recipe) => {
+        if (recipe.id == Shard) {
+            result = recipe;
+        }
+    });
     return result;
 };
 
@@ -121,6 +164,20 @@ var calculateIDFusionResult = function (ShardTable, Shard) {
     return "empty slot";
 };
 
+var calculateInverseIDFusionResult = function (ShardTable, Shard) {
+    var ShardLetter = Shard.slice(0, 1);
+    var ShardNumber = parseInt(Shard.slice(1));
+    var ShardTableOfRarity = ShardTable[getInfoForShardLetter(ShardLetter).cuteName];
+    var ShardCategory = ShardTableOfRarity[ShardNumber].shardCategory;
+    var index = ShardNumber;
+    for (var index = ShardNumber - 1; index > 0; index--) {
+        if (ShardCategory == ShardTableOfRarity[index]?.shardCategory) {
+            return ShardLetter + index;
+        }
+    }
+    return "empty slot";
+};
+
 var calculateChameleonFusionResult = function (ShardTable, NonChameleonShard) {
     var ShardLetter = NonChameleonShard.slice(0, 1);
     var ShardNumber = parseInt(NonChameleonShard.slice(1));
@@ -160,6 +217,9 @@ var calculateChameleonFusionResult = function (ShardTable, NonChameleonShard) {
 };
 
 var checkIfShardIDExists = function (ShardTable, ShardID) {
+    if (!ShardID || ShardID == "empty slot" || ShardID == "C0") {
+        return false;
+    }
     // might optimize this if necessary. but my array only has a 400-ish elements. hopefully this doesn't bite me in the back.
     var flag = false;
     ShardTable.sorted.forEach((item) => {
@@ -257,6 +317,43 @@ var generateDirectHTMLResults = function (ShardTable, results) {
     return html;
 };
 
+var generateInverseHTMLResults = function (ShardTable, results) {
+    if (!results || !(typeof results === "object") || !("length" in results)) {
+        return `<span style="color: #f00">An unexpected error occurred: "results" argument in generateHTMLResults is not an array</span>`;
+    }
+    var html = "";
+    results.forEach((element) => {
+        var tempHTML = `<div class="fusion-result-box">`;
+
+        // TODO: change amountA/B to 2 if reptile, or elemental, and 1, if chameleon.
+        var amountA = 5;
+        var amountB = 5;
+        if (element.A.shardID == "shape") {
+            tempHTML += `<span class="minecraft-font mcc">[${element.A.shape}]</span>`;
+        } else {
+            var objectA = ShardTable[getInfoForShardLetter(element.A.shardID.slice(0, 1)).cuteName][element.A.shardID.slice(1)];
+            var cssClassA = getInfoForShardLetter(element.A.shardID.slice(0, 1)).cssClass;
+            tempHTML += `<span class="minecraft-font mc7">${objectA.shardID} </span>`;
+            tempHTML += `<span class="minecraft-font ${cssClassA}">${objectA.shardName} Shard`;
+            tempHTML += `&nbsp;<span class="mcf">x${amountA}</span></span>`;
+        }
+
+        tempHTML += `<span class="minecraft-font mcf">&nbsp;+&nbsp;</span>`;
+        if (element.B.shardID == "shape") {
+            tempHTML += `<span class="minecraft-font mcc">[${element.B.shape}]</span>`;
+        } else {
+            var objectB = ShardTable[getInfoForShardLetter(element.B.shardID.slice(0, 1)).cuteName][element.B.shardID.slice(1)];
+            var cssClassB = getInfoForShardLetter(element.B.shardID.slice(0, 1)).cssClass;
+            tempHTML += `<span class="minecraft-font mc7">${objectB.shardID} </span>`;
+            tempHTML += `<span class="minecraft-font ${cssClassB}">${objectB.shardName} Shard`;
+            tempHTML += `&nbsp;<span class="mcf">x${amountB}</span></span>`;
+        }
+        tempHTML += `<span class="minecraft-font mcf">&nbsp;=&nbsp;${element.amount} Shards</span>`;
+        html += tempHTML + `</div><br />`;
+    });
+    return html;
+};
+
 var flushCalculatorResults = function () {
     el("results-direct").innerHTML = "";
     //el("results-reverse").innerHTML = "";
@@ -312,6 +409,43 @@ var calculateButtonCallback = function () {
         console.error(error);
     } finally {
         console.log("Direct Fusion: Calculation script finished execution.");
+    }
+};
+
+var inverseCalculateCallback = function () {
+    if (Loading) {
+        return;
+    }
+    flushCalculatorResults();
+    var input1 = "" + el("input3").value;
+    console.log(`call function: calculate_inverse(${input1})`);
+    var shard1 = "empty slot";
+
+    if (checkIfShardIDExists(ShardTable, input1.toUpperCase())) {
+        shard1 = input1.toUpperCase();
+    } else {
+        var temp1 = getShardIDFromName(ShardTable, input1);
+        if (temp1 != "C0") {
+            shard1 = temp1;
+        } else {
+            el("results-reverse").innerHTML = `<span style="color: #f00">Failed validation: "${input1}" is not a valid Shard ID or name.</span>`;
+            return;
+        }
+    }
+    if (getInfoForShardLetter(shard1.slice(0, 1)).index == -1) {
+        el("results-reverse").innerHTML = `<span style="color: #f00">An unexpected error occurred. Your input: "${input1}".</span>`;
+        console.log("Invalid input to viewer calculation function.");
+        return;
+    }
+    try {
+        var result = calculateInverseResult(ShardTable, shard1);
+        el("results-reverse").innerHTML = generateInverseHTMLResults(ShardTable, result);
+        console.log(result);
+    } catch (error) {
+        el("results-reverse").innerHTML = `<span style="color: #f00">An unexpected error occurred: ${error}</span>`;
+        console.error(error);
+    } finally {
+        console.log("Inverse Fusion: Calculation script finished execution.");
     }
 };
 
@@ -381,6 +515,7 @@ var ShardTable = {};
             Loading = false;
             el("loading").style = "display: none";
             el("calculate-direct").addEventListener("click", calculateButtonCallback);
+            el("calculate-reverse").addEventListener("click", inverseCalculateCallback);
             el("clickable-viewer").addEventListener("click", shardViewerCallback);
             el("tab-click-1").addEventListener("click", () => {
                 switchTabs(1);
