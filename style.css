@@ -33,6 +33,30 @@ button {
     -webkit-user-select: none;
 }
 
+@media screen and (width >= 500px) {
+    #tab-click-1::before {
+        content: "Direct Fusion Calculator";
+    }
+    #tab-click-2::before {
+        content: "Inverse Fusion Calculator";
+    }
+    #tab-click-3::before {
+        content: "View Shards and Attributes";
+    }
+}
+
+@media screen and (width < 500px) {
+    #tab-click-1::before {
+        content: "Direct";
+    }
+    #tab-click-2::before {
+        content: "Inverse";
+    }
+    #tab-click-3::before {
+        content: "View Shards";
+    }
+}
+
 .sticky {
     display: flexbox;
     padding: 8px;
