@@ -48,6 +48,20 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
 
 var calculateInverseResult = function (ShardTable, Shard) {
     var candidates = [];
+    // Add the Special Fusion recipe, if it exists:
+    var specialCandidate = calculateInverseSpecialFusions(ShardTable, Shard);
+    if (specialCandidate != "no recipe" && ("shape" in specialCandidate)) {
+        if ("length" in specialCandidate.shape) {
+            candidates = candidates.concat(specialCandidate.shape);
+        } else {
+            candidates.push(specialCandidate.shape);
+        }
+    }
+    // Add the ID Fusion that can create this shard:
+    var idCandidate = calculateInverseIDFusionResult(ShardTable, Shard);
+    if (checkIfShardIDExists(ShardTable, idCandidate)) {
+        candidates.push({ A: { shardID: idCandidate }, B: { shardID: "shape", shape: "Any Shard" }, amount: 1 });
+    }
     // Add any possible Chameleon Fusions that can create this shard:
     var candidate1 = Shard.slice(0, 1) + (parseInt(Shard.slice(1)) - 1);
     var candidate2 = Shard.slice(0, 1) + (parseInt(Shard.slice(1)) - 2);
@@ -60,22 +74,6 @@ var calculateInverseResult = function (ShardTable, Shard) {
     }
     if (checkIfShardIDExists(ShardTable, candidate3)) {
         candidates.push({ A: { shardID: candidate3 }, B: { shardID: "L4" }, amount: 1 });
-    }
-    // Add the ID Fusion that can create this shard:
-    var idCandidate = calculateInverseIDFusionResult(ShardTable, Shard);
-    if (checkIfShardIDExists(ShardTable, idCandidate)) {
-        candidates.push({ A: { shardID: idCandidate }, B: { shardID: "shape", shape: "Any Shard" }, amount: 1 });
-    }
-    // Add the Special Fusion recipe, if it exists:
-    var specialCandidate = calculateInverseSpecialFusions(ShardTable, Shard);
-    if (specialCandidate != "no recipe" && ("shape" in specialCandidate)) {
-        // TODO: add shape properties to specialFusionRecipes.js
-        // should follow {A: {shardID: "shape", shape: ...} B: {shardID: "shape", shape: ...}, amount: 2};
-        if ("length" in specialCandidate.shape) {
-            candidates = candidates.concat(specialCandidate.shape);
-        } else {
-            candidates.push(specialCandidate.shape);
-        }
     }
     // Purge duplicates
     return Array.from(new Set(candidates));
@@ -330,8 +328,10 @@ var generateInverseHTMLResults = function (ShardTable, results) {
     results.forEach((element) => {
         var tempHTML = `<div class="fusion-result-box">`;
         var amountA = 5, amountB = 5;
+        tempHTML += `<span class="minecraft-font mcf">(${element.amount}&nbsp;Shard${element.amount == 1 ? "" : "s"})</span>&nbsp;`;
         if (element.A.shardID == "shape") {
             tempHTML += `<span class="minecraft-font mcc">[${element.A.shape}]</span>`;
+            tempHTML += `&nbsp;<span class="minecraft-font mcf">x?</span></span>`;
         } else {
             var objectA = ShardTable[getInfoForShardLetter(element.A.shardID.slice(0, 1)).cuteName][element.A.shardID.slice(1)];
             var cssClassA = getInfoForShardLetter(element.A.shardID.slice(0, 1)).cssClass;
@@ -348,6 +348,7 @@ var generateInverseHTMLResults = function (ShardTable, results) {
         tempHTML += `<span class="minecraft-font mcf">&nbsp;+&nbsp;</span>`;
         if (element.B.shardID == "shape") {
             tempHTML += `<span class="minecraft-font mcc">[${element.B.shape}]</span>`;
+            tempHTML += `&nbsp;<span class="minecraft-font mcf">x?</span></span>`;
         } else {
             var objectB = ShardTable[getInfoForShardLetter(element.B.shardID.slice(0, 1)).cuteName][element.B.shardID.slice(1)];
             var cssClassB = getInfoForShardLetter(element.B.shardID.slice(0, 1)).cssClass;
@@ -360,7 +361,6 @@ var generateInverseHTMLResults = function (ShardTable, results) {
             tempHTML += `<span class="minecraft-font ${cssClassB}">${objectB.shardName} Shard`;
             tempHTML += `&nbsp;<span class="mcf">x${amountB}</span></span>`;
         }
-        tempHTML += `<span class="minecraft-font mcf">&nbsp;=&nbsp;${element.amount} Shards</span>`;
         html += tempHTML + `</div><br />`;
     });
     return html;
