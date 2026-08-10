@@ -191,6 +191,18 @@ var getShardNamesWithPrefix = function (ShardTable, Prefix) {
     return array;
 };
 
+var switchTabs = function (tab) {
+    flushCalculatorResults();
+    var totalTabs = 3;
+    for (i = 1; i <= totalTabs; i++) {
+        el("tab" + i).style = "display: none;";
+        el("tab-click-" + i).style = "";
+    }
+    el("tab" + tab).style = "";
+    el("tab-click-" + tab).style = "background-color: #bbb;";
+    console.log("Switched tab to tab " + tab);
+};
+
 var loadOneShardConstant = async function (resource) {
     var response = await fetch(new Request(resource));
     var json = await response.json();
@@ -213,7 +225,7 @@ var loadManyShardConstants = async function () {
     };
 };
 
-var generateHTMLResults = function (ShardTable, results) {
+var generateDirectHTMLResults = function (ShardTable, results) {
     if (!results || !(typeof results === "object") || !("length" in results)) {
         return `<span style="color: #f00">An unexpected error occurred: "results" argument in generateHTMLResults is not an array</span>`;
     }
@@ -245,54 +257,96 @@ var generateHTMLResults = function (ShardTable, results) {
     return html;
 };
 
+var flushCalculatorResults = function () {
+    el("results-direct").innerHTML = "";
+    //el("results-reverse").innerHTML = "";
+    el("results-viewer").innerHTML = "";
+    console.log("cleared calculator results");
+};
+
 var calculateButtonCallback = function () {
     if (Loading) {
         return;
     }
-    el("results").innerHTML = "";
+    flushCalculatorResults();
     var input1 = "" + el("input1").value;
     var input2 = "" + el("input2").value;
-    console.log(`call function: calculate(${input1}, ${input2})`);
-    if (true) {
-        var shard1 = "empty slot",
-            shard2 = "empty slot";
-        if (checkIfShardIDExists(ShardTable, input1.toUpperCase())) {
-            shard1 = input1.toUpperCase();
+    console.log(`call function: calculate_direct(${input1}, ${input2})`);
+
+    var shard1 = "empty slot",
+        shard2 = "empty slot";
+    if (checkIfShardIDExists(ShardTable, input1.toUpperCase())) {
+        shard1 = input1.toUpperCase();
+    } else {
+        var temp1 = getShardIDFromName(ShardTable, input1);
+        if (temp1 != "C0") {
+            shard1 = temp1;
         } else {
-            var temp1 = getShardIDFromName(ShardTable, input1);
-            if (temp1 != "C0") {
-                shard1 = temp1;
-            } else {
-                el("results").innerHTML = `<span style="color: #f00">Failed validation: "${input1}" is not a valid Shard ID or name.</span>`;
-                return;
-            }
-        }
-        if (checkIfShardIDExists(ShardTable, input2.toUpperCase())) {
-            shard2 = input2.toUpperCase();
-        } else {
-            var temp2 = getShardIDFromName(ShardTable, input2);
-            if (temp2 != "C0") {
-                shard2 = temp2;
-            } else {
-                el("results").innerHTML = `<span style="color: #f00">Failed validation: "${input2}" is not a valid Shard ID or name.</span>`;
-                return;
-            }
+            el("results-direct").innerHTML = `<span style="color: #f00">Failed validation: "${input1}" is not a valid Shard ID or name.</span>`;
+            return;
         }
     }
+    if (checkIfShardIDExists(ShardTable, input2.toUpperCase())) {
+        shard2 = input2.toUpperCase();
+    } else {
+        var temp2 = getShardIDFromName(ShardTable, input2);
+        if (temp2 != "C0") {
+            shard2 = temp2;
+        } else {
+            el("results-direct").innerHTML = `<span style="color: #f00">Failed validation: "${input2}" is not a valid Shard ID or name.</span>`;
+            return;
+        }
+    }
+
     if (getInfoForShardLetter(shard1.slice(0, 1)).index == -1 || getInfoForShardLetter(shard2.slice(0, 1)).index == -1) {
-        el("results").innerHTML = `<span style="color: #f00">An unexpected error occurred. Your inputs: ["${input1}]", "[${input2}]".</span>`;
-        console.log("Invalid input to calculation function.");
+        el("results-direct").innerHTML = `<span style="color: #f00">An unexpected error occurred. Your inputs: ["${input1}]", "[${input2}]".</span>`;
+        console.log("Invalid input to direct fuse calculation function.");
         return;
     }
     try {
         var result = calculateFusionResult(ShardTable, shard1, shard2);
-        el("results").innerHTML = generateHTMLResults(ShardTable, result);
+        el("results-direct").innerHTML = generateDirectHTMLResults(ShardTable, result);
         console.log(result);
     } catch (error) {
-        el("results").innerHTML = `<span style="color: #f00">An unexpected error occurred: ${error}</span>`;
+        el("results-direct").innerHTML = `<span style="color: #f00">An unexpected error occurred: ${error}</span>`;
         console.error(error);
     } finally {
-        console.log("Calculation complete.");
+        console.log("Direct Fusion: Calculation script finished execution.");
+    }
+};
+
+var shardViewerCallback = function () {
+    if (Loading) {
+        return;
+    }
+    flushCalculatorResults();
+    var input1 = "" + el("input4").value;
+    console.log(`call function: calculate_viewer(${input1})`);
+    var shard1 = "empty slot";
+
+    if (checkIfShardIDExists(ShardTable, input1.toUpperCase())) {
+        shard1 = input1.toUpperCase();
+    } else {
+        var temp1 = getShardIDFromName(ShardTable, input1);
+        if (temp1 != "C0") {
+            shard1 = temp1;
+        } else {
+            el("results-viewer").innerHTML = `<span style="color: #f00">Failed validation: "${input1}" is not a valid Shard ID or name.</span>`;
+            return;
+        }
+    }
+    if (getInfoForShardLetter(shard1.slice(0, 1)).index == -1) {
+        el("results-viewer").innerHTML = `<span style="color: #f00">An unexpected error occurred. Your input: "${input1}".</span>`;
+        console.log("Invalid input to viewer calculation function.");
+        return;
+    }
+    try {
+        el("results-viewer").innerHTML = generateDirectHTMLResults(ShardTable, [{ shardID: shard1, amount: 1 }]);
+    } catch (error) {
+        el("results-viewer").innerHTML = `<span style="color: #f00">An unexpected error occurred: ${error}</span>`;
+        console.error(error);
+    } finally {
+        console.log("Shard Viewer: Calculation script finished execution.");
     }
 };
 
@@ -326,6 +380,16 @@ var ShardTable = {};
         .then(() => {
             Loading = false;
             el("loading").style = "display: none";
-            el("calculate").addEventListener("click", calculateButtonCallback);
+            el("calculate-direct").addEventListener("click", calculateButtonCallback);
+            el("clickable-viewer").addEventListener("click", shardViewerCallback);
+            el("tab-click-1").addEventListener("click", () => {
+                switchTabs(1);
+            });
+            el("tab-click-2").addEventListener("click", () => {
+                switchTabs(2);
+            });
+            el("tab-click-3").addEventListener("click", () => {
+                switchTabs(3);
+            });
         });
 })();

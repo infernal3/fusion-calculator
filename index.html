@@ -31,21 +31,17 @@
             <p>This shouldn't take more than 1 second.</p>
         </div>
         <div class="sticky">
-            <div class="navigation-bar"></div>
+            <nav class="navigation-bar" role="navigation">
+                <button id="tab-click-1" style="background-color: #bbb">Direct Fusion Calculator</button>
+                <button id="tab-click-2">Inverse Fusion Calculator</button>
+                <button id="tab-click-3">View Shards and Attributes</button>
+            </nav>
         </div>
-        <div id="app">
-            <main id="tab1" role="main">
+        <main id="app" role="main">
+            <div id="tab1">
                 <h1>Fusion Calculator</h1>
-                <p>Attribute Fusion is the process of combining two or more shard families to create a new shard.</p>
-                <p>
-                    There are three different variants of Attribute Fusion: ID Fusion, Special Fusion, and Chameleon.
-                    <br />
-                    ID Fusion uses the ID, rarity and attribute category of one shard to determine the output shard.
-                    <br />
-                    Special Fusion uses predefined special fusion recipes to determine an output shard. Special Fusions grant 2 shards when fused.
-                    <br />
-                    Chameleon Fusion takes the ID of the non-chameleon shard and outputs the next 3 IDs sequentially.
-                </p>
+                <p>The Direct Fusion Calculator will output the shards as if the two inputs were put into the ingame Fusion Box.</p>
+
                 <p>Examples of valid calculator inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc5">Ghost</span>, <span class="minecraft-font mc6">Apex Dragon</span></p>
                 <div class="fusionbox" id="fusionbox">
                     <div class="fusionbox-header" id="fusionbox-header">Fusion Box</div>
@@ -121,16 +117,48 @@
                 <br />
                 <label class="no-select">Input 2nd shard ID or name here: <input type="text" class="minecraft-font" id="input2" /></label>
                 <br />
-                <button id="calculate" class="minecraft-font">Calculate</button>
+                <button id="calculate-direct" class="minecraft-font">Calculate</button>
                 <br />
-                <div id="results"></div>
+                <div id="results-direct"></div>
+            </div>
+            <div id="tab2" style="display: none">
+                <h1>Fusion Calculator</h1>
+                <p>The Inverse Fusion Calculator will output all fusion combinations that create a particular shard.</p>
+                <p>Examples of valid calculator inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc5">Ghost</span>, <span class="minecraft-font mc6">Apex Dragon</span></p>
+                <label class="no-select">Input a shard ID or name here: <input type="text" class="minecraft-font" id="input3" /></label>
                 <br />
-                <a href="https://github.com/infernal3/fusion-calculator/">View Source on GitHub</a>
+                <button id="calculate-reverse" class="minecraft-font">Calculate</button>
                 <br />
-                <a href="https://infernal3.github.io/">Return to homepage</a>
+                <div id="results-reverse"></div>
+            </div>
+            <div id="tab3" style="display: none">
+                <h1>Shard and Attribute Viewer</h1>
+                <p>Insert a shard name or shard ID to view information about it.</p>
+                <p>Examples of valid inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc5">Ghost</span>, <span class="minecraft-font mc6">Apex Dragon</span></p>
+                <label class="no-select">Input a shard ID or name here: <input type="text" class="minecraft-font" id="input4" /></label>
                 <br />
-                <p>Simple fusion calculator by infernal3</p>
-            </main>
+                <button id="clickable-viewer" class="minecraft-font">View Shard Info</button>
+                <br />
+                <div id="results-viewer"></div>
+            </div>
+        </main>
+        <div style="top: 48px; position: relative">
+            <br />
+            <hr />
+            <a href="https://github.com/infernal3/fusion-calculator/">View Source on GitHub</a>
+            <br />
+            <a href="https://infernal3.github.io/">Return to homepage</a>
+            <br />
+            <p>
+                There are three different variants of Attribute Fusion: ID Fusion, Special Fusion, and Chameleon.
+                <br />
+                ID Fusion uses the ID, rarity and attribute category of one shard to determine the output shard.
+                <br />
+                Special Fusion uses predefined special fusion recipes to determine an output shard. Special Fusions grant 2 shards when fused.
+                <br />
+                Chameleon Fusion takes the ID of the non-chameleon shard and outputs the next 3 IDs sequentially.
+            </p>
+            <p>Simple fusion calculator by infernal3</p>
         </div>
     </body>
 </html>

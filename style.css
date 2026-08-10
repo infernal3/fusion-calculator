@@ -33,7 +33,20 @@ button {
     -webkit-user-select: none;
 }
 
+.sticky {
+    display: flexbox;
+    padding: 8px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 32px;
+    background-color: #eee;
+}
+
 #app {
+    top: 48px;
+    position: relative;
     direction: ltr;
     unicode-bidi: isolate;
     line-height: 1.95;
