@@ -96,7 +96,7 @@
         "attributeEffect": "Finds a Hitman Egg every 750s during Hoppity's Hunt",
         "shardName": "Rabbit Godfather",
         "wikiDescription": "Fusing Rabbit Godmother Shard with Combat Category and Legendary or higher",
-        "shardFamily": "",
+        "shardFamily": "Crime",
         "shardSkill": "Global",
         "shardCategory": "Forest"
     },
@@ -116,8 +116,8 @@
         "attributeEffect": "Grants +0.5–5 ☯ Enchanting Wisdom",
         "shardName": "Lapis Creeper",
         "wikiDescription": "Fusing Lapis Skeleton Shard with Ghost Shard or Legendary or higher",
-        "shardFamily": "",
-        "shardSkill": "Combat",
+        "shardFamily": "Lapis",
+        "shardSkill": "Enchanting",
         "shardCategory": "Combat"
     },
     {
@@ -135,9 +135,9 @@
         "attributeName": "Payback",
         "attributeEffect": "When hit, your next hit deals +2%–20% damage",
         "shardName": "Spike",
-        "wikiDescription": "Catch with a Fishing Net\nPlace Traps in Murkwater Depths (Underwater)\nPlace Traps in Kelpwoven Tunnels (Underwater)",
+        "wikiDescription": "Catch with a Fishing Net\nPlace Hunting Traps in Murkwater Depths (Underwater)\nPlace Hunting Traps in Kelpwoven Tunnels (Underwater)",
         "shardFamily": "",
-        "shardSkill": "Foraging",
+        "shardSkill": "Combat",
         "shardCategory": "Water"
     },
     {
@@ -188,7 +188,7 @@
         "attributeEffect": "Your \"Tracker\" Attributes are +2%–20% stronger",
         "shardName": "Doomspiral",
         "wikiDescription": "Catch a Doomspiral with a Critter Capsule in the Haunted Biome of the Critter Safari",
-        "shardFamily": "",
+        "shardFamily": "Demon, Elemental",
         "shardSkill": "Global",
         "shardCategory": "Combat"
     },
@@ -198,7 +198,7 @@
         "attributeEffect": "Grants a +0.01%–0.1% chance to drop a Rainbow Feather when hunting a mob",
         "shardName": "Macaw",
         "wikiDescription": "Catch a Macaw with a Critter Capsule in the Forest Biome of the Critter Safari",
-        "shardFamily": "",
+        "shardFamily": "Bird",
         "shardSkill": "Hunting",
         "shardCategory": "Forest"
     },
@@ -219,7 +219,7 @@
         "shardName": "Ananke",
         "wikiDescription": "Fusing Kraken Shard with Bird Family\nObtained from Kuudra",
         "shardFamily": "Bird, Demon",
-        "shardSkill": "Combat",
+        "shardSkill": "Global",
         "shardCategory": "Combat"
     },
     {
@@ -238,7 +238,7 @@
         "attributeEffect": "Grants +0.5–5  Double Hook Chance while on Combat Islands",
         "shardName": "Lord Jawbus",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Lord Jawbus while using Salts\nObtained from Kuudra",
-        "shardFamily": "",
+        "shardFamily": "Creation, Elusive",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
     },
@@ -247,7 +247,7 @@
         "attributeName": "Matriarch Cubs",
         "attributeEffect": "Grants a +2%–20% chance to get a second Heavy Pearl",
         "shardName": "Hellwisp",
-        "wikiDescription": "Catch with Pocket Black Hole\nKill Hellwisp while using Salts\nObtained from Kuudra\nPlace Traps in Matriarch's Lair",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Hellwisp while using Salts\nObtained from Kuudra\nPlace Hunting Traps in Matriarch's Lair",
         "shardFamily": "Demon",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
@@ -257,7 +257,7 @@
         "attributeName": "Magic Find",
         "attributeEffect": "Grants +0.5–5  Magic Find",
         "shardName": "Cinderbat",
-        "wikiDescription": "Catch with Pocket Black Hole\nCatch with Lasso\nKill Cinderbat while using Salts\nObtained from Kuudra\nPlace Traps in Smoldering Tomb",
+        "wikiDescription": "Catch with Pocket Black Hole\nCatch with Lasso\nKill Cinderbat while using Salts\nObtained from Kuudra\nPlace Hunting Traps in Smoldering Tomb",
         "shardFamily": "",
         "shardSkill": "Global",
         "shardCategory": "Forest"
@@ -265,7 +265,7 @@
     {
         "shardID": "L29",
         "attributeName": "Hunter's Karma",
-        "attributeEffect": "Grants +1–10  Hunter Fortune",
+        "attributeEffect": "Grants +1–10  Hunting Fortune",
         "shardName": "Megalith",
         "wikiDescription": "Fusing Tortoise Shard with Water Category and Epic or higher",
         "shardFamily": "Reptile, Turtle",
@@ -298,7 +298,7 @@
         "attributeEffect": "The effect of Starborn Temples is +1%–10% stronger on you",
         "shardName": "Sun Fish",
         "wikiDescription": "Fusing Shinyfish Shard with Bezal, Cinderbat, Flare, Lava Flame, Fire Eel, Bal, and Flaming Spider Shards",
-        "shardFamily": "Elemental",
+        "shardFamily": "",
         "shardSkill": "Global",
         "shardCategory": "Water"
     },
@@ -328,7 +328,7 @@
         "attributeEffect": "Your \"Visitor\" Attributes are +5%–50% stronger",
         "shardName": "Queen Snake",
         "wikiDescription": "Fusing Queen Bee Shard with Queen Ant Shard",
-        "shardFamily": "",
+        "shardFamily": "Reptile, Scaled, Serpent",
         "shardSkill": "Global",
         "shardCategory": "Water"
     },
@@ -343,7 +343,16 @@
         "shardCategory": "Combat"
     },
     null,
-    null,
+    {
+        "shardID": "L38",
+        "attributeName": "Treasure Fisher",
+        "attributeEffect": "Grants 0.1–1  Treasure Chance",
+        "shardName": "Ghost Crab",
+        "wikiDescription": "Fusing Blue Crab Shard with Poltergeist Family and Rare or higher",
+        "shardFamily": "Crustacean",
+        "shardSkill": "Global",
+        "shardCategory": "Water"
+    },
     {
         "shardID": "L39",
         "attributeName": "Unlimited Energy",
@@ -401,7 +410,7 @@
         "attributeEffect": "Increases the chance of The Primordial cocooning Slayer Bosses and Slayer Minibosses by +0.5%–5%",
         "shardName": "Primordial",
         "wikiDescription": "Dropped by Primordial Broodfather",
-        "shardFamily": "",
+        "shardFamily": "Spider",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
@@ -420,42 +429,24 @@
         "attributeName": "Bayou Hook",
         "attributeEffect": "Grants +0.5–5  Double Hook Chance while on Fishing Islands",
         "shardName": "Titanoboa",
-        "wikiDescription": "Kill Titanoboa while using Salts\nPlace Traps in Backwater Bayou (Underwater)",
-        "shardFamily": "Reptile, Serpent",
+        "wikiDescription": "Kill Titanoboa while using Salts\nPlace Hunting Traps in Backwater Bayou (Underwater)",
+        "shardFamily": "Elusive, Reptile, Serpent, Scaled",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
     },
-    {
-        "shardID": "L48",
-        "attributeName": "Dominance",
-        "attributeEffect": "Gain +1.5%–15% more  Damage when at full health",
-        "shardName": "Thorn",
-        "wikiDescription": "Obtained from Master Catacombs Floor IV",
-        "shardFamily": "",
-        "shardSkill": "Combat",
-        "shardCategory": "Combat"
-    },
+    null,
     {
         "shardID": "L49",
         "attributeName": "Miracle Chance",
-        "attributeEffect": "Increases your chance of finding Dyes by 0.1%-1%",
+        "attributeEffect": "Increases your chance of finding Dyes by 0.1%–1%",
         "shardName": "Rainbug",
         "wikiDescription": "Ring all 7 Bells in the Critter Safari",
-        "shardFamily": "",
+        "shardFamily": "Bug, Miracle",
         "shardSkill": "Global",
         "shardCategory": "Forest"
     },
     null,
-    {
-        "shardID": "L51",
-        "attributeName": "Catacombs Graduate",
-        "attributeEffect": "Gain +2%–20% more Dungeons class experience",
-        "shardName": "Scarf",
-        "wikiDescription": "Obtained from Master Catacombs Floor II",
-        "shardFamily": "",
-        "shardSkill": "Combat",
-        "shardCategory": "Combat"
-    },
+    null,
     null,
     null,
     {
@@ -476,7 +467,7 @@
         "attributeEffect": "Grants +0.5%–5% Growth Speed in your Greenhouse",
         "shardName": "Timestalk Clone",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Timestalk Clone while using Salts",
-        "shardFamily": "",
+        "shardFamily": "Poltergeist",
         "shardSkill": "Farming",
         "shardCategory": "Combat"
     },
@@ -488,7 +479,7 @@
         "attributeEffect": "Grants +0.5–5  Cold Resistance",
         "shardName": "Wumpa",
         "wikiDescription": "Catch a Wumpa with a Critter Capsule in the Icy Biome of the Critter Safari",
-        "shardFamily": "",
+        "shardFamily": "Arctic",
         "shardSkill": "Global",
         "shardCategory": "Combat"
     }

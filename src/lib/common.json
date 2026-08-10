@@ -35,7 +35,7 @@
         "attributeName": "Nocturnal Animal",
         "attributeEffect": "Grants +1–10  Sweep during the night",
         "shardName": "Phanpyre",
-        "wikiDescription": "Catch with Lasso\nPlace Traps in Galatea (On Land)\nFound in Fig and Mangrove Tree Gifts",
+        "wikiDescription": "Catch with Lasso\nPlace Hunting Traps in Galatea (On Land)\nFound in Fig and Mangrove Tree Gifts",
         "shardFamily": "Phantom",
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
@@ -45,7 +45,7 @@
         "attributeName": "Cheapstake",
         "attributeEffect": "Gain +1%–10% more Coins from fishing treasures",
         "shardName": "Cod",
-        "wikiDescription": "Place Traps in Murkwater Depths (Underwater)\nPlace Traps in Murkwater Shallows (Underwater)\nCaught by Fishing in Tomb Floodway\nCatch with a Fishing Net",
+        "wikiDescription": "Place Hunting Traps in Murkwater Depths (Underwater)\nPlace Hunting Traps in Murkwater Shallows (Underwater)\nCaught by Fishing in Tomb Floodway\nCatch with a Fishing Net",
         "shardFamily": "Tropical Fish",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
@@ -56,16 +56,16 @@
         "attributeEffect": "Grants +4–40  Defense against  Animal mobs",
         "shardName": "Howling Spirit",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Howling Spirit while using Salts",
-        "shardFamily": "",
+        "shardFamily": "Cave Dweller",
         "shardSkill": "Combat",
-        "shardCategory": "Forest*"
+        "shardCategory": "Combat"
     },
     {
         "shardID": "C7",
         "attributeName": "Moonglade Mastery",
         "attributeEffect": "Grants +10–100  Fig Fortune and +10–100  Mangrove Fortune",
         "shardName": "Phanflare",
-        "wikiDescription": "Catch with Lasso\nPlace Traps in Galatea (On Land)\nFound in Fig and Mangrove Tree Gifts",
+        "wikiDescription": "Catch with Lasso\nPlace Hunting Traps in Galatea (On Land)\nFound in Fig and Mangrove Tree Gifts",
         "shardFamily": "Phantom",
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
@@ -75,8 +75,8 @@
         "attributeName": "Aquatic Resistance",
         "attributeEffect": "Grants +4–40  Defense against  Aquatic mobs",
         "shardName": "Dumpster Diver",
-        "wikiDescription": "Kill Dumpster Diver while using Salts\nPlace Traps in Backwater Bayou (Underwater)",
-        "shardFamily": "Squid[Confirm]",
+        "wikiDescription": "Kill Dumpster Diver while using Salts\nPlace Hunting Traps in Backwater Bayou (Underwater)",
+        "shardFamily": "Trash Lover",
         "shardSkill": "Combat",
         "shardCategory": "Water"
     },
@@ -95,7 +95,7 @@
         "attributeName": "Mossy Box",
         "attributeEffect": "Grants +5–50  Block Fortune",
         "shardName": "Hideonleaf",
-        "wikiDescription": "Hunted on Galatea",
+        "wikiDescription": "Hunted in the Moonglade Marsh",
         "shardFamily": "Shulker",
         "shardSkill": "Mining",
         "shardCategory": "Forest"
@@ -105,7 +105,7 @@
         "attributeName": "Forest Fishing",
         "attributeEffect": "Grants +3–30  Fishing Speed while on Foraging Islands",
         "shardName": "Verdant",
-        "wikiDescription": "Place Traps in Murkwater Depths (Underwater)\nPlace Traps in Murkwater Shallows (Underwater)\nCaught by Fishing in Tomb Floodway\nCatch with a Fishing Net",
+        "wikiDescription": "Place Hunting Traps in Murkwater Depths (Underwater)\nPlace Hunting Traps in Murkwater Shallows (Underwater)\nCaught by Fishing in Tomb Floodway\nCatch with a Fishing Net",
         "shardFamily": "Tropical Fish",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
@@ -115,7 +115,7 @@
         "attributeName": "Skeletal Ruler",
         "attributeEffect": "Increase damage to  Skeletal mobs by +3%–30%",
         "shardName": "Chill",
-        "wikiDescription": "Catch with Pocket Black Hole\nKill Chillshot or Chillblade while using Salts\nPlace Traps in Wyrmgrove Tomb",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Chillshot or Chillblade while using Salts\nPlace Hunting Traps in Wyrmgrove Tomb",
         "shardFamily": "",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
@@ -126,7 +126,7 @@
         "attributeEffect": "Grants +2.5–25  Farming Fortune",
         "shardName": "Fly",
         "wikiDescription": "Catch with Lasso\nKill Fly while using Salts",
-        "shardFamily": "",
+        "shardFamily": "Bug, Trash Lover",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
     },
@@ -146,7 +146,7 @@
         "attributeEffect": "Grants +4–40  Defense against  Arthropod mobs",
         "shardName": "Voracious Spider",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Voracious Spider while using Salts",
-        "shardFamily": "",
+        "shardFamily": "Spider",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
@@ -165,7 +165,7 @@
         "attributeName": "Yummy",
         "attributeEffect": "Grants a +10%–100% chance to drop double Berries and Sea Lumies",
         "shardName": "Birries",
-        "wikiDescription": "Place Traps in Galatea (On Land)\nCatch with a Fishing Net\nCatch with Lasso",
+        "wikiDescription": "Place Hunting Traps in Galatea (On Land)\nCatch with a Fishing Net\nCatch with Lasso",
         "shardFamily": "",
         "shardSkill": "Foraging",
         "shardCategory": "Water"
@@ -186,7 +186,7 @@
         "attributeEffect": "Grants +5–50  Sweep towards Fig Trees",
         "shardName": "Crow",
         "wikiDescription": "Purchased in Agatha's Shop",
-        "shardFamily": "Bird",
+        "shardFamily": "Bird, Trash Lover",
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
     },
@@ -195,7 +195,7 @@
         "attributeName": "Unity is Strength",
         "attributeEffect": "Grants +0.02–0.2  Sweep for each unique Common Attribute you own",
         "shardName": "Tadgang",
-        "wikiDescription": "Catch with Pocket Black Hole\nKill Tadgang while using Salts\nPlace Traps in Murkwater Depths (Underwater)\nPlace Traps in Murkwater Shallows (Underwater)",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Tadgang while using Salts\nPlace Hunting Traps in Murkwater Depths (Underwater)\nPlace Hunting Traps in Murkwater Shallows (Underwater)",
         "shardFamily": "Amphibian, Frog",
         "shardSkill": "Hunting",
         "shardCategory": "Water"
@@ -216,8 +216,8 @@
         "attributeEffect": "The cooldown of the Rabbit Hitman is reduced by +2.5%–25%",
         "shardName": "Rabbit Mafioso",
         "wikiDescription": "Purchased in Chocolate Shop",
-        "shardFamily": "",
-        "shardSkill": "",
+        "shardFamily": "Crime",
+        "shardSkill": "Global",
         "shardCategory": "Forest"
     },
     {
@@ -225,8 +225,8 @@
         "attributeName": "Bucket Lover",
         "attributeEffect": "You have a +5%–50% chance to gain extra Chums",
         "shardName": "Coralot",
-        "wikiDescription": "Place Traps in Murkwater Depths (Underwater)\nCatch with a Fishing Net\nCatch with Lasso",
-        "shardFamily": "Axolotl",
+        "wikiDescription": "Place Hunting Traps in Murkwater Depths (Underwater)\nCatch with a Fishing Net\nCatch with Lasso",
+        "shardFamily": "Amphibian, Axolotl",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
     },
@@ -245,7 +245,7 @@
         "attributeName": "Visitor Bait",
         "attributeEffect": "Garden Visitors arrive +1%–10% faster",
         "shardName": "Mudworm",
-        "wikiDescription": "Place Traps in Galatea (On Land)\nFound in Grass on Galatea",
+        "wikiDescription": "Place Hunting Traps in Galatea (On Land)\nFloor Drop in Moonglade Marsh",
         "shardFamily": "",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
@@ -255,7 +255,7 @@
         "attributeName": "Lotus Trophy",
         "attributeEffect": "Grants +1–10  Trophy Chance while in the  Lotus Atoll",
         "shardName": "Lotusfish",
-        "wikiDescription": "Place Traps in Lotus Atoll (Underwater)\nHunted in Lotus Atoll",
+        "wikiDescription": "Place Hunting Traps in Lotus Atoll (Underwater)\nHunted in Lotus Atoll",
         "shardFamily": "Tropical Fish",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
@@ -276,8 +276,8 @@
         "attributeEffect": "Grants +1–10 Crop Growth while in The Garden",
         "shardName": "Locust",
         "wikiDescription": "Catch with Lasso\nKill Locust while using Salts",
-        "shardFamily": "",
-        "shardSkill": "",
+        "shardFamily": "Bug, Trash Lover",
+        "shardSkill": "Farming",
         "shardCategory": "Forest"
     },
     {
@@ -285,7 +285,7 @@
         "attributeName": "Forest Strength",
         "attributeEffect": "Grants +5–50  Strength while on Foraging Islands",
         "shardName": "Azure",
-        "wikiDescription": "Place Traps in Murkwater Depths (Underwater)\nPlace Traps in Murkwater Shallows (Underwater)\nCaught by Fishing in Tomb Floodway",
+        "wikiDescription": "Place Hunting Traps in Murkwater Depths (Underwater)\nPlace Hunting Traps in Murkwater Shallows (Underwater)\nCaught by Fishing in Tomb Floodway",
         "shardFamily": "Tropical Fish",
         "shardSkill": "Combat",
         "shardCategory": "Water"
@@ -306,7 +306,7 @@
         "attributeEffect": "Grants +4–40  Defense against  Woodland mobs",
         "shardName": "Stag Beetle",
         "wikiDescription": "Catch with Lasso\nLather Honeycomb on Mangrove Trees",
-        "shardFamily": "",
+        "shardFamily": "Bug",
         "shardSkill": "Combat",
         "shardCategory": "Forest"
     },
@@ -343,7 +343,7 @@
     {
         "shardID": "C35",
         "attributeName": "Decent Karma",
-        "attributeEffect": "Grants +2–20  Hunter Fortune towards Common Attributes",
+        "attributeEffect": "Grants +2–20  Hunting Fortune towards Common Attributes",
         "shardName": "Newt",
         "wikiDescription": "Fusing Axolotl Family with Water Category",
         "shardFamily": "Lizard, Reptile",
@@ -366,7 +366,7 @@
         "attributeEffect": "Grants +2.5–25  Mining Fortune",
         "shardName": "Flitter",
         "wikiDescription": "Catch a Flitter with a Critter Capsule in the Cavern Biome of the Critter Safari\nFloor Drop in Cavern Biome of the Critter Safari",
-        "shardFamily": "",
+        "shardFamily": "Cave Dweller",
         "shardSkill": "Mining",
         "shardCategory": "Forest"
     },
@@ -376,7 +376,7 @@
         "attributeEffect": "Grants +3–30  Fishing Speed while on Fishing Islands",
         "shardName": "Tepid",
         "wikiDescription": "Catch a Tepid with a Critter Capsule in the Icy Biome of the Critter Safari",
-        "shardFamily": "",
+        "shardFamily": "Tropical Fish",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
     },
@@ -387,7 +387,7 @@
         "shardName": "Cretan Bull",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Empyeran Cretan Bull, Exalted Cretan Bull, Blessed Cretan Bull, or Venerable Cretan Bull while using Salts",
         "shardFamily": "",
-        "shardSkill": "",
+        "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
     {
@@ -396,8 +396,8 @@
         "attributeEffect": "Grants +0.5–5  Tracking towards Queen Ants",
         "shardName": "Ant",
         "wikiDescription": "Kill Ant while using Salts\nPlace Hunting Traps in Ant's Cave",
-        "shardFamily": "",
-        "shardSkill": "",
+        "shardFamily": "Bug",
+        "shardSkill": "Hunting",
         "shardCategory": "Forest"
     },
     {
@@ -406,7 +406,7 @@
         "attributeEffect": "Grants +3–30  Fishing Speed while on Mining Islands",
         "shardName": "Cavernfish",
         "wikiDescription": "Catch a Cavernfish with a Critter Capsule in the Cavern Biome of the Critter Safari",
-        "shardFamily": "",
+        "shardFamily": "Cave Dweller, Tropical Fish",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
     },
@@ -416,7 +416,7 @@
         "attributeEffect": "Grants +4–40  Defense against  Frozen mobs",
         "shardName": "Strongarm",
         "wikiDescription": "Catch a Strongarm with a Critter Capsule in the Icy Biome of the Critter Safari\nFloor Drop in Icy Biome of the Critter Safari",
-        "shardFamily": "",
+        "shardFamily": "Artic",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
@@ -426,8 +426,8 @@
         "attributeEffect": "Grants +5–50  Ore Fortune",
         "shardName": "Hideonsun",
         "wikiDescription": "Hunted in the Torrhus Canyon",
-        "shardFamily": "",
-        "shardSkill": "",
+        "shardFamily": "Shulker",
+        "shardSkill": "Mining",
         "shardCategory": "Forest"
     },
     {
@@ -437,7 +437,7 @@
         "shardName": "Haggard",
         "wikiDescription": "Kill Haggard while using Salts\nCatch with a Fishing Nets",
         "shardFamily": "",
-        "shardSkill": "",
+        "shardSkill": "Combat",
         "shardCategory": "Water"
     },
     {
@@ -456,7 +456,7 @@
         "attributeEffect": "Grants +4–40  Defense against  Subterranean mobs",
         "shardName": "Shyworm",
         "wikiDescription": "Catch a Shyworm with a Critter Capsule in the Cavern Biome of the Critter Safari\nFloor Drop in Cavern Biome of the Critter Safari",
-        "shardFamily": "",
+        "shardFamily": "Cave Dweller",
         "shardSkill": "Global",
         "shardCategory": "Forest"
     },
@@ -467,7 +467,7 @@
         "shardName": "Brineling",
         "wikiDescription": "Kill Brineling while using Salts\nCatch with a Fishing Net",
         "shardFamily": "",
-        "shardSkill": "",
+        "shardSkill": "Combat",
         "shardCategory": "Water"
     },
     null,
@@ -490,7 +490,7 @@
         "shardName": "Firefox",
         "wikiDescription": "Catch with Lasso\nFound in Helix Tree Gifts",
         "shardFamily": "",
-        "shardSkill": "",
+        "shardSkill": "Foraging",
         "shardCategory": "Forest"
     },
     null,
@@ -502,7 +502,7 @@
         "shardName": "Groundhog",
         "wikiDescription": "Catch with Lasso\nFound in Helix Tree Gifts",
         "shardFamily": "",
-        "shardSkill": "",
+        "shardSkill": "Foraging",
         "shardCategory": "Forest"
     },
     {
@@ -511,8 +511,8 @@
         "attributeEffect": "Grants +0.5–5  Pressure Resistance while on Torrhus Canyon",
         "shardName": "Timil",
         "wikiDescription": "Catch with a Fishing Net\nPlace Hunting Traps in Spring Path (Underwater)",
-        "shardFamily": "",
-        "shardSkill": "",
+        "shardFamily": "Tropical Fish",
+        "shardSkill": "Fishing",
         "shardCategory": "Water"
     },
     null,
@@ -522,8 +522,8 @@
         "attributeEffect": "Grants +4–40  Defense against  Airborne mobs",
         "shardName": "Blue Jay",
         "wikiDescription": "Catch with Lasso",
-        "shardFamily": "",
-        "shardSkill": "",
+        "shardFamily": "Bird",
+        "shardSkill": "Combat",
         "shardCategory": "Forest"
     },
     null,
@@ -533,7 +533,7 @@
         "attributeName": "Chocolate Speed",
         "attributeEffect": "Increases your Chocolate Factory speed by +0.25%–2.5%",
         "shardName": "Bunbun",
-        "wikiDescription": "Catch with Lasso\nPlace Traps in Torrhus Canyon (On Land)",
+        "wikiDescription": "Catch with Lasso\nPlace Hunting Traps in Torrhus Canyon (On Land)",
         "shardFamily": "",
         "shardSkill": "Global",
         "shardCategory": "Forest"
@@ -546,8 +546,8 @@
         "attributeEffect": "Honeyhives have a +2.5%–25% chance to contain double the Honeycomb",
         "shardName": "Honeybuzz",
         "wikiDescription": "Catch with Lasso\nFound in Honeyhives",
-        "shardFamily": "",
-        "shardSkill": "",
+        "shardFamily": "Bug",
+        "shardSkill": "Foraging",
         "shardCategory": "Forest"
     },
     null,
@@ -558,7 +558,7 @@
         "attributeEffect": "Trees lathered with Honeycomb have a +5%–50% chance to attract a second mob",
         "shardName": "Pollendart",
         "wikiDescription": "Catch with Lasso\nLather Honeycomb on Helix Trees",
-        "shardFamily": "",
+        "shardFamily": "Bug",
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
     }

@@ -43,7 +43,7 @@
     {
         "shardID": "E5",
         "attributeName": "Excellent Karma",
-        "attributeEffect": "Grants +1–10  Hunter Fortune towards Epic Attributes",
+        "attributeEffect": "Grants +1–10  Hunting Fortune towards Epic Attributes",
         "shardName": "Leviathan",
         "wikiDescription": "Fusing Lizard Family with Water Category and Rare or higher",
         "shardFamily": "Lizard, Reptile",
@@ -55,7 +55,7 @@
         "attributeName": "Echo of Resistance",
         "attributeEffect": "Your Resistance Attributes are +2%–20% stronger",
         "shardName": "Alligator",
-        "wikiDescription": "Fusing Crocodile Shard with Combat Category and Rare or higher\nPlace Traps in Backwater Bayou (Underwater)\nKill Alligator while using Salts",
+        "wikiDescription": "Fusing Crocodile Shard with Combat Category and Rare or higher\nPlace Hunting Traps in Backwater Bayou (Underwater)\nKill Alligator while using Salts",
         "shardFamily": "Croco, Reptile",
         "shardSkill": "Hunting",
         "shardCategory": "Combat"
@@ -65,19 +65,19 @@
         "attributeName": "Berry Mogul",
         "attributeEffect": "Your Salts last +1%–10% longer",
         "shardName": "Fenlord",
-        "wikiDescription": "Fusing Bullfrog Shard with Forest Category and Rare or higher\nPlace Traps in Galatea (On Land)",
+        "wikiDescription": "Fusing Bullfrog Shard with Forest Category and Rare or higher\nPlace Hunting Traps in Galatea (On Land)",
         "shardFamily": "Amphibian, Frog",
         "shardSkill": "Hunting",
-        "shardCategory": "Water*"
+        "shardCategory": "Forest"
     },
     {
         "shardID": "E8",
         "attributeName": "Pickaxe Cooldown",
         "attributeEffect": "Reduces the cooldown of your Pickaxe Ability by +1%–10%",
         "shardName": "Abyssal Miner",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Kill Abyssal Miner while using Salts",
+        "shardFamily": "Cave Dweller",
+        "shardSkill": "Mining",
         "shardCategory": "Water"
     },
     {
@@ -115,9 +115,9 @@
         "attributeName": "Special Upgrades",
         "attributeEffect": "Summoning Eyes you drop have a +0.5%–5% chance to be recombobulated",
         "shardName": "Special Zealot",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Fusing Zealot Shard with Combat Category and Elusive Family\nCatch with Pocket Black Holes\nKill Zealot Special Enderman while using Salts",
+        "shardFamily": "Elusive",
+        "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
     {
@@ -185,9 +185,9 @@
         "attributeName": "Sky High",
         "attributeEffect": "Increases the distance you can fall before taking fall damage by +0.5–5 blocks",
         "shardName": "Murderwing",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Fusing Phantom Family with Epic or higher",
+        "shardFamily": "Phantom",
+        "shardSkill": "Global",
         "shardCategory": "Forest"
     },
     {
@@ -222,12 +222,12 @@
     },
     {
         "shardID": "E23",
-        "attributeName": "Oustanding Fisher",
+        "attributeName": "Outstanding Fisher",
         "attributeEffect": "Treasure catches are +1%–10% more likely to be OUTSTANDING",
         "shardName": "Blue Crab",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Fusing Crustacean Family and Rare or higher with Treasure Fish Family and Rare or higher",
+        "shardFamily": "Crustacean",
+        "shardSkill": "Fishing",
         "shardCategory": "Water"
     },
     {
@@ -236,7 +236,7 @@
         "attributeEffect": "Dungeon Blessings are +1%–10% stronger on you",
         "shardName": "Mimic",
         "wikiDescription": "Kill Mimic while using Salts",
-        "shardFamily": "",
+        "shardFamily": "Elusive, Poltergeist",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
@@ -245,9 +245,9 @@
         "attributeName": "Slayer Progress",
         "attributeEffect": "Slayer Quests start +1%–10% complete",
         "shardName": "Wolverine",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Purchased in Sanger's Shop",
+        "shardFamily": "Elusive",
+        "shardSkill": "Combat",
         "shardCategory": "Forest"
     },
     {
@@ -255,9 +255,9 @@
         "attributeName": "Shell",
         "attributeEffect": "Gain a +10%–100% chance to negate knockback",
         "shardName": "Shellwise",
-        "wikiDescription": "Place Traps in Murkwater Depths (Underwater)\nCatch with a Fishing Net",
+        "wikiDescription": "Place Hunting Traps in Murkwater Depths (Underwater)\nCatch with a Fishing Net",
         "shardFamily": "Reptile, Turtle",
-        "shardSkill": "Global",
+        "shardSkill": "Combat",
         "shardCategory": "Water"
     },
     {
@@ -266,7 +266,7 @@
         "attributeEffect": "Increases melee damage dealt by +2.5%–25%",
         "shardName": "Barbarian Duke X",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Barbarian Duke X while using Salts\nObtained from Kuudra",
-        "shardFamily": "",
+        "shardFamily": "Elusive",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
@@ -280,16 +280,7 @@
         "shardSkill": "Taming",
         "shardCategory": "Forest"
     },
-    {
-        "shardID": "E29",
-        "attributeName": "Attack Speed",
-        "attributeEffect": "Grants +1–10  Attack Speed",
-        "shardName": "Inferno Demonlord",
-        "wikiDescription": "Obtained from the Inferno Demonlord III and IV",
-        "shardFamily": "Demon",
-        "shardSkill": "Combat",
-        "shardCategory": "Combat*"
-    },
+    null,
     {
         "shardID": "E30",
         "attributeName": "Echo of Ruler",
@@ -335,7 +326,7 @@
         "attributeName": "Mana Regeneration",
         "attributeEffect": "Increases your Mana regeneration by +1%–10%",
         "shardName": "XYZ",
-        "wikiDescription": "Catch with Lasso\nKill Atom while using Salts\nObtained from Kuudra\nPlace Traps in Mystic Marsh\nCaptured using an Atominizer",
+        "wikiDescription": "Catch with Lasso\nKill Atom while using Salts\nObtained from Kuudra\nPlace Hunting Traps in Mystic Marsh\nCaptured using an Atominizer",
         "shardFamily": "",
         "shardSkill": "Global",
         "shardCategory": "Forest"
@@ -365,7 +356,7 @@
         "attributeName": "Garden Wisdom",
         "attributeEffect": "Grants +0.5–5 ☯ Farming Wisdom",
         "shardName": "Dragonfly",
-        "wikiDescription": "",
+        "wikiDescription": "Fusing Firefly Shard with Dragon Family\nCatch with Lasso\nKill Dragonfly while using Salts",
         "shardFamily": "Bug",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
@@ -398,9 +389,9 @@
         "attributeName": "Ghastly Distraction",
         "attributeEffect": "Pacifies enemies for +1s–10s after mining Opal Gemstones in the Smoldering Tomb. Does not work on Slayer Bosses, Slayer Minibosses. Attacking an enemy ends the effect early",
         "shardName": "Dive Ghast",
-        "wikiDescription": "",
+        "wikiDescription": "Catch with Lasso\nKill Dive Ghast while using Salts",
         "shardFamily": "",
-        "shardSkill": "",
+        "shardSkill": "Global",
         "shardCategory": "Forest"
     },
     {
@@ -408,9 +399,9 @@
         "attributeName": "Forager's Fortune",
         "attributeEffect": "Grants +0.5–5  Magic Find while on Foraging Islands",
         "shardName": "Silkbreeze",
-        "wikiDescription": "",
+        "wikiDescription": "Kill Silkbreeze while using Salts\nCatch with a Fishing Net\nCatch with Lasso",
         "shardFamily": "",
-        "shardSkill": "",
+        "shardSkill": "Combat",
         "shardCategory": "Water"
     },
     {
@@ -419,7 +410,7 @@
         "attributeEffect": "Grants +0.25–2.5  Gemstone Spread",
         "shardName": "Gemzie",
         "wikiDescription": "Catch a Gemzie with a Critter Capsule in the Cavern Biome of the Critter Safari",
-        "shardFamily": "Arctic",
+        "shardFamily": "Cave Dweller",
         "shardSkill": "Mining",
         "shardCategory": "Combat"
     },
@@ -428,9 +419,9 @@
         "attributeName": "Divine Rabbit Luck",
         "attributeEffect": "Increases your chance of finding DIVINE Rabbits during Hoppity's Hunt by +1%–10%",
         "shardName": "Rabbit Godmother",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Purchased in Chocolate Shop",
+        "shardFamily": "Crime",
+        "shardSkill": "Global",
         "shardCategory": "Forest"
     },
     {
@@ -438,20 +429,29 @@
         "attributeName": "Fisher's Fortune",
         "attributeEffect": "Grants +0.5–5  Magic Find while on Fishing Islands",
         "shardName": "Giant Isopod",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Kill Giant Isopod while using Salts",
+        "shardFamily": "Crustacean, Elusive",
+        "shardSkill": "Fishing",
         "shardCategory": "Water"
     },
-    null,
+    {
+        "shardID": "E48",
+        "attributeName": "Attack Speed",
+        "attributeEffect": "Grants +1–10  Attack Speed",
+        "shardName": "Inferno Demonlord",
+        "wikiDescription": "Obtained from the Inferno Demonlord III and IV",
+        "shardFamily": "Demon",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
     {
         "shardID": "E49",
         "attributeName": "Honey Refill",
         "attributeEffect": "Honeyhives have a +0.5%–5% chance to refill instantly",
         "shardName": "Queen Bee",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Found in Honeyhives\nUnlocked from Honeycomb Collection VII",
+        "shardFamily": "Bug",
+        "shardSkill": "Foraging",
         "shardCategory": "Forest"
     },
     null,
@@ -460,9 +460,9 @@
         "attributeName": "Catacombs Explorer",
         "attributeEffect": "Grants +1%–10% more Catacombs XP",
         "shardName": "Bonzo",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Obtained from Master Catacombs Floor I",
+        "shardFamily": "Demon",
+        "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
     {
@@ -470,24 +470,42 @@
         "attributeName": "Lathering Greed",
         "attributeEffect": "Gain +10%–100% more Honeycomb from hunting mobs spawned from Trees lathered with Honeycomb",
         "shardName": "Beeheemoth",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Fusing Queen Bee Shard with Lunar Moth Shard\nCatch with Lasso\nDropped by Beeheemoth",
+        "shardFamily": "Bug, Elusive",
+        "shardSkill": "Foraging",
         "shardCategory": "Forest"
     },
     null,
+    {
+        "shardID": "E54",
+        "attributeName": "Catacombs Graduate",
+        "attributeEffect": "Gain +2%–20% more Dungeons class experience",
+        "shardName": "Scarf",
+        "wikiDescription": "Obtained from Master Catacombs Floor II",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
     null,
     null,
-    null,
-    null,
+    {
+        "shardID": "E57",
+        "attributeName": "Dominance",
+        "attributeEffect": "Gain +1.5%–15% more  Damage when at full health",
+        "shardName": "Thorn",
+        "wikiDescription": "Obtained from Master Catacombs Floor IV",
+        "shardFamily": "",
+        "shardSkill": "Combat",
+        "shardCategory": "Combat"
+    },
     {
         "shardID": "E58",
         "attributeName": "Social Wisdom",
         "attributeEffect": "Grants +0.5–5 ☯ Social Wisdom",
         "shardName": "Mountain Goat",
-        "wikiDescription": "",
+        "wikiDescription": "Catch with Lasso\nPlace Hunting Traps in Spring Path",
         "shardFamily": "",
-        "shardSkill": "",
+        "shardSkill": "Global",
         "shardCategory": "Forest"
     },
     null,
@@ -496,9 +514,9 @@
         "attributeName": "Glossy Fortune",
         "attributeEffect": "Increases your chance of finding Glossy Gemstones during Mining Fiestas by +1%–10%",
         "shardName": "Scatha",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Catch with Pocket Black Hole",
+        "shardFamily": "Cave Dweller",
+        "shardSkill": "Mining",
         "shardCategory": "Combat"
     },
     null,
@@ -508,9 +526,9 @@
         "attributeName": "Royal Riches",
         "attributeEffect": "Grants +5–50  Mining Speed and +2.5–25  Ore Fortune while in the Mines of Divan",
         "shardName": "Nilbog",
-        "wikiDescription": "",
-        "shardFamily": "",
-        "shardSkill": "",
+        "wikiDescription": "Fusing Gimmiegold Shard with Legendary or higher",
+        "shardFamily": "Cave Dweller, Poltergeist",
+        "shardSkill": "Mining",
         "shardCategory": "Combat"
     },
     null,
