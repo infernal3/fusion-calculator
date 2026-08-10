@@ -470,6 +470,18 @@ var shardViewerCallback = function () {
     console.log(`call function: calculate_viewer(${input1})`);
     var shard1 = "empty slot";
 
+    if(input1.toUpperCase() == "EVERYTHING" || (input1.toLowerCase() in ShardTable)) {
+        ShardTable[input1.toUpperCase() == "EVERYTHING" ? "unsorted" : input1.toLowerCase()].forEach((element) => {
+            if (!element || !("shardID" in element)) return;
+            
+            window.requestAnimationFrame(() => {
+                el("results-viewer").innerHTML += generateDirectHTMLResults(ShardTable, [{ shardID: element.shardID, amount: 1 }]);
+            });
+        });
+        console.log("Shard Viewer: Calculation script (view everything) finished execution.");
+        return;
+    }
+
     if (checkIfShardIDExists(ShardTable, input1.toUpperCase())) {
         shard1 = input1.toUpperCase();
     } else {
