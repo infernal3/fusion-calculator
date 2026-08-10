@@ -249,7 +249,7 @@ var specialFusionRecipes = [
     {
         id: "R70",
         predicate: (A, B) => A.shardName == "Queen Ant" && B.shardName == "King Cobra",
-        shape: { A: { shardID: "U79" }, B: { shardID: "R54" }, amount: 2},
+        shape: { A: { shardID: "U79" }, B: { shardID: "R54" }, amount: 2 },
     },
     // Fusion recipes for Epic Shards
     {
