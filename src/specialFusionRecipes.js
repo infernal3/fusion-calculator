@@ -425,6 +425,11 @@ var specialFusionRecipes = [
         shape: { A: { shardID: "E35" }, B: { shardID: "shape", shape: "Epic or Higher Water Shard" }, amount: 2 },
     },
     {
+        id: "L10",
+        predicate: (A, B) => A.shardName == "Rabbit Godmother" && B.shardCategory == "Combat" && getRarityIndex(B.shardID.slice(0, 1)) >= 5,
+        shape: { A: { shardID: "E46" }, B: { shardID: "shape", shape: "Legendary Combat Shard" }, amount: 2 },
+    },
+    {
         id: "L11",
         predicate: (A, B) => A.shardName == "Sea Serpent" && B.shardCategory == "Water" && getRarityIndex(B.shardID.slice(0, 1)) >= 4,
         shape: { A: { shardID: "E32" }, B: { shardID: "shape", shape: "Epic or Higher Water Shard" }, amount: 2 },
