@@ -35,6 +35,7 @@
                 <button id="tab-click-1" aria-label="Direct Fusion Tab" style="background-color: #bbb"></button>
                 <button id="tab-click-2" aria-label="Inverse Fusion Tab"></button>
                 <button id="tab-click-3" aria-label="Shard View Tab"></button>
+                <button id="tab-click-4" aria-label="Single Fusion Tab"></button>
             </nav>
         </div>
         <main id="app" role="main">
@@ -141,6 +142,16 @@
                 <button id="clickable-viewer" class="minecraft-font">View Shard Info</button>
                 <br />
                 <div id="results-viewer"></div>
+            </div>
+            <div id="tab4" style="display: none">
+                <h1>Fusion Calculator</h1>
+                <p>The Single Input Fusion Calculator will attempt to output all fusion combinations that a particular shard can create.</p>
+                <p>Examples of valid calculator inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc9">Hideonwall</span>, <span class="minecraft-font mc5">Ghost</span></p>
+                <label class="no-select">Input a shard ID or name here: <input type="text" class="minecraft-font" id="input5" /></label>
+                <br />
+                <button id="calculate-single" class="minecraft-font">Calculate</button>
+                <br />
+                <div id="results-single"></div>
             </div>
         </main>
         <div style="top: 48px; position: relative">

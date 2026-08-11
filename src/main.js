@@ -79,6 +79,61 @@ var calculateInverseResult = function (ShardTable, Shard) {
     return Array.from(new Set(candidates));
 };
 
+var calculateSingleInputResult = function (ShardTable, Shard) {
+    var ShardObject = ShardTable[getInfoForShardLetter(Shard.slice(0, 1)).cuteName][parseInt(Shard.slice(1))];
+    var array = [];
+    var idCandidate = calculateIDFusionResult(ShardTable, Shard);
+    if (idCandidate != "empty slot" && Shard != "L4") {
+        array.push({ A: { shardID: Shard }, B: { shardID: "shape", shape: "Any Shard" }, amount: 1, shardID: idCandidate.shardID });
+    }
+    var chameleonCandidates = calculateChameleonFusionResult(ShardTable, Shard);
+    array = array.concat(
+        chameleonCandidates.map((value) => {
+            if (value.shardID == "empty slot") {
+                return undefined;
+            }
+            return { A: { shardID: Shard }, B: { shardID: "L4" }, amount: value.amount, shardID: value.shardID };
+        }),
+    );
+    if (Shard != "L4") {
+        specialFusionRecipes.forEach((element) => {
+            console.log(element);
+            var shapeTemp = element.shape;
+            if (!("length" in shapeTemp)) {
+                shapeTemp = [shapeTemp];
+            }
+            if (element.predicateA(ShardObject)) {
+                shapeTemp.forEach((element2) => {
+                    if (element2.B.shardID == "shape") {
+                        array.push({ A: { shardID: Shard }, B: { shardID: "shape", shape: element2.B.shape }, amount: 2, shardID: element.id });
+                    } else {
+                        array.push({ A: { shardID: Shard }, B: { shardID: element2.B.shardID }, amount: 2, shardID: element.id });
+                    }
+                });
+                return;
+            }
+            if (element.predicateB(ShardObject)) {
+                shapeTemp.forEach((element2) => {
+                    if (element2.A.shardID == "shape") {
+                        array.push({ A: { shardID: Shard }, B: { shardID: "shape", shape: element2.A.shape }, amount: 2, shardID: element.id });
+                    } else {
+                        array.push({ A: { shardID: Shard }, B: { shardID: element2.A.shardID }, amount: 2, shardID: element.id });
+                    }
+                });
+            }
+        });
+    }
+    return Array.from(new Set(array)).filter((item) => {
+        if (!item || !("shardID" in item)) {
+            return false;
+        }
+        if (item.shardID == "empty slot") {
+            return false;
+        }
+        return true;
+    });
+};
+
 var getShardIDFromName = function (ShardTable, ShardName) {
     var result = "C0";
     ShardTable.sorted.forEach((item) => {
@@ -114,11 +169,11 @@ var calculateAllSpecialFusions = function (ShardTable, ShardA, ShardB) {
 
     // Iterate through all of the special fusion recipes and check if any apply
     specialFusionRecipes.forEach((recipe) => {
-        if (recipe.predicate(ShardObjectA, ShardObjectB)) {
+        if (recipe.predicateA(ShardObjectA) && recipe.predicateB(ShardObjectB)) {
             array.push(recipe.id);
             return;
         }
-        if (recipe.predicate(ShardObjectB, ShardObjectA)) {
+        if (recipe.predicateA(ShardObjectB) && recipe.predicateB(ShardObjectA)) {
             array.push(recipe.id);
             return;
         }
@@ -253,7 +308,7 @@ var getShardNamesWithPrefix = function (ShardTable, Prefix) {
 
 var switchTabs = function (tab) {
     flushCalculatorResults();
-    var totalTabs = 3;
+    var totalTabs = 4;
     for (i = 1; i <= totalTabs; i++) {
         el("tab" + i).style = "display: none;";
         el("tab-click-" + i).style = "";
@@ -367,10 +422,63 @@ var generateInverseHTMLResults = function (ShardTable, results) {
     return html;
 };
 
+var generateSingleHTMLResults = function (ShardTable, results) {
+    if (!results || !(typeof results === "object") || !("length" in results)) {
+        return `<span style="color: #f00">An unexpected error occurred: "results" argument in generateHTMLResults is not an array</span>`;
+    }
+    var html = "";
+    if (results.length == 0) {
+        return `<div class="fusion result-box minecraft-font mcc">Couldn't find any fusion recipes for this shard.</div>`;
+    }
+    results.forEach((element) => {
+        var tempHTML = `<div class="fusion-result-box">`;
+        var amountA = 5,
+            amountB = 5;
+        //tempHTML += `<span class="minecraft-font mcf">(${element.amount}&nbsp;Shard${element.amount == 1 ? "" : "s"})</span>&nbsp;`;
+        var objectA = ShardTable[getInfoForShardLetter(element.A.shardID.slice(0, 1)).cuteName][element.A.shardID.slice(1)];
+        var cssClassA = getInfoForShardLetter(element.A.shardID.slice(0, 1)).cssClass;
+        if (element.A.shardID == "L4") {
+            amountA = 1;
+        } else if (objectA.shardFamily.includes("Reptile") || objectA.shardFamily.includes("Elemental")) {
+            amountA = 2;
+        }
+        tempHTML += `<span class="minecraft-font mc7">${objectA.shardID} </span>`;
+        tempHTML += `<span class="minecraft-font ${cssClassA}">${objectA.shardName} Shard`;
+        tempHTML += `&nbsp;<span class="mcf">x${amountA}</span></span>`;
+
+        tempHTML += `<span class="minecraft-font mcf">&nbsp;+&nbsp;</span>`;
+        if (element.B.shardID == "shape") {
+            tempHTML += `<span class="minecraft-font mcc">[${element.B.shape}]</span>`;
+            tempHTML += `&nbsp;<span class="minecraft-font mcf">x?</span></span>`;
+        } else {
+            var objectB = ShardTable[getInfoForShardLetter(element.B.shardID.slice(0, 1)).cuteName][element.B.shardID.slice(1)];
+            var cssClassB = getInfoForShardLetter(element.B.shardID.slice(0, 1)).cssClass;
+            if (element.B.shardID == "L4") {
+                amountB = 1;
+            } else if (objectB.shardFamily.includes("Reptile") || objectB.shardFamily.includes("Elemental")) {
+                amountB = 2;
+            }
+            tempHTML += `<span class="minecraft-font mc7">${objectB.shardID} </span>`;
+            tempHTML += `<span class="minecraft-font ${cssClassB}">${objectB.shardName} Shard`;
+            tempHTML += `&nbsp;<span class="mcf">x${amountB}</span></span>`;
+        }
+        var objectC = ShardTable[getInfoForShardLetter(element.shardID.slice(0, 1)).cuteName][element.shardID.slice(1)];
+        var cssClassC = getInfoForShardLetter(element.shardID.slice(0, 1)).cssClass;
+
+        tempHTML += `&nbsp;&nbsp;<span class="minecraft-font mcf">=&nbsp;</span>`;
+        tempHTML += `<span class="minecraft-font mc7">${objectC.shardID} </span>`;
+        tempHTML += `<span class="minecraft-font ${cssClassC}">${objectC.shardName} Shard`;
+        tempHTML += `&nbsp;<span class="mcf">x${element.amount}</span></span>`;
+        html += tempHTML + `</div><br />`;
+    });
+    return html;
+};
+
 var flushCalculatorResults = function () {
     el("results-direct").innerHTML = "";
     el("results-reverse").innerHTML = "";
     el("results-viewer").innerHTML = "";
+    el("results-single").innerHTML = "";
     console.log("cleared calculator results");
 };
 
@@ -462,6 +570,43 @@ var inverseCalculateCallback = function () {
     }
 };
 
+var singleCalculateCallback = function () {
+    if (Loading) {
+        return;
+    }
+    flushCalculatorResults();
+    var input1 = "" + el("input5").value;
+    console.log(`call function: calculate_single(${input1})`);
+    var shard1 = "empty slot";
+
+    if (checkIfShardIDExists(ShardTable, input1.toUpperCase())) {
+        shard1 = input1.toUpperCase();
+    } else {
+        var temp1 = getShardIDFromName(ShardTable, input1);
+        if (temp1 != "C0") {
+            shard1 = temp1;
+        } else {
+            el("results-single").innerHTML = `<span style="color: #f00">Failed validation: "${input1}" is not a valid Shard ID or name.</span>`;
+            return;
+        }
+    }
+    if (getInfoForShardLetter(shard1.slice(0, 1)).index == -1) {
+        el("results-single").innerHTML = `<span style="color: #f00">An unexpected error occurred. Your input: "${input1}".</span>`;
+        console.log("Invalid input to viewer calculation function.");
+        return;
+    }
+    try {
+        var result = calculateSingleInputResult(ShardTable, shard1);
+        el("results-single").innerHTML = generateSingleHTMLResults(ShardTable, result);
+        console.log(result);
+    } catch (error) {
+        el("results-single").innerHTML = `<span style="color: #f00">An unexpected error occurred: ${error}</span>`;
+        console.error(error);
+    } finally {
+        console.log("Single Branch Fusion: Calculation script finished execution.");
+    }
+};
+
 var shardViewerCallback = function () {
     if (Loading) {
         return;
@@ -546,6 +691,7 @@ var ShardTable = {};
             el("calculate-direct").addEventListener("click", calculateButtonCallback);
             el("calculate-reverse").addEventListener("click", inverseCalculateCallback);
             el("clickable-viewer").addEventListener("click", shardViewerCallback);
+            el("calculate-single").addEventListener("click", singleCalculateCallback);
             el("tab-click-1").addEventListener("click", () => {
                 switchTabs(1);
             });
@@ -554,6 +700,9 @@ var ShardTable = {};
             });
             el("tab-click-3").addEventListener("click", () => {
                 switchTabs(3);
+            });
+            el("tab-click-4").addEventListener("click", () => {
+                switchTabs(4);
             });
         });
 })();

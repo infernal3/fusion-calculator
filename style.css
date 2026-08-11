@@ -43,6 +43,9 @@ button {
     #tab-click-3::before {
         content: "View Shards and Attributes";
     }
+    #tab-click-4::before {
+        content: "Single Input Fusion Calculator";
+    }
 }
 
 @media screen and (width < 500px) {
@@ -54,6 +57,9 @@ button {
     }
     #tab-click-3::before {
         content: "View Shards";
+    }
+    #tab-click-4::before {
+        content: "Single Input";
     }
 }
 
