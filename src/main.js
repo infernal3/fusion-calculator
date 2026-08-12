@@ -22,6 +22,14 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
     }*/
 
     // Merge Special Fusion and ID Fusion candidates into one array. Purge duplicates and invalid results:
+
+    specialCandidates = specialCandidates.sort((a, b) => {
+        // Sort Specials by Rarity first, then highest ID. So L10 > E46 > E5 > R1 > All ID fusion results regardless of their ID.
+        if (a.shardID.slice(0, 1) != b.shardID.slice(0, 1)) {
+            return getInfoForShardLetter(b.shardID.slice(0, 1)).index - getInfoForShardLetter(a.shardID.slice(0, 1)).index;
+        }
+        return parseInt(a.shardID.slice(1)) - parseInt(b.shardID.slice(1));
+    });
     var candidates = Array.from(new Set(specialCandidates.concat(candidateA, candidateB)))
         .filter((item) => {
             return item != "empty slot";
@@ -32,17 +40,14 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
         .filter((item) => {
             return item.shardID != ShardB;
         })
-        .sort((a, b) => {
-            if (a.shardID.slice(0, 1) != b.shardID.slice(0, 1)) {
-                return getInfoForShardLetter(b.shardID.slice(0, 1)).index - getInfoForShardLetter(a.shardID.slice(0, 1)).index;
+        .map((value, index) => {
+            // If there are more than 3 candidates remaining after purging, mark them with a property.
+            if (index >= 3) {
+                value["ignored"] = true;
+                return value;
             }
-            return parseInt(a.shardID.slice(1)) - parseInt(b.shardID.slice(1));
+            return value;
         });
-
-    // If there are more than 3 candidates remaining after purging, omit lower priority candidates:
-    /*while (candidates.length > 3) {
-        candidates.pop();
-    }*/
     return candidates;
 };
 
@@ -367,6 +372,9 @@ var generateDirectHTMLResults = function (ShardTable, results) {
         }
         tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${object.shardSkill} Attribute Category, ${object.shardCategory} Shard</span><br />`;
         tempHTML += `<span class="minecraft-font mcf">${object.attributeEffect}</span><br />`;
+        if (element.ignored) {
+            tempHTML += `<span class="minecraft-font minecraft-font small mcc">Warning: this shard might not appear in the ingame fusion box! (Max 3 shards)</span><br />`;
+        }
         html += tempHTML + `</div><br />`;
     });
     return html;
