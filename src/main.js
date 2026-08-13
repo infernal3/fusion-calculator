@@ -87,19 +87,6 @@ var calculateInverseResult = function (ShardTable, Shard) {
 var calculateSingleInputResult = function (ShardTable, Shard) {
     var ShardObject = ShardTable[getInfoForShardLetter(Shard.slice(0, 1)).cuteName][parseInt(Shard.slice(1))];
     var array = [];
-    var idCandidate = calculateIDFusionResult(ShardTable, Shard);
-    if (idCandidate != "empty slot" && Shard != "L4") {
-        array.push({ A: { shardID: Shard }, B: { shardID: "shape", shape: "Any Shard" }, amount: 1, shardID: idCandidate.shardID });
-    }
-    var chameleonCandidates = calculateChameleonFusionResult(ShardTable, Shard);
-    array = array.concat(
-        chameleonCandidates.map((value) => {
-            if (value.shardID == "empty slot") {
-                return undefined;
-            }
-            return { A: { shardID: Shard }, B: { shardID: "L4" }, amount: value.amount, shardID: value.shardID };
-        }),
-    );
     if (Shard != "L4") {
         specialFusionRecipes.forEach((element) => {
             console.log(element);
@@ -109,34 +96,64 @@ var calculateSingleInputResult = function (ShardTable, Shard) {
             }
             if (element.predicateA(ShardObject)) {
                 shapeTemp.forEach((element2) => {
-                    if (element2.B.shardID == "shape") {
-                        array.push({ A: { shardID: Shard }, B: { shardID: "shape", shape: element2.B.shape }, amount: 2, shardID: element.id });
-                    } else {
-                        array.push({ A: { shardID: Shard }, B: { shardID: element2.B.shardID }, amount: 2, shardID: element.id });
+                    var objectTemp = { A: { shardID: Shard }, amount: 2, shardID: element.id };
+                    if (element2.A.shardID == Shard) {
+                        objectTemp.direct = true;
                     }
+                    if (element2.B.shardID == "shape") {
+                        objectTemp.B = { shardID: "shape", shape: element2.B.shape };
+                    } else {
+                        objectTemp.B = { shardID: element2.B.shardID };
+                    }
+                    array.push(objectTemp);
                 });
                 return;
-            }
-            if (element.predicateB(ShardObject)) {
+            } else if (element.predicateB(ShardObject)) {
                 shapeTemp.forEach((element2) => {
-                    if (element2.A.shardID == "shape") {
-                        array.push({ A: { shardID: Shard }, B: { shardID: "shape", shape: element2.A.shape }, amount: 2, shardID: element.id });
-                    } else {
-                        array.push({ A: { shardID: Shard }, B: { shardID: element2.A.shardID }, amount: 2, shardID: element.id });
+                    var objectTemp = { A: { shardID: Shard }, amount: 2, shardID: element.id };
+                    if (element2.B.shardID == Shard) {
+                        objectTemp.direct = true;
                     }
+                    if (element2.A.shardID == "shape") {
+                        objectTemp.B = { shardID: "shape", shape: element2.A.shape };
+                    } else {
+                        objectTemp.B = { shardID: element2.A.shardID };
+                    }
+                    array.push(objectTemp);
                 });
             }
         });
     }
-    return Array.from(new Set(array)).filter((item) => {
-        if (!item || !("shardID" in item)) {
-            return false;
-        }
-        if (item.shardID == "empty slot") {
-            return false;
-        }
-        return true;
-    });
+    var idCandidate = calculateIDFusionResult(ShardTable, Shard);
+    if (idCandidate != "empty slot" && Shard != "L4") {
+        array.push({ A: { shardID: Shard }, B: { shardID: "shape", shape: "Any Shard" }, amount: 1, shardID: idCandidate.shardID, direct: true });
+    }
+    var chameleonCandidates = calculateChameleonFusionResult(ShardTable, Shard);
+    array = array.concat(
+        chameleonCandidates.map((value) => {
+            if (value.shardID == "empty slot") {
+                return undefined;
+            }
+            return { A: { shardID: Shard }, B: { shardID: "L4" }, amount: value.amount, shardID: value.shardID, direct: true };
+        }),
+    );
+    array = Array.from(new Set(array))
+        .filter((item) => {
+            if (!item || !("shardID" in item)) {
+                return false;
+            }
+            if (item.shardID == "empty slot") {
+                return false;
+            }
+            return true;
+        })
+        .sort((a, b) => {
+            if (a.direct || b.direct) {
+                return Number(!!b.direct) - Number(!!a.direct);
+            }
+            return 200 * (getRarityIndex(b.shardID.slice(0, 1)) - getRarityIndex(a.shardID.slice(0, 1))) + parseInt(a.shardID.slice(1)) - parseInt(b.shardID.slice(1));
+        });
+    return array;
 };
 
 var getShardIDFromName = function (ShardTable, ShardName) {
