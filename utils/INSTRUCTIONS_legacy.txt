@@ -1,7 +1,7 @@
 /*
 Instructions to recreate the shard data, in case I forget.
 1: https://hypixelskyblock.minecraft.wiki/w/Attributes/Search
-I am scalping the data from a wiki that literally anyone can edit. Hypixel doesn't have this data in their public API.
+Hypixel doesn't have this data in their public API.
 
 2: Navigate the HTML, until I find the table body for that rarity of attributes. Make sure <tbody> == $0.
 

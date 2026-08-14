@@ -46,6 +46,9 @@ button {
     #tab-click-4::before {
         content: "Single Input Fusion Calculator";
     }
+    #tab-click-5::before {
+        content: "About";
+    }
 }
 
 @media screen and (width < 500px) {
@@ -60,6 +63,9 @@ button {
     }
     #tab-click-4::before {
         content: "Single Input";
+    }
+    #tab-click-5::before {
+        content: "About";
     }
 }
 

@@ -20,6 +20,7 @@
         <meta property="og:url" content="https://infernal3.github.io/fusion-calculator" />
 
         <link rel="manifest" href="site.webmanifest" />
+        <script defer src="src/idFusionRecipes.js"></script>
         <script defer src="src/specialFusionRecipes.js"></script>
         <script defer src="src/main.js"></script>
         <link rel="stylesheet" href="minecrafttext.css" />
@@ -36,6 +37,7 @@
                 <button id="tab-click-2" aria-label="Inverse Fusion Tab"></button>
                 <button id="tab-click-3" aria-label="Shard View Tab"></button>
                 <button id="tab-click-4" aria-label="Single Fusion Tab"></button>
+                <button id="tab-click-5" aria-label="About"></button>
             </nav>
         </div>
         <main id="app" role="main">
@@ -153,13 +155,21 @@
                 <br />
                 <div id="results-single"></div>
             </div>
+            <div id="tab5" style="display: none">
+                <h1>About</h1>
+                <p>infernal3's Fusion Calculator is a simple Attribute Fusion Calculator for Hypixel SkyBlock.</p>
+                <p><a href="https://github.com/infernal3/fusion-calculator/">View the Source Code on GitHub</a></p>
+                <p>This fusion calculator was mainly created by me, infernal3.</p>
+                <p>Artificial Intelligence (AI) will <span class="mcc">never</span> be used in the creation of this project.</p>
+                <br>
+                <p>The current version of the Fusion Calculator is licensed under the <a href="/LICENSE">MIT License</a>.</p>
+                <br>
+                <a href="https://github.com/infernal3/fusion-calculator#credits">Credits</a>
+            </div>
         </main>
         <div style="top: 48px; position: relative">
             <br />
             <hr />
-            <a href="https://github.com/infernal3/fusion-calculator/">View Source on GitHub</a>
-            <br />
-            <br />
             <a href="https://infernal3.github.io/">Return to homepage</a>
             <br />
             <p>

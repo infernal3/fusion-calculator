@@ -11,8 +11,8 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
     }
 
     // candidateA and candidateB are the ID Fusion results for Shard A and Shard B:
-    var candidateA = calculateIDFusionResult(ShardTable, ShardA);
-    var candidateB = calculateIDFusionResult(ShardTable, ShardB);
+    var candidateA = calculateIDFusionResult(ShardA);
+    var candidateB = calculateIDFusionResult(ShardB);
 
     // Each Special Fusion has its own combination, and they can check for rarity, family, category, etc:
     var specialCandidates = calculateAllSpecialFusions(ShardTable, ShardA, ShardB);
@@ -63,10 +63,13 @@ var calculateInverseResult = function (ShardTable, Shard) {
         }
     }
     // Add the ID Fusion that can create this shard:
-    var idCandidate = calculateInverseIDFusionResult(ShardTable, Shard);
-    if (checkIfShardIDExists(ShardTable, idCandidate)) {
-        candidates.push({ A: { shardID: idCandidate }, B: { shardID: "shape", shape: "Any Shard" }, amount: 1 });
-    }
+    var idCandidates = calculateInverseIDFusionResult(Shard);
+    candidates = candidates.concat(
+        idCandidates.map((value) => {
+            return { A: { shardID: value }, B: { shardID: "shape", shape: "Any Shard" }, amount: 1 };
+        }),
+    );
+
     var UNOBTAINABLE_SHARDS = ["L4", "L42", "L41", "R25", "L49", "L32", "L45"];
     if (!UNOBTAINABLE_SHARDS.includes(Shard)) {
         // Add any possible Chameleon Fusions that can create this shard:
@@ -126,7 +129,7 @@ var calculateSingleInputResult = function (ShardTable, Shard) {
             }
         });
     }
-    var idCandidate = calculateIDFusionResult(ShardTable, Shard);
+    var idCandidate = calculateIDFusionResult(Shard);
     if (idCandidate != "empty slot" && Shard != "L4") {
         array.push({ A: { shardID: Shard }, B: { shardID: "shape", shape: "Any Shard" }, amount: 1, shardID: idCandidate.shardID, direct: true });
     }
@@ -229,7 +232,9 @@ var getRarityIndex = function (ShardLetter) {
     return getInfoForShardLetter(ShardLetter).index;
 };
 
-var calculateIDFusionResult = function (ShardTable, Shard) {
+// This function outputted incorrect results because ID Fusion is hardcoded and doesn't follow a clean formula like I thought it did.
+// DO NOT USE.
+var calculateIDFusionResult_legacy = function (ShardTable, Shard) {
     var ShardLetter = Shard.slice(0, 1);
     var ShardNumber = parseInt(Shard.slice(1));
     var ShardTableOfRarity = ShardTable[getInfoForShardLetter(ShardLetter).cuteName];
@@ -244,7 +249,17 @@ var calculateIDFusionResult = function (ShardTable, Shard) {
     return "empty slot";
 };
 
-var calculateInverseIDFusionResult = function (ShardTable, Shard) {
+var calculateIDFusionResult = function (Shard) {
+    var candidate = idFusionRecipes[Shard];
+    if (candidate) {
+        return { shardID: candidate, amount: 1 };
+    }
+    return "empty slot";
+};
+
+// This function outputted incorrect results because ID Fusion is hardcoded and doesn't follow a clean formula like I thought it did.
+// DO NOT USE.
+var calculateInverseIDFusionResult_legacy = function (ShardTable, Shard) {
     var ShardLetter = Shard.slice(0, 1);
     var ShardNumber = parseInt(Shard.slice(1));
     var ShardTableOfRarity = ShardTable[getInfoForShardLetter(ShardLetter).cuteName];
@@ -257,6 +272,16 @@ var calculateInverseIDFusionResult = function (ShardTable, Shard) {
         }
     }
     return "empty slot";
+};
+
+var calculateInverseIDFusionResult = function (Shard) {
+    var array = [];
+    for (var property in idFusionRecipes) {
+        if (idFusionRecipes[property] == Shard) {
+            array.push(property);
+        }
+    }
+    return array;
 };
 
 var calculateChameleonFusionResult = function (ShardTable, NonChameleonShard) {
@@ -336,7 +361,7 @@ var getShardNamesWithPrefix = function (ShardTable, Prefix) {
 
 var switchTabs = function (tab) {
     flushCalculatorResults();
-    var totalTabs = 4;
+    var totalTabs = 5;
     for (i = 1; i <= totalTabs; i++) {
         el("tab" + i).style = "display: none;";
         el("tab-click-" + i).style = "";
@@ -409,7 +434,7 @@ var generateInverseHTMLResults = function (ShardTable, results) {
     }
     var html = "";
     if (results.length == 0) {
-        return `<div class="fusion result-box minecraft-font mcc">Couldn't find any fusion recipes for this shard.</div>`;
+        return `<div class="fusion-result-box minecraft-font mcc">This shard cannot be obtained through Attribute Fusion. (No recipes found)</div>`;
     }
     results.forEach((element) => {
         var tempHTML = `<div class="fusion-result-box">`;
@@ -734,6 +759,9 @@ var ShardTable = {};
             });
             el("tab-click-4").addEventListener("click", () => {
                 switchTabs(4);
+            });
+            el("tab-click-5").addEventListener("click", () => {
+                switchTabs(5);
             });
         });
 })();
