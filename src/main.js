@@ -67,18 +67,21 @@ var calculateInverseResult = function (ShardTable, Shard) {
     if (checkIfShardIDExists(ShardTable, idCandidate)) {
         candidates.push({ A: { shardID: idCandidate }, B: { shardID: "shape", shape: "Any Shard" }, amount: 1 });
     }
-    // Add any possible Chameleon Fusions that can create this shard:
-    var candidate1 = Shard.slice(0, 1) + (parseInt(Shard.slice(1)) - 1);
-    var candidate2 = Shard.slice(0, 1) + (parseInt(Shard.slice(1)) - 2);
-    var candidate3 = Shard.slice(0, 1) + (parseInt(Shard.slice(1)) - 3);
-    if (checkIfShardIDExists(ShardTable, candidate1)) {
-        candidates.push({ A: { shardID: candidate1 }, B: { shardID: "L4" }, amount: 1 });
-    }
-    if (checkIfShardIDExists(ShardTable, candidate2)) {
-        candidates.push({ A: { shardID: candidate2 }, B: { shardID: "L4" }, amount: 1 });
-    }
-    if (checkIfShardIDExists(ShardTable, candidate3)) {
-        candidates.push({ A: { shardID: candidate3 }, B: { shardID: "L4" }, amount: 1 });
+    var UNOBTAINABLE_SHARDS = ["L4", "L42", "L41", "R25", "L49", "L32", "L45"];
+    if (!UNOBTAINABLE_SHARDS.includes(Shard)) {
+        // Add any possible Chameleon Fusions that can create this shard:
+        var candidate1 = Shard.slice(0, 1) + (parseInt(Shard.slice(1)) - 1);
+        var candidate2 = Shard.slice(0, 1) + (parseInt(Shard.slice(1)) - 2);
+        var candidate3 = Shard.slice(0, 1) + (parseInt(Shard.slice(1)) - 3);
+        if (checkIfShardIDExists(ShardTable, candidate1)) {
+            candidates.push({ A: { shardID: candidate1 }, B: { shardID: "L4" }, amount: 1 });
+        }
+        if (checkIfShardIDExists(ShardTable, candidate2)) {
+            candidates.push({ A: { shardID: candidate2 }, B: { shardID: "L4" }, amount: 1 });
+        }
+        if (checkIfShardIDExists(ShardTable, candidate3)) {
+            candidates.push({ A: { shardID: candidate3 }, B: { shardID: "L4" }, amount: 1 });
+        }
     }
     // Purge duplicates
     return Array.from(new Set(candidates));
@@ -233,7 +236,8 @@ var calculateIDFusionResult = function (ShardTable, Shard) {
     var ShardCategory = ShardTableOfRarity[ShardNumber].shardCategory;
     var index = ShardNumber;
     for (var index = ShardNumber + 1; index < 100; index++) {
-        if (ShardCategory == ShardTableOfRarity[index]?.shardCategory) {
+        // index must be less than 6 to protect against ID fusion skipping a shard
+        if (ShardCategory == ShardTableOfRarity[index]?.shardCategory && index - ShardNumber < 6) {
             return { shardID: ShardLetter + index, amount: 1 };
         }
     }
@@ -247,7 +251,8 @@ var calculateInverseIDFusionResult = function (ShardTable, Shard) {
     var ShardCategory = ShardTableOfRarity[ShardNumber].shardCategory;
     var index = ShardNumber;
     for (var index = ShardNumber - 1; index > 0; index--) {
-        if (ShardCategory == ShardTableOfRarity[index]?.shardCategory) {
+        // index must be less than 6 to protect against ID fusion skipping a shard
+        if (ShardCategory == ShardTableOfRarity[index]?.shardCategory && ShardNumber - index < 6) {
             return ShardLetter + index;
         }
     }
@@ -260,8 +265,13 @@ var calculateChameleonFusionResult = function (ShardTable, NonChameleonShard) {
     var candidate1 = ShardLetter + (ShardNumber + 1);
     var candidate2 = ShardLetter + (ShardNumber + 2);
     var candidate3 = ShardLetter + (ShardNumber + 3);
+    var UNOBTAINABLE_SHARDS = ["L4", "L42", "L41", "R25", "L49", "L32", "L45"];
     var missingCandidates = 0;
     var validate = function (candidate) {
+        if (UNOBTAINABLE_SHARDS.includes(candidate)) {
+            // This will make it instantly fail the shard filtering. The shard is unobtainable.
+            return "Z0";
+        }
         if (checkIfShardIDExists(ShardTable, candidate)) {
             return candidate;
         }
@@ -283,9 +293,6 @@ var calculateChameleonFusionResult = function (ShardTable, NonChameleonShard) {
     ]
         .filter((item) => {
             return !item.shardID.includes("Z");
-        })
-        .filter((item) => {
-            return item.shardID != "L4"; // Chameleon Fusion will never output a Chameleon
         })
         .filter((item) => {
             return item.shardID != NonChameleonShard; // Chameleon Fusion will never output the non-chameleon shard used
