@@ -89,7 +89,6 @@ var calculateSingleInputResult = function (ShardTable, Shard) {
     var array = [];
     if (Shard != "L4") {
         specialFusionRecipes.forEach((element) => {
-            console.log(element);
             var shapeTemp = element.shape;
             if (!("length" in shapeTemp)) {
                 shapeTemp = [shapeTemp];
