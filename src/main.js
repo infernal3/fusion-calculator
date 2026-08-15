@@ -94,14 +94,15 @@ var calculateSingleInputResult = function (ShardTable, Shard) {
     var ShardObject = ShardTable[getInfoForShardLetter(Shard.slice(0, 1)).cuteName][parseInt(Shard.slice(1))];
     var array = [];
     if (Shard != "L4") {
-        specialFusionRecipes.forEach((element) => {
+        for (var property in specialFusionRecipes) {
+            var element = specialFusionRecipes[property];
             var shapeTemp = element.shape;
             if (!("length" in shapeTemp)) {
                 shapeTemp = [shapeTemp];
             }
             if (element.predicateA(ShardObject)) {
                 shapeTemp.forEach((element2) => {
-                    var objectTemp = { A: { shardID: Shard }, amount: 2, shardID: element.id };
+                    var objectTemp = { A: { shardID: Shard }, amount: 2, shardID: property };
                     if (element2.A.shardID == Shard) {
                         objectTemp.direct = true;
                     }
@@ -112,10 +113,9 @@ var calculateSingleInputResult = function (ShardTable, Shard) {
                     }
                     array.push(objectTemp);
                 });
-                return;
             } else if (element.predicateB(ShardObject)) {
                 shapeTemp.forEach((element2) => {
-                    var objectTemp = { A: { shardID: Shard }, amount: 2, shardID: element.id };
+                    var objectTemp = { A: { shardID: Shard }, amount: 2, shardID: property };
                     if (element2.B.shardID == Shard) {
                         objectTemp.direct = true;
                     }
@@ -127,7 +127,7 @@ var calculateSingleInputResult = function (ShardTable, Shard) {
                     array.push(objectTemp);
                 });
             }
-        });
+        }
     }
     var idCandidate = calculateIDFusionResult(Shard);
     if (idCandidate != "empty slot" && Shard != "L4") {
@@ -179,32 +179,26 @@ var getShardIDFromName = function (ShardTable, ShardName) {
 };
 
 var calculateInverseSpecialFusions = function (ShardTable, Shard) {
-    var result = "no recipe";
-    specialFusionRecipes.forEach((recipe) => {
-        if (recipe.id == Shard) {
-            result = recipe;
-        }
-    });
-    return result;
+    var result = specialFusionRecipes[Shard];
+    if (result) {
+        return result;
+    }
+    return "no recipe";
 };
 
 var calculateAllSpecialFusions = function (ShardTable, ShardA, ShardB) {
     // Fetch rarity, family, category, name for both of the shards:
-    var ShardObjectA = ShardTable[getInfoForShardLetter(ShardA.slice(0, 1)).cuteName][parseInt(ShardA.slice(1))];
-    var ShardObjectB = ShardTable[getInfoForShardLetter(ShardB.slice(0, 1)).cuteName][parseInt(ShardB.slice(1))];
+    var A = ShardTable[getInfoForShardLetter(ShardA.slice(0, 1)).cuteName][parseInt(ShardA.slice(1))];
+    var B = ShardTable[getInfoForShardLetter(ShardB.slice(0, 1)).cuteName][parseInt(ShardB.slice(1))];
     var array = [];
 
     // Iterate through all of the special fusion recipes and check if any apply
-    specialFusionRecipes.forEach((recipe) => {
-        if (recipe.predicateA(ShardObjectA) && recipe.predicateB(ShardObjectB)) {
-            array.push(recipe.id);
-            return;
+    for (var property in specialFusionRecipes) {
+        var recipe = specialFusionRecipes[property];
+        if ((recipe.predicateA(A) && recipe.predicateB(B)) || (recipe.predicateA(B) && recipe.predicateB(A))) {
+            array.push(property);
         }
-        if (recipe.predicateA(ShardObjectB) && recipe.predicateB(ShardObjectA)) {
-            array.push(recipe.id);
-            return;
-        }
-    });
+    }
     // Sort the array by Shard ID (Highest to lowest).
     return array.toReversed().map((item) => {
         return { shardID: item, amount: 2 };
