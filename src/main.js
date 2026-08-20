@@ -222,7 +222,7 @@ var getInfoForShardLetter = function (ShardLetter) {
         case "L":
             return { cssClass: "mc6", nextTier: "Z", cuteName: "legendary", index: 5 };
         default:
-            return { cssClass: "mc4", nextTier: "Z", cuteName: "unsorted", index: -1 };
+            return { cssClass: "mc4", nextTier: "Z", cuteName: "everything", index: -1 };
     }
 };
 
@@ -387,7 +387,7 @@ var loadManyShardConstants = async function () {
         rare: rare,
         epic: epic,
         legendary: legendary,
-        unsorted: [].concat(common, uncommon, rare, epic, legendary),
+        everything: [].concat(common, uncommon, rare, epic, legendary),
     };
 };
 
@@ -671,13 +671,20 @@ var shardViewerCallback = function () {
     console.log(`call function: calculate_viewer(${input1})`);
     var shard1 = "empty slot";
 
-    if (input1.toUpperCase() == "EVERYTHING" || input1.toLowerCase() in ShardTable) {
+    if (input1.toLowerCase() in ShardTable) {
         var temp = input1.toLowerCase();
-        if (input1.toUpperCase() == "EVERYTHING") {
-            temp = "unsorted";
-        }
+        var familyRestrictions = el("input42").value;
+        var categoryRestrictions = el("input43").value;
         ShardTable[temp].forEach((element) => {
-            if (!element || !("shardID" in element)) return;
+            if (!element || !("shardID" in element)) {
+                return;
+            }
+            if (familyRestrictions != "none" && !element.shardFamily.toLowerCase().includes(familyRestrictions)) {
+                return;
+            }
+            if (categoryRestrictions != "none" && element.shardSkill.toLowerCase() != categoryRestrictions) {
+                return;
+            }
             window.requestAnimationFrame(() => {
                 el("results-viewer").innerHTML += generateDirectHTMLResults(ShardTable, [{ shardID: element.shardID, amount: 1 }]);
             });
@@ -721,7 +728,7 @@ var ShardTable = {};
             ShardTable = result;
         })
         .then(() => {
-            ShardTable.sorted = ShardTable.unsorted.toSorted((a, b) => {
+            ShardTable.sorted = ShardTable.everything.toSorted((a, b) => {
                 if (a == null) {
                     return 1;
                 }
@@ -747,14 +754,14 @@ var ShardTable = {};
             el("calculate-reverse").addEventListener("click", inverseCalculateCallback);
             el("clickable-viewer").addEventListener("click", shardViewerCallback);
             el("calculate-single").addEventListener("click", singleCalculateCallback);
-            /*
+
             FAMILY_NAMES.forEach((name) => {
                 el("input42").innerHTML += `<option>${name}</option>`;
             });
             SHARD_CATEGORIES.forEach((name) => {
                 el("input43").innerHTML += `<option>${name}</option>`;
             });
-            */
+
             el("tab-click-1").addEventListener("click", () => {
                 switchTabs(1);
             });
