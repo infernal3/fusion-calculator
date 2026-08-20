@@ -1,5 +1,9 @@
 const el = (e) => document.getElementById(e);
 
+var FAMILY_NAMES = ["amphibian", "axolotl", "bird", "bug", "cave dweller", "creation", "crime", "croco", "demon", "dragon", "drowned", "eel", "elemental", "elusive", "fox", "frog", "lapis", "lizard", "panda", "phantom", "poltergeist", "reptile", "scaled", "serpent", "shulker", "spider", "squid", "trash lover", "treasure fish", "tropical fish", "turtle", "crustacean", "arctic", "dinosaur", "miracle"];
+
+var SHARD_CATEGORIES = ["farming", "mining", "combat", "foraging", "fishing", "taming", "enchanting", "hunting", "global"];
+
 // ShardA and ShardB should be Shard ID, not the shard name or the processed shard object.
 var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
     // Chameleon-fusion overrides all other fusion type. Check for the presence of a Chameleon:
@@ -43,7 +47,7 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
         .map((value, index) => {
             // If there are more than 3 candidates remaining after purging, mark them with a property.
             if (index >= 3) {
-                value["ignored"] = true;
+                value.ignored = true;
                 return value;
             }
             return value;
@@ -667,7 +671,6 @@ var shardViewerCallback = function () {
     var shard1 = "empty slot";
 
     if (input1.toUpperCase() == "EVERYTHING" || input1.toLowerCase() in ShardTable) {
-        // TODO: refactor this weird spaghetti code
         var temp = input1.toLowerCase();
         if (input1.toUpperCase() == "EVERYTHING") {
             temp = "unsorted";
@@ -678,7 +681,7 @@ var shardViewerCallback = function () {
                 el("results-viewer").innerHTML += generateDirectHTMLResults(ShardTable, [{ shardID: element.shardID, amount: 1 }]);
             });
         });
-        console.log("Shard Viewer: Calculation script (view everything) finished execution.");
+        console.log("Shard Viewer: Calculation script (view indexed) finished execution.");
         return;
     }
 
@@ -724,6 +727,7 @@ var ShardTable = {};
                 if (b == null) {
                     return -1;
                 }
+                // Sort them using JavaScript's builtin string comparison
                 var genericSort = [a.shardName, b.shardName].sort();
 
                 if (genericSort[0] == genericSort[1]) {
@@ -742,6 +746,14 @@ var ShardTable = {};
             el("calculate-reverse").addEventListener("click", inverseCalculateCallback);
             el("clickable-viewer").addEventListener("click", shardViewerCallback);
             el("calculate-single").addEventListener("click", singleCalculateCallback);
+            /*
+            FAMILY_NAMES.forEach((name) => {
+                el("input42").innerHTML += `<option>${name}</option>`;
+            });
+            SHARD_CATEGORIES.forEach((name) => {
+                el("input43").innerHTML += `<option>${name}</option>`;
+            });
+            */
             el("tab-click-1").addEventListener("click", () => {
                 switchTabs(1);
             });
