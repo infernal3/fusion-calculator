@@ -417,7 +417,8 @@ var generateDirectHTMLResults = function (ShardTable, results) {
             tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${families[0]} Family</span><br />`;
         }
         tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${object.shardSkill} Attribute Category, ${object.shardCategory} Shard</span><br />`;
-        tempHTML += `<span class="minecraft-font mcf">${object.attributeEffect}</span><br />`;
+        var sanitizedAttributeEffect = object.attributeEffect.replace("\n", `</span><br /><span class="minecraft-font mcf">`);
+        tempHTML += `<span class="minecraft-font mcf">${sanitizedAttributeEffect}</span><br />`;
         if (element.ignored) {
             tempHTML += `<span class="minecraft-font minecraft-font small mcc">Warning: this shard might not appear in the ingame fusion box! (Max 3 shards)</span><br />`;
         }
