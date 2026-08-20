@@ -33,9 +33,9 @@
     {
         "shardID": "L4",
         "attributeName": "Reptiloid",
-        "attributeEffect": "Fusions with Chameleons grant the next 3 IDs as results",
+        "attributeEffect": "Fusing a Chameleon with a Shard grants the next 3 Shards from that Shard's ID line as a result",
         "shardName": "Chameleon",
-        "wikiDescription": "Found in Fig and Mangrove Tree Gifts",
+        "wikiDescription": "Found in Tree Gifts",
         "shardFamily": "Reptile",
         "shardSkill": "Hunting",
         "shardCategory": "Forest"
@@ -195,7 +195,7 @@
     {
         "shardID": "L22",
         "attributeName": "Splendor",
-        "attributeEffect": "Grants a +0.01%–0.1% chance to drop a Rainbow Feather when hunting a mob",
+        "attributeEffect": "Grants a +2.5%–25% chance to get a bonus Rainbow Feather when hunting SPARKLING ︎ Critter in the  Critter Safari",
         "shardName": "Macaw",
         "wikiDescription": "Catch a Macaw with a Critter Capsule in the Forest Biome of the Critter Safari",
         "shardFamily": "Bird",
@@ -419,7 +419,7 @@
         "attributeName": "Groovy Radar",
         "attributeEffect": " Pests have a +2.5%–25% chance to drop a second Vinyl",
         "shardName": "Cocoaleech",
-        "wikiDescription": "Crafted using Designer Coffee Beans and Devourer",
+        "wikiDescription": "Crafted using Designer Coffee Beans",
         "shardFamily": "Bug",
         "shardSkill": "Hunting",
         "shardCategory": "Forest"

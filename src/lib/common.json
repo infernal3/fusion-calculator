@@ -35,7 +35,7 @@
         "attributeName": "Nocturnal Animal",
         "attributeEffect": "Grants +1–10  Sweep during the night",
         "shardName": "Phanpyre",
-        "wikiDescription": "Catch with Lasso\nPlace Hunting Traps in Galatea (On Land)\nFound in Fig and Mangrove Tree Gifts",
+        "wikiDescription": "Catch with Lasso\nPlace Hunting Traps in Galatea* (On Land)\nFound in Fig and Mangrove Tree Gifts",
         "shardFamily": "Phantom",
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
@@ -55,7 +55,7 @@
         "attributeName": "Animal Resistance",
         "attributeEffect": "Grants +4–40  Defense against  Animal mobs",
         "shardName": "Howling Spirit",
-        "wikiDescription": "Catch with Pocket Black Hole\nKill Howling Spirit while using Salts",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Howling Spirit or Pack Spirit while using Salts",
         "shardFamily": "Cave Dweller",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
@@ -65,7 +65,7 @@
         "attributeName": "Moonglade Mastery",
         "attributeEffect": "Grants +10–100  Fig Fortune and +10–100  Mangrove Fortune",
         "shardName": "Phanflare",
-        "wikiDescription": "Catch with Lasso\nPlace Hunting Traps in Galatea (On Land)\nFound in Fig and Mangrove Tree Gifts",
+        "wikiDescription": "Catch with Lasso\nPlace Hunting Traps in Galatea* (On Land)\nFound in Fig and Mangrove Tree Gifts",
         "shardFamily": "Phantom",
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
@@ -165,7 +165,7 @@
         "attributeName": "Yummy",
         "attributeEffect": "Grants a +10%–100% chance to drop double Berries and Sea Lumies",
         "shardName": "Birries",
-        "wikiDescription": "Place Hunting Traps in Galatea (On Land)\nCatch with a Fishing Net\nCatch with Lasso",
+        "wikiDescription": "Place Hunting Traps in Galatea* (On Land)\nCatch with a Fishing Net\nCatch with Lasso",
         "shardFamily": "",
         "shardSkill": "Foraging",
         "shardCategory": "Water"
@@ -245,7 +245,7 @@
         "attributeName": "Visitor Bait",
         "attributeEffect": "Garden Visitors arrive +1%–10% faster",
         "shardName": "Mudworm",
-        "wikiDescription": "Place Hunting Traps in Galatea (On Land)\nFloor Drop in Moonglade Marsh",
+        "wikiDescription": "Place Hunting Traps in Galatea* (On Land)\nFloor Drop in Moonglade Marsh",
         "shardFamily": "",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
@@ -263,7 +263,7 @@
     {
         "shardID": "C27",
         "attributeName": "Midas Touch",
-        "attributeEffect": "Grants +1–10 Coin per kill",
+        "attributeEffect": "Grants +1–10 Coins per kill",
         "shardName": "Golden Ghoul",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Golden Ghoul while using Salts",
         "shardFamily": "",
@@ -273,7 +273,7 @@
     {
         "shardID": "C28",
         "attributeName": "Crop Speed",
-        "attributeEffect": "Grants +1–10 Crop Growth while in The Garden",
+        "attributeEffect": "Grants +1–10 Crop Growth while in  The Garden",
         "shardName": "Locust",
         "wikiDescription": "Catch with Lasso\nKill Locust while using Salts",
         "shardFamily": "Bug, Trash Lover",
@@ -343,7 +343,7 @@
     {
         "shardID": "C35",
         "attributeName": "Decent Karma",
-        "attributeEffect": "Grants +2–20  Hunting Fortune towards Common Attributes",
+        "attributeEffect": "Grants +2–20  Hunting Fortune towards COMMON Attributes",
         "shardName": "Newt",
         "wikiDescription": "Fusing Axolotl Family with Water Category",
         "shardFamily": "Lizard, Reptile",
@@ -416,7 +416,7 @@
         "attributeEffect": "Grants +4–40  Defense against  Frozen mobs",
         "shardName": "Strongarm",
         "wikiDescription": "Catch a Strongarm with a Critter Capsule in the Icy Biome of the Critter Safari\nFloor Drop in Icy Biome of the Critter Safari",
-        "shardFamily": "Artic",
+        "shardFamily": "Arctic",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
     },
@@ -435,7 +435,7 @@
         "attributeName": "Skeletal Resistance",
         "attributeEffect": "Grants +4–40  Defense against  Skeletal mobs",
         "shardName": "Haggard",
-        "wikiDescription": "Kill Haggard while using Salts\nCatch with a Fishing Nets",
+        "wikiDescription": "Kill Haggard while using Salts\nCatch with a Fishing Net",
         "shardFamily": "",
         "shardSkill": "Combat",
         "shardCategory": "Water"
@@ -508,7 +508,7 @@
     {
         "shardID": "C56",
         "attributeName": "Torrhus Diver",
-        "attributeEffect": "Grants +0.5–5  Pressure Resistance while on Torrhus Canyon",
+        "attributeEffect": "Grants +0.5–5  Pressure Resistance while on  Torrhus Canyon",
         "shardName": "Timil",
         "wikiDescription": "Catch with a Fishing Net\nPlace Hunting Traps in Spring Path (Underwater)",
         "shardFamily": "Tropical Fish",

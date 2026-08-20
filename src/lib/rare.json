@@ -63,9 +63,9 @@
     {
         "shardID": "R7",
         "attributeName": "Beacon Zealot",
-        "attributeEffect": "The effects of Galatea's beacons are +10%–100% stronger on you. Gain a +0.1%–1% chance to find Signal Enhancers in Tree Gifts",
+        "attributeEffect": "The effects of Galatea's beacons are +10%–100% stronger on you. Gain a +0.1%–1% chance to find Signal Enhancers in Tree Gifts",
         "shardName": "Beaconmite",
-        "wikiDescription": "Obtained by Tuning the Moonglade Beacon",
+        "wikiDescription": "Obtained by Tuning the Moonglade Beacon*",
         "shardFamily": "Bug",
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
@@ -73,7 +73,7 @@
     {
         "shardID": "R8",
         "attributeName": "Great Karma",
-        "attributeEffect": "Grants +1–10  Hunting Fortune towards Rare Attributes",
+        "attributeEffect": "Grants +1–10  Hunting Fortune towards RARE Attributes",
         "shardName": "Lizard King",
         "wikiDescription": "Fusing Lizard Family with Water Category and Uncommon or higher",
         "shardFamily": "Lizard, Reptile",
@@ -95,7 +95,7 @@
         "attributeName": "Fancy Visit",
         "attributeEffect": "RARE and above Garden Visitors have a +1%–10% higher chance to arrive",
         "shardName": "Invisibug",
-        "wikiDescription": "Place Hunting Traps in Galatea (On Land)\nFloor Drop in Moonglade Marsh",
+        "wikiDescription": "Place Hunting Traps in Galatea* (On Land)\nFloor Drop in Moonglade Marsh",
         "shardFamily": "Bug",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
@@ -103,7 +103,7 @@
     {
         "shardID": "R11",
         "attributeName": "Moonglade Serendipity",
-        "attributeEffect": "Increases the odds of finding rare items in Tree Gifts at Moonglade Marsh by +2%–20%",
+        "attributeEffect": "Increases the odds of finding rare items in Tree Gifts at  Moonglade Marsh by +2%–20%",
         "shardName": "Piranha",
         "wikiDescription": "Place Hunting Traps in Murkwater Depths (Underwater)\nPlace Hunting Traps in Murkwater Shallows (Underwater)\nCaught by Fishing in Moonglade Marsh",
         "shardFamily": "Treasure Fish",
@@ -114,7 +114,7 @@
     {
         "shardID": "R13",
         "attributeName": "Catacombs Box",
-        "attributeEffect": "Increases the quality of boss rewards in The Catacombs by +1–10",
+        "attributeEffect": "Increases the quality of boss rewards in  The Catacombs by +1–10",
         "shardName": "Hideongeon",
         "wikiDescription": "Fusing Shulker Family with Wither Shard",
         "shardFamily": "Shulker",
@@ -145,8 +145,8 @@
     null,
     {
         "shardID": "R18",
-        "attributeName": "Humanoid Ruler",
-        "attributeEffect": "Grants +3%–30% more  Damage against  Humanoid mobs",
+        "attributeName": "Undead Fortune",
+        "attributeEffect": "Grants +0.5–5  Magic Find against  Undead mobs",
         "shardName": "Drowned",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Seacurse, Hydrospear, or Tidetot while using Salts\nPlace Hunting Traps in Drowned Reliquary",
         "shardFamily": "Drowned",
@@ -158,7 +158,7 @@
         "attributeName": "Helix Sharpening",
         "attributeEffect": "Grants +15–150  Sweep towards Helix Trees",
         "shardName": "Vulture",
-        "wikiDescription": "Purchased from  Miria",
+        "wikiDescription": "Purchased in Miria's Shop",
         "shardFamily": "Bird",
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
@@ -167,7 +167,7 @@
     {
         "shardID": "R21",
         "attributeName": "Atomized Mithril",
-        "attributeEffect": "Gain +1%–10% extra Mithril Powder",
+        "attributeEffect": "Gain +1%–10% extra ᠅ Mithril Powder",
         "shardName": "Star Sentry",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Star Sentry while using Salts",
         "shardFamily": "",
@@ -238,7 +238,7 @@
     {
         "shardID": "R29",
         "attributeName": "Crystal Serendipity",
-        "attributeEffect": "Treasure Chests you find in the Crystal Hollows have a +1%–10% chance to double their loot",
+        "attributeEffect": "Treasure Chests you find in the  Crystal Hollows have a +1%–10% chance to double their loot",
         "shardName": "Silentdepth",
         "wikiDescription": "Place Hunting Traps in Crystal Hollows (Underwater)\nCaught by Fishing in Crystal Hollows",
         "shardFamily": "Treasure Fish",
@@ -258,9 +258,9 @@
     {
         "shardID": "R31",
         "attributeName": "Atomized Crystals",
-        "attributeEffect": "Gain +1%–10% extra Gemstone Powder",
+        "attributeEffect": "Gain +1%–10% extra ᠅ Gemstone Powder",
         "shardName": "Thyst",
-        "wikiDescription": "Catch with Pocket Black Hole\nKill Thyst while using Salts\nPlace Hunting Traps in Crystal Hollows Jungle",
+        "wikiDescription": "Catch with Lasso*\nKill Thyst while using Salts\nPlace Hunting Traps in Crystal Hollows Jungle",
         "shardFamily": "Cave Dweller",
         "shardSkill": "Mining",
         "shardCategory": "Forest"
@@ -320,7 +320,7 @@
         "attributeName": "Chop",
         "attributeEffect": "Grants a +10%–100% chance to Chop an extra log, on top of the ones you swept",
         "shardName": "Hummingbird",
-        "wikiDescription": "Found by Fig and Mangrove Tree Gifts",
+        "wikiDescription": "Found in Fig and Mangrove Tree Gifts*",
         "shardFamily": "Bird",
         "shardSkill": "Foraging",
         "shardCategory": "Forest"
@@ -371,7 +371,7 @@
         "attributeName": "Pretty Clothes",
         "attributeEffect": "Gain +1%–10% more Copper from Garden Visitors",
         "shardName": "Ladybug",
-        "wikiDescription": "Fusing Termite Shard with Invisibug Shard",
+        "wikiDescription": "Fusing Earthworm Shard with Invisibug Shard",
         "shardFamily": "Bug",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
@@ -401,7 +401,7 @@
         "attributeName": "Animal Fortune",
         "attributeEffect": "Grants +0.5–5  Magic Find against  Animal mobs",
         "shardName": "Wild Hog",
-        "wikiDescription": "",
+        "wikiDescription": "Fusing Groundhog Shard with Honeyhog Shard",
         "shardFamily": "",
         "shardSkill": "Combat",
         "shardCategory": "Forest"
@@ -420,9 +420,9 @@
     {
         "shardID": "R49",
         "attributeName": "Essence of the Forest",
-        "attributeEffect": "Gain +1%–10% more Forest Essence",
+        "attributeEffect": "Gain +1%–10% more Forest Essence",
         "shardName": "Dreadwing",
-        "wikiDescription": "Fusing Phanpyre and Phanflare Shards with Rare or higher\nCatch with Pocket Black Hole\nCatch with Lasso\nKill Dreadwing while using Salts\nPlace Hunting Traps in Galatea (On Land)\nFound in Fig and Mangrove Tree Gifts",
+        "wikiDescription": "Fusing Phanpyre and Phanflare Shards with Rare or higher\nCatch with Pocket Black Hole*\nCatch with Lasso\nKill Dreadwing while using Salts*\nPlace Hunting Traps in Galatea* (On Land)\nFound in Fig and Mangrove Tree Gifts",
         "shardFamily": "Phantom",
         "shardSkill": "Global",
         "shardCategory": "Forest"
@@ -430,7 +430,7 @@
     {
         "shardID": "R50",
         "attributeName": "Deep Diving",
-        "attributeEffect": "Grants +5–10  Respiration",
+        "attributeEffect": "Grants +1–10  Respiration",
         "shardName": "Joydive",
         "wikiDescription": "Place Hunting Traps in Murkwater Depths (Underwater)\nCatch with a Fishing Net",
         "shardFamily": "",
@@ -440,7 +440,7 @@
     {
         "shardID": "R51",
         "attributeName": "Atomized Glacite",
-        "attributeEffect": "Gain +1%–10% extra Glacite Powder",
+        "attributeEffect": "Gain +1%–10% extra ᠅ Glacite Powder",
         "shardName": "Stalagmight",
         "wikiDescription": "Fusing Quartzfang Shard with Cave Dweller Family or Silentdepth Shard",
         "shardFamily": "Cave Dweller",
@@ -610,7 +610,7 @@
     {
         "shardID": "R68",
         "attributeName": "Thunder Speed",
-        "attributeEffect": "Your Thunder, Storm, and Hurricane Bottles fill +1%–10% faster",
+        "attributeEffect": "Your Thunder, Storm, and Hurricane Bottles fill +1%–10% faster",
         "shardName": "Thunder",
         "wikiDescription": "Kill Thunder while using Salts",
         "shardFamily": "Elusive",
@@ -630,7 +630,7 @@
     {
         "shardID": "R70",
         "attributeName": "Floor Fortune",
-        "attributeEffect": "Grants a +0.1%–1% to gain double loot from Floor Drops",
+        "attributeEffect": "Grants a +0.1%–1% chance to gain double loot from Floor Drops",
         "shardName": "Anteater",
         "wikiDescription": "Fusing Queen Ant Shard with King Cobra Shard",
         "shardFamily": "",
@@ -731,9 +731,9 @@
     {
         "shardID": "R81",
         "attributeName": "Refined Luck",
-        "attributeEffect": "Increases your chance of finding Refined Minerals during Mining Fiestas by +1%–10%",
+        "attributeEffect": "Increases your chance of finding  Refined Minerals during Mining Fiestas by +1%–10%",
         "shardName": "Stoneworm",
-        "wikiDescription": "Kill Worm while using Salts",
+        "wikiDescription": "Kill Stoneworm while using Salts",
         "shardFamily": "Cave Dweller",
         "shardSkill": "Mining",
         "shardCategory": "Combat"
@@ -751,7 +751,7 @@
     {
         "shardID": "R83",
         "attributeName": "Torrhus Serendipity",
-        "attributeEffect": "Increases the odds of finding rare items in Tree Gifts at Torrhus Canyon by +2%–20%",
+        "attributeEffect": "Increases the odds of finding rare items in Tree Gifts at  Torrhus Canyon by +2%–20%",
         "shardName": "Stingray",
         "wikiDescription": "Caught by Fishing in Torrhus Canyon\nPlace Hunting Traps in Hotspot Haven (Underwater)\nPlace Hunting Traps in Spring Depths (Underwater)",
         "shardFamily": "Treasure Fish",
@@ -761,7 +761,7 @@
     {
         "shardID": "R84",
         "attributeName": "Mutation Serendipity",
-        "attributeEffect": "Mutations have a +0.5%–5% chance to instantly re-mutate at their first growth phase when harvested.",
+        "attributeEffect": "Mutations have a +0.5%–5% chance to instantly re-mutate at their first growth phase when harvested",
         "shardName": "Zombuddy",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Zombuddy while using Salts",
         "shardFamily": "",
@@ -781,7 +781,7 @@
     {
         "shardID": "R86",
         "attributeName": "Essence of Fossils",
-        "attributeEffect": "Gain +1%–+10% more Fossil Essence.",
+        "attributeEffect": "Gain +1%–10% more Fossil Essence",
         "shardName": "Troodon",
         "wikiDescription": "Catch a Troodon with a Critter Capsule in the Icy Biome of the Critter Safari",
         "shardFamily": "Dinosaur",
@@ -801,7 +801,7 @@
     {
         "shardID": "R88",
         "attributeName": "Atomized Whispers",
-        "attributeEffect": "Gain +1%–10% extra Forest Whispers",
+        "attributeEffect": "Gain +1%–10% extra Whispers",
         "shardName": "Pangolin",
         "wikiDescription": "Catch with Lasso",
         "shardFamily": "",
@@ -822,7 +822,7 @@
     {
         "shardID": "R91",
         "attributeName": "Rekindle",
-        "attributeEffect": "Killing a Bat has a +10%–100% chance to add 1 Bonus Score to your Dungeon Run",
+        "attributeEffect": "Killing a Bat has a +10%–100% chance to add 1 Bonus Score to your Dungeon Run\nLimit of +1 Score per run\n",
         "shardName": "Murkbat",
         "wikiDescription": "Catch with Lasso\nLather Honeycomb on Mangrove Trees",
         "shardFamily": "",

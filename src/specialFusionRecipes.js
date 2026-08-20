@@ -192,11 +192,16 @@ var specialFusionRecipes = {
         shape: { A: { shardID: "shape", shape: "Rare or Higher Shulker Family" }, B: { shardID: "shape", shape: "Rare or Higher Shard" }, amount: 2 },
     },
     R43: {
-        predicateA: (A) => A.shardName == "Termite",
+        predicateA: (A) => A.shardName == "Earthworm",
         predicateB: (B) => B.shardName == "Invisibug",
         shape: { A: { shardID: "U40" }, B: { shardID: "R10" }, amount: 2 },
     },
     R46: {
+        predicateA: (A) => A.shardName == "Groundhog",
+        predicateB: (B) => B.shardName == "Honeyhog",
+        shape: { A: { shardID: "C55" }, B: { shardID: "C45" }, amount: 2 },
+    },
+    R47: {
         predicateA: (A) => A.shardFamily.includes("Frog"),
         predicateB: (B) => B.shardCategory == "Forest" && getRarityIndex(B.shardID.slice(0, 1)) >= 3,
         shape: { A: { shardID: "shape", shape: "Frog Family" }, B: { shardID: "shape", shape: "Rare or Higher Forest Shard" }, amount: 2 },
@@ -285,7 +290,7 @@ var specialFusionRecipes = {
     E7: {
         predicateA: (A) => A.shardName == "Bullfrog",
         predicateB: (B) => B.shardCategory == "Forest" && getRarityIndex(B.shardID.slice(0, 1)) >= 3,
-        shape: { A: { shardID: "R46" }, B: { shardID: "shape", shape: "Rare or Higher Forest Shard" }, amount: 2 },
+        shape: { A: { shardID: "R47" }, B: { shardID: "shape", shape: "Rare or Higher Forest Shard" }, amount: 2 },
     },
     E9: {
         predicateA: (A) => A.shardName == "King Cobra",
@@ -314,10 +319,11 @@ var specialFusionRecipes = {
     },
     E14: {
         predicateA: (A) => A.shardName == "Moray Eel",
-        predicateB: (B) => B.shardName == "Eel" || B.shardName == "Firefly",
+        predicateB: (B) => B.shardName == "Eel" || B.shardName == "Firefly" || B.shardName == "Firefox",
         shape: [
             { A: { shardID: "R53" }, B: { shardID: "E11" }, amount: 2 },
             { A: { shardID: "E31" }, B: { shardID: "E11" }, amount: 2 },
+            { A: { shardID: "C52" }, B: { shardID: "E11" }, amount: 2 },
         ],
     },
     E16: {
