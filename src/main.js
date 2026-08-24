@@ -1,5 +1,9 @@
 const el = (e) => document.getElementById(e);
 
+var FAMILY_NAMES = ["amphibian", "axolotl", "bird", "bug", "cave dweller", "creation", "crime", "croco", "demon", "dragon", "drowned", "eel", "elemental", "elusive", "fox", "frog", "lapis", "lizard", "panda", "phantom", "poltergeist", "reptile", "scaled", "serpent", "shulker", "spider", "squid", "trash lover", "treasure fish", "tropical fish", "turtle", "crustacean", "arctic", "dinosaur", "miracle"];
+
+var SHARD_CATEGORIES = ["farming", "mining", "combat", "foraging", "fishing", "taming", "enchanting", "hunting", "global"];
+
 // ShardA and ShardB should be Shard ID, not the shard name or the processed shard object.
 var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
     // Chameleon-fusion overrides all other fusion type. Check for the presence of a Chameleon:
@@ -43,7 +47,7 @@ var calculateFusionResult = function (ShardTable, ShardA, ShardB) {
         .map((value, index) => {
             // If there are more than 3 candidates remaining after purging, mark them with a property.
             if (index >= 3) {
-                value["ignored"] = true;
+                value.ignored = true;
                 return value;
             }
             return value;
@@ -94,14 +98,15 @@ var calculateSingleInputResult = function (ShardTable, Shard) {
     var ShardObject = ShardTable[getInfoForShardLetter(Shard.slice(0, 1)).cuteName][parseInt(Shard.slice(1))];
     var array = [];
     if (Shard != "L4") {
-        specialFusionRecipes.forEach((element) => {
+        for (var property in specialFusionRecipes) {
+            var element = specialFusionRecipes[property];
             var shapeTemp = element.shape;
             if (!("length" in shapeTemp)) {
                 shapeTemp = [shapeTemp];
             }
             if (element.predicateA(ShardObject)) {
                 shapeTemp.forEach((element2) => {
-                    var objectTemp = { A: { shardID: Shard }, amount: 2, shardID: element.id };
+                    var objectTemp = { A: { shardID: Shard }, amount: 2, shardID: property };
                     if (element2.A.shardID == Shard) {
                         objectTemp.direct = true;
                     }
@@ -112,10 +117,9 @@ var calculateSingleInputResult = function (ShardTable, Shard) {
                     }
                     array.push(objectTemp);
                 });
-                return;
             } else if (element.predicateB(ShardObject)) {
                 shapeTemp.forEach((element2) => {
-                    var objectTemp = { A: { shardID: Shard }, amount: 2, shardID: element.id };
+                    var objectTemp = { A: { shardID: Shard }, amount: 2, shardID: property };
                     if (element2.B.shardID == Shard) {
                         objectTemp.direct = true;
                     }
@@ -127,7 +131,7 @@ var calculateSingleInputResult = function (ShardTable, Shard) {
                     array.push(objectTemp);
                 });
             }
-        });
+        }
     }
     var idCandidate = calculateIDFusionResult(Shard);
     if (idCandidate != "empty slot" && Shard != "L4") {
@@ -179,32 +183,26 @@ var getShardIDFromName = function (ShardTable, ShardName) {
 };
 
 var calculateInverseSpecialFusions = function (ShardTable, Shard) {
-    var result = "no recipe";
-    specialFusionRecipes.forEach((recipe) => {
-        if (recipe.id == Shard) {
-            result = recipe;
-        }
-    });
-    return result;
+    var result = specialFusionRecipes[Shard];
+    if (result) {
+        return result;
+    }
+    return "no recipe";
 };
 
 var calculateAllSpecialFusions = function (ShardTable, ShardA, ShardB) {
     // Fetch rarity, family, category, name for both of the shards:
-    var ShardObjectA = ShardTable[getInfoForShardLetter(ShardA.slice(0, 1)).cuteName][parseInt(ShardA.slice(1))];
-    var ShardObjectB = ShardTable[getInfoForShardLetter(ShardB.slice(0, 1)).cuteName][parseInt(ShardB.slice(1))];
+    var A = ShardTable[getInfoForShardLetter(ShardA.slice(0, 1)).cuteName][parseInt(ShardA.slice(1))];
+    var B = ShardTable[getInfoForShardLetter(ShardB.slice(0, 1)).cuteName][parseInt(ShardB.slice(1))];
     var array = [];
 
     // Iterate through all of the special fusion recipes and check if any apply
-    specialFusionRecipes.forEach((recipe) => {
-        if (recipe.predicateA(ShardObjectA) && recipe.predicateB(ShardObjectB)) {
-            array.push(recipe.id);
-            return;
+    for (var property in specialFusionRecipes) {
+        var recipe = specialFusionRecipes[property];
+        if ((recipe.predicateA(A) && recipe.predicateB(B)) || (recipe.predicateA(B) && recipe.predicateB(A))) {
+            array.push(property);
         }
-        if (recipe.predicateA(ShardObjectB) && recipe.predicateB(ShardObjectA)) {
-            array.push(recipe.id);
-            return;
-        }
-    });
+    }
     // Sort the array by Shard ID (Highest to lowest).
     return array.toReversed().map((item) => {
         return { shardID: item, amount: 2 };
@@ -224,7 +222,7 @@ var getInfoForShardLetter = function (ShardLetter) {
         case "L":
             return { cssClass: "mc6", nextTier: "Z", cuteName: "legendary", index: 5 };
         default:
-            return { cssClass: "mc4", nextTier: "Z", cuteName: "unsorted", index: -1 };
+            return { cssClass: "mc4", nextTier: "Z", cuteName: "everything", index: -1 };
     }
 };
 
@@ -389,7 +387,7 @@ var loadManyShardConstants = async function () {
         rare: rare,
         epic: epic,
         legendary: legendary,
-        unsorted: [].concat(common, uncommon, rare, epic, legendary),
+        everything: [].concat(common, uncommon, rare, epic, legendary),
     };
 };
 
@@ -419,7 +417,8 @@ var generateDirectHTMLResults = function (ShardTable, results) {
             tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${families[0]} Family</span><br />`;
         }
         tempHTML += `<span class="minecraft-font minecraft-font-small mc7">${object.shardSkill} Attribute Category, ${object.shardCategory} Shard</span><br />`;
-        tempHTML += `<span class="minecraft-font mcf">${object.attributeEffect}</span><br />`;
+        var sanitizedAttributeEffect = object.attributeEffect.replace("\n", `</span><br /><span class="minecraft-font mcf">`);
+        tempHTML += `<span class="minecraft-font mcf">${sanitizedAttributeEffect}</span><br />`;
         if (element.ignored) {
             tempHTML += `<span class="minecraft-font minecraft-font small mcc">Warning: this shard might not appear in the ingame fusion box! (Max 3 shards)</span><br />`;
         }
@@ -672,19 +671,25 @@ var shardViewerCallback = function () {
     console.log(`call function: calculate_viewer(${input1})`);
     var shard1 = "empty slot";
 
-    if (input1.toUpperCase() == "EVERYTHING" || input1.toLowerCase() in ShardTable) {
-        // TODO: refactor this weird spaghetti code
+    if (input1.toLowerCase() in ShardTable) {
         var temp = input1.toLowerCase();
-        if (input1.toUpperCase() == "EVERYTHING") {
-            temp = "unsorted";
-        }
+        var familyRestrictions = el("input42").value;
+        var categoryRestrictions = el("input43").value;
         ShardTable[temp].forEach((element) => {
-            if (!element || !("shardID" in element)) return;
+            if (!element || !("shardID" in element)) {
+                return;
+            }
+            if (familyRestrictions != "none" && !element.shardFamily.toLowerCase().includes(familyRestrictions)) {
+                return;
+            }
+            if (categoryRestrictions != "none" && element.shardSkill.toLowerCase() != categoryRestrictions) {
+                return;
+            }
             window.requestAnimationFrame(() => {
                 el("results-viewer").innerHTML += generateDirectHTMLResults(ShardTable, [{ shardID: element.shardID, amount: 1 }]);
             });
         });
-        console.log("Shard Viewer: Calculation script (view everything) finished execution.");
+        console.log("Shard Viewer: Calculation script (view indexed) finished execution.");
         return;
     }
 
@@ -723,13 +728,14 @@ var ShardTable = {};
             ShardTable = result;
         })
         .then(() => {
-            ShardTable.sorted = ShardTable.unsorted.toSorted((a, b) => {
+            ShardTable.sorted = ShardTable.everything.toSorted((a, b) => {
                 if (a == null) {
                     return 1;
                 }
                 if (b == null) {
                     return -1;
                 }
+                // Sort them using JavaScript's builtin string comparison
                 var genericSort = [a.shardName, b.shardName].sort();
 
                 if (genericSort[0] == genericSort[1]) {
@@ -748,6 +754,14 @@ var ShardTable = {};
             el("calculate-reverse").addEventListener("click", inverseCalculateCallback);
             el("clickable-viewer").addEventListener("click", shardViewerCallback);
             el("calculate-single").addEventListener("click", singleCalculateCallback);
+
+            FAMILY_NAMES.forEach((name) => {
+                el("input42").innerHTML += `<option>${name}</option>`;
+            });
+            SHARD_CATEGORIES.forEach((name) => {
+                el("input43").innerHTML += `<option>${name}</option>`;
+            });
+
             el("tab-click-1").addEventListener("click", () => {
                 switchTabs(1);
             });

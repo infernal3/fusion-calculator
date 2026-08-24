@@ -33,7 +33,7 @@
     {
         "shardID": "U4",
         "attributeName": "Fig Collector",
-        "attributeEffect": "Grants +1–10  Fig Fortune for every digit in your Fig Log collection. (Max 10M collection)",
+        "attributeEffect": "Grants +1–10  Fig Fortune for every digit in your Fig Log collection (Max 10M collection)",
         "shardName": "Sparrow",
         "wikiDescription": "Unlocked from Fig Collection VII",
         "shardFamily": "Bird",
@@ -63,7 +63,7 @@
     {
         "shardID": "U7",
         "attributeName": "Bigger Box",
-        "attributeEffect": "Grants a +5%–50% chance to find an extra item in Treasure Chests and the Crystal Nucleus",
+        "attributeEffect": "Grants a +5%–50% chance to find an extra item in Treasure Chests and the  Crystal Nucleus",
         "shardName": "Hideoncave",
         "wikiDescription": "Fusing Shulker Family with Cave Dweller Family",
         "shardFamily": "Shulker",
@@ -73,7 +73,7 @@
     {
         "shardID": "U8",
         "attributeName": "Good Karma",
-        "attributeEffect": "Grants +2–20  Hunting Fortune towards Uncommon Attributes",
+        "attributeEffect": "Grants +2–20  Hunting Fortune towards UNCOMMON Attributes",
         "shardName": "Salamander",
         "wikiDescription": "Fusing Newt Shard with Water Category",
         "shardFamily": "Lizard, Reptile",
@@ -95,7 +95,7 @@
         "attributeName": "Pest Luck",
         "attributeEffect": "Grants +0.5–5  Overbloom on  Pests",
         "shardName": "Field Mouse",
-        "wikiDescription": "Catch with Lassos\nKill Field Mouse while using Salts",
+        "wikiDescription": "Catch with Lasso\nKill Field Mouse while using Salts",
         "shardFamily": "Elusive, Trash Lover",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
@@ -105,7 +105,7 @@
         "attributeName": "Forest Trap",
         "attributeEffect": "Forest Shards get caught by Traps +1%–10% faster",
         "shardName": "Mossybit",
-        "wikiDescription": "Fusing Tadgang Shard with Forest Category\nPlace Hunting Traps in Galatea (On Land)\nHunted in Murkwater Loch",
+        "wikiDescription": "Fusing Tadgang Shard with Forest Category\nPlace Hunting Traps in Galatea* (On Land)\nHunted in Murkwater Loch",
         "shardFamily": "Amphibian, Frog",
         "shardSkill": "Hunting",
         "shardCategory": "Water"
@@ -156,7 +156,7 @@
         "attributeName": "Witch's Fortune",
         "attributeEffect": "Increases your chance of dropping Ingredients during the Year of the Witch by +1%–10%",
         "shardName": "Sea Witch",
-        "wikiDescription": "Catch with Lassos\nKill Sea Witch while using Salts",
+        "wikiDescription": "Catch with Lasso*\nKill Sea Witch while using Salts",
         "shardFamily": "",
         "shardSkill": "Alchemy",
         "shardCategory": "Water"
@@ -176,7 +176,7 @@
         "attributeName": "Pest Fortune",
         "attributeEffect": "Grants +5–50  Farming Fortune on  Pests",
         "shardName": "Cricket",
-        "wikiDescription": "Catch Cricket with Lasso\nKill Cricket while using Salts",
+        "wikiDescription": "Catch with Lasso\nKill Cricket while using Salts",
         "shardFamily": "Bug, Trash Lover",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
@@ -246,7 +246,7 @@
         "attributeName": "Dwarven Training",
         "attributeEffect": "Gain +1%–10% more Heart of the Mountain Exp",
         "shardName": "Treasure Hoarder",
-        "wikiDescription": "Catch Treasure Hoarder with Pocket Black Hole\nKill Treasure Hoarder while using Salts\nPlace Hunting Traps in Dwarven Mines (Underwater)",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Treasure Hoarder while using Salts\nPlace Hunting Traps in Dwarven Mines (Underwater)",
         "shardFamily": "Cave Dweller",
         "shardSkill": "Mining",
         "shardCategory": "Water"
@@ -254,7 +254,7 @@
     {
         "shardID": "U27",
         "attributeName": "Life Recovery",
-        "attributeEffect": "Heals for +0.1%–1% of your max health each time you kill a mob. Cooldown: 0.5s",
+        "attributeEffect": "Heals for +0.1%–1% of your max health each time you kill a mob\nCooldown: 0.5s\n",
         "shardName": "Sycophant",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Revenant Sycophant while using Salts",
         "shardFamily": "",
@@ -264,7 +264,7 @@
     {
         "shardID": "U28",
         "attributeName": "Mangrove Collector",
-        "attributeEffect": "Grants +1–10  Mangrove Fortune for every digit in your Mangrove Log collection. (Max 10M collection)",
+        "attributeEffect": "Grants +1–10  Mangrove Fortune for every digit in your Mangrove Log collection (Max 10M collection)",
         "shardName": "Seagull",
         "wikiDescription": "Unlocked from Mangrove Collection VII",
         "shardFamily": "Bird, Trash Lover",
@@ -337,7 +337,7 @@
         "attributeName": "Ender Ruler",
         "attributeEffect": "Grants +3%–30% more  Damage against  Ender mobs",
         "shardName": "Zealot Bruiser",
-        "wikiDescription": "Catch Zealot Bruiser with Pocket Black Hole\nKill Zealot Bruiser while using Salts",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Zealot Bruiser while using Salts",
         "shardFamily": "",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
@@ -368,7 +368,7 @@
         "attributeName": "Infiltration",
         "attributeEffect": "Grants +3–30  Farming Fortune if your Garden Plot currently has a  Pest in it",
         "shardName": "Earthworm",
-        "wikiDescription": "Fusing Bug Family with Mining Attribute Category\nCatch Earthworm with Pocket Black Hole\nCatch Earthworm with Lasso\nKill earthworm while using Salts",
+        "wikiDescription": "Fusing Bug Family with Mining Attribute Category\nCatch with Pocket Black Hole*\nCatch with Lasso\nKill Earthworm while using Salts",
         "shardFamily": "Trash Lover",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
@@ -378,7 +378,7 @@
         "attributeName": "Golden Frog",
         "attributeEffect": "Trophy Frogs are +0.5%–5% more likely to be GOLD",
         "shardName": "Flipflopper",
-        "wikiDescription": "Catch with a Fishing Net\nFusing Water Category and Uncommon with Common or higher",
+        "wikiDescription": "Catch with a Fishing Net",
         "shardFamily": "",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
@@ -468,7 +468,7 @@
         "attributeName": "Titanoboa Tracker",
         "attributeEffect": "Grants +0.5–5  Tracking towards Titanoboa",
         "shardName": "Water Snake",
-        "wikiDescription": "Catch Water Snake with a Fishing Net\nPlace Hunting Traps in Spring Depths (Underwater)\nPlace Hunting Traps in Spring Shallows (Underwater)",
+        "wikiDescription": "Catch with a Fishing Net\nPlace Hunting Traps in Spring Depths (Underwater)\nPlace Hunting Traps in Spring Shallows (Underwater)",
         "shardFamily": "Reptile, Scaled, Serpent",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
@@ -577,7 +577,7 @@
     {
         "shardID": "U62",
         "attributeName": "Starlyn Training",
-        "attributeEffect": "Gain +1%–10% more points in Starlyn Contests",
+        "attributeEffect": "Gain +0.5%–5% more points in Starlyn Contests",
         "shardName": "Solar",
         "wikiDescription": "Catch with a Fishing Net\nPlace Hunting Traps in Spring Shallows (Underwater)",
         "shardFamily": "Tropical Fish",
@@ -589,7 +589,7 @@
         "attributeName": "Visitor Compost",
         "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring Compost",
         "shardName": "Parched",
-        "wikiDescription": "Catch with Pocket Black Hole\nKill Honeymite while using Salts\nLather Honeycomb on Helix Trees",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Parched while using Salts\nLather Honeycomb on Helix Trees",
         "shardFamily": "",
         "shardSkill": "Farming",
         "shardCategory": "Combat"
@@ -618,7 +618,7 @@
     {
         "shardID": "U67",
         "attributeName": "Visitor Cheese",
-        "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring Tasty Cheese",
+        "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring  Tasty Cheese",
         "shardName": "Woodlouse",
         "wikiDescription": "Catch with Lasso\nLather Honeycomb on Mangrove Trees",
         "shardFamily": "Bug, Crustacean, Trash Lover",
@@ -638,9 +638,9 @@
     {
         "shardID": "U69",
         "attributeName": "Bayou Treasure",
-        "attributeEffect": "Grants +0.1–1  Treasure Chance while in the Backwater Bayou",
+        "attributeEffect": "Grants +0.1–1  Treasure Chance while in the  Backwater Bayou",
         "shardName": "Cheeky Tiki",
-        "wikiDescription": "Catch with a Pocket Black Hole",
+        "wikiDescription": "Catch with Pocket Black Hole",
         "shardFamily": "Creation",
         "shardSkill": "Fishing",
         "shardCategory": "Combat"
@@ -648,7 +648,7 @@
     {
         "shardID": "U70",
         "attributeName": "Visitor Plant",
-        "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring Plant Matter",
+        "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring  Plant Matter",
         "shardName": "Red Panda",
         "wikiDescription": "Purchased in Sanger's Shop",
         "shardFamily": "Elusive, Panda",
@@ -680,7 +680,7 @@
     {
         "shardID": "U75",
         "attributeName": "Construct Ruler",
-        "attributeEffect": "Grants +3%–30% more  Damage against ︎ Construct Construct mobs",
+        "attributeEffect": "Grants +3%–30% more  Damage against ︎ Construct mobs",
         "shardName": "Shrieky Tiki",
         "wikiDescription": "Catch with Pocket Black Hole",
         "shardFamily": "Creation",
@@ -723,7 +723,7 @@
     {
         "shardID": "U82",
         "attributeName": "Helix Collector",
-        "attributeEffect": "Grants +1–10  Helix Fortune for every digit in your Helix Log Collection. (Max 10M collection)",
+        "attributeEffect": "Grants +1–10  Helix Fortune for every digit in your Helix Log collection (Max 10M collection)",
         "shardName": "Hawk",
         "wikiDescription": "Unlocked from Helix Collection VII",
         "shardFamily": "Bird",
@@ -735,9 +735,9 @@
     {
         "shardID": "U85",
         "attributeName": "Ticket Discount",
-        "attributeEffect": "Upgrading Safari Tickets at the Safari Manager costs +1%–10% less Forest Essence",
+        "attributeEffect": "Upgrading Safari Tickets at the Safari Manager costs +1%–10% less Forest Essence",
         "shardName": "June Bug",
-        "wikiDescription": "Unlocked from Ruby Veilshroom IV",
+        "wikiDescription": "Unlocked from Ruby Veilshroom Collection IV",
         "shardFamily": "Bug",
         "shardSkill": "Global",
         "shardCategory": "Forest"
@@ -747,7 +747,7 @@
     {
         "shardID": "U88",
         "attributeName": "Visitor Dung",
-        "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring Dung",
+        "attributeEffect": "Garden Visitors have a +0.25%–2.5% chance to bring Dung",
         "shardName": "Dung Beetle",
         "wikiDescription": "Place Hunting Traps in Torrhus Canyon (On Land)\nPlace Hunting Traps in Spring Path\nFloor Drop in Torrhus Canyon",
         "shardFamily": "Bug, Trash Lover",

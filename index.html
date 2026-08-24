@@ -136,10 +136,27 @@
             </div>
             <div id="tab3" style="display: none">
                 <h1>Shard and Attribute Viewer</h1>
-                <p>Insert a shard name or shard ID to view information about it.</p>
-                <p>Examples of valid inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc9">Hideonwall</span>, <span class="minecraft-font mc5">Ghost</span></p>
-                <p>To see information for multiple shards at once, use <span class="minecraft-font mcc">everything</span> or a rarity name as the input.</p>
-                <label class="no-select">Input a shard ID or name here: <input type="text" class="minecraft-font" id="input4" /></label>
+                <p>Insert a shard name, shard ID, or rarity name to view shard and attribute information.</p>
+                <p>Examples of valid inputs: <span class="minecraft-font">C7</span>, <span class="minecraft-font mc9">rare</span>, <span class="minecraft-font mcc">everything</span></p>
+                <!--<p>To see information for multiple shards at once, use <span class="minecraft-font mcc">everything</span> or a rarity name as the input.</p>-->
+                <label class="no-select">Input a rarity, shard ID, or shard name here: <input type="text" class="minecraft-font" id="input4" /></label>
+                <br />
+                <!--<label for="input41">Filter by shard rarity:</label>
+                <select id="input41">
+                    <option>All Rarities</option>
+                </select>
+                <br />-->
+                <p>If your input targets multiple shards, refine your search further:</p>
+                <label for="input42">Filter by shard family:</label>
+                <select id="input42">
+                    <option value="none">All Families</option>
+                </select>
+                <br />
+                <label for="input43">Filter by shard category:</label>
+                <select id="input43">
+                    <option value="none">All Categories</option>
+                </select>
+                <br />
                 <br />
                 <button id="clickable-viewer" class="minecraft-font">View Shard Info</button>
                 <br />

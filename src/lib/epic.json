@@ -43,7 +43,7 @@
     {
         "shardID": "E5",
         "attributeName": "Excellent Karma",
-        "attributeEffect": "Grants +1–10  Hunting Fortune towards Epic Attributes",
+        "attributeEffect": "Grants +1–10  Hunting Fortune towards EPIC Attributes",
         "shardName": "Leviathan",
         "wikiDescription": "Fusing Lizard Family with Water Category and Rare or higher",
         "shardFamily": "Lizard, Reptile",
@@ -55,7 +55,7 @@
         "attributeName": "Echo of Resistance",
         "attributeEffect": "Your Resistance Attributes are +2%–20% stronger",
         "shardName": "Alligator",
-        "wikiDescription": "Fusing Crocodile Shard with Combat Category and Rare or higher\nPlace Hunting Traps in Backwater Bayou (Underwater)\nKill Alligator while using Salts",
+        "wikiDescription": "Fusing Crocodile Shard with Combat Category and Rare or higher\nKill Alligator while using Salts\nPlace Hunting Traps in Backwater Bayou (Underwater)",
         "shardFamily": "Croco, Reptile",
         "shardSkill": "Hunting",
         "shardCategory": "Combat"
@@ -65,7 +65,7 @@
         "attributeName": "Berry Mogul",
         "attributeEffect": "Your Salts last +1%–10% longer",
         "shardName": "Fenlord",
-        "wikiDescription": "Fusing Bullfrog Shard with Forest Category and Rare or higher\nPlace Hunting Traps in Galatea (On Land)",
+        "wikiDescription": "Fusing Bullfrog Shard with Forest Category and Rare or higher",
         "shardFamily": "Amphibian, Frog",
         "shardSkill": "Hunting",
         "shardCategory": "Forest"
@@ -113,9 +113,9 @@
     {
         "shardID": "E12",
         "attributeName": "Special Upgrades",
-        "attributeEffect": "Summoning Eyes you drop have a +0.5%–5% chance to be recombobulated",
+        "attributeEffect": "Summoning Eyes you drop have a +0.5%–5% chance to be recombobulated\nPlacing recombobulated Summoning Eyes increases your chance of spawning a Superior Dragon\n",
         "shardName": "Special Zealot",
-        "wikiDescription": "Fusing Zealot Shard with Combat Category and Elusive Family\nCatch with Pocket Black Holes\nKill Zealot Special Enderman while using Salts",
+        "wikiDescription": "Fusing Zealot Shard with Combat Category and Elusive Family\nCatch with Pocket Black Hole\nKill Zealot Special Enderman while using Salts",
         "shardFamily": "Elusive",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
@@ -125,7 +125,7 @@
         "attributeName": "Lunar Power",
         "attributeEffect": "Grants +5–50  Farming Fortune during the Night",
         "shardName": "Lunar Moth",
-        "wikiDescription": "Fusing Ladybug Shard with Bug Family and Rare or higher",
+        "wikiDescription": "Fusing Ladybug Shard with Bug Family and Rare or higher\nCatch with Lasso\nKill Lunar Moth while using Salts",
         "shardFamily": "Bug",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
@@ -135,7 +135,7 @@
         "attributeName": "Trophy Hunter",
         "attributeEffect": "Grants +2–20  Trophy Chance",
         "shardName": "Fire Eel",
-        "wikiDescription": "Fusing Eel Shard with Moray Eel Shard\nFusing Moray Eel Shard with Firefly Shards\nCatch with Pocket Black Holes\nKill Fire Eel while using Salts\nObtained from Kuudra",
+        "wikiDescription": "Fusing Eel Shard with Moray Eel Shard\nFusing Moray Eel Shard with Firefox and Firefly Shards\nCatch with Pocket Black Hole\nKill Fire Eel while using Salts\nObtained from Kuudra",
         "shardFamily": "Amphibian, Eel",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
@@ -165,7 +165,7 @@
         "attributeName": "Fishing Speed",
         "attributeEffect": "Grants +3–30  Fishing Speed",
         "shardName": "Water Hydra",
-        "wikiDescription": "Catch with Pocket Black Holes\nKill Water Hydra while using Salts",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Water Hydra while using Salts",
         "shardFamily": "",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
@@ -203,7 +203,7 @@
     {
         "shardID": "E21",
         "attributeName": "Reborn",
-        "attributeEffect": "Killing a Prince has a +10%–100% chance to add 1 Bonus Score to your Dungeon Run. Limit of +1 Score per run",
+        "attributeEffect": "Killing a Prince has a +10%–100% chance to add 1 Bonus Score to your Dungeon Run\nLimit of +1 Score per run\n",
         "shardName": "Prince",
         "wikiDescription": "Kill Prince Bernhard, Prince Christian, Prince Pieter, Prince Nicholas, Prince Alexander, Prince Marius, Prince Valentin, or Prince Friedrich while using Salts",
         "shardFamily": "",
@@ -296,7 +296,7 @@
         "attributeName": "Solar Power",
         "attributeEffect": "Grants +5–50  Farming Fortune during the day",
         "shardName": "Firefly",
-        "wikiDescription": "Fusing Praying Mantis Shard with Bezal, Cinderbat, Flare, Lava Flame, Fire Eel, Bal, and Flaming Spider Shards",
+        "wikiDescription": "Fusing Praying Mantis Shard with Bezal, Cinderbat, Flare, Lava Flame, Fire Eel, Bal, and Flaming Spider Shards\nCatch with Lasso\nKill Firefly while using Salts",
         "shardFamily": "Bug",
         "shardSkill": "Farming",
         "shardCategory": "Forest"
@@ -316,7 +316,7 @@
         "attributeName": "Veil",
         "attributeEffect": "Grants +1–10  True Defense",
         "shardName": "Ghost",
-        "wikiDescription": "Catch with Pocket Black Hole\nKill Ghosts while using Salts",
+        "wikiDescription": "Catch with Pocket Black Hole\nKill Ghost while using Salts",
         "shardFamily": "Cave Dweller",
         "shardSkill": "Combat",
         "shardCategory": "Combat"
@@ -387,7 +387,7 @@
     {
         "shardID": "E43",
         "attributeName": "Ghastly Distraction",
-        "attributeEffect": "Pacifies enemies for +1s–10s after mining Opal Gemstones in the Smoldering Tomb. Does not work on Slayer Bosses, Slayer Minibosses. Attacking an enemy ends the effect early",
+        "attributeEffect": "Pacifies enemies for +1s–10s after mining Opal Gemstones in the  Smoldering Tomb\nDoes not work on Slayer Bosses, Slayer Minibosses. Attacking an enemy ends the effect early\n",
         "shardName": "Dive Ghast",
         "wikiDescription": "Catch with Lasso\nKill Dive Ghast while using Salts",
         "shardFamily": "",
@@ -429,7 +429,7 @@
         "attributeName": "Fisher's Fortune",
         "attributeEffect": "Grants +0.5–5  Magic Find while on Fishing Islands",
         "shardName": "Giant Isopod",
-        "wikiDescription": "Kill Giant Isopod while using Salts",
+        "wikiDescription": "Catch with a Fishing Net*\nKill Giant Isopod while using Salts",
         "shardFamily": "Crustacean, Elusive",
         "shardSkill": "Fishing",
         "shardCategory": "Water"
@@ -512,7 +512,7 @@
     {
         "shardID": "E60",
         "attributeName": "Glossy Fortune",
-        "attributeEffect": "Increases your chance of finding Glossy Gemstones during Mining Fiestas by +1%–10%",
+        "attributeEffect": "Increases your chance of finding  Glossy Gemstones during Mining Fiestas by +1%–10%",
         "shardName": "Scatha",
         "wikiDescription": "Catch with Pocket Black Hole",
         "shardFamily": "Cave Dweller",
@@ -524,7 +524,7 @@
     {
         "shardID": "E63",
         "attributeName": "Royal Riches",
-        "attributeEffect": "Grants +5–50  Mining Speed and +2.5–25  Ore Fortune while in the Mines of Divan",
+        "attributeEffect": "Grants +5–50  Mining Speed and +2.5–25  Ore Fortune while in the  Mines of Divan",
         "shardName": "Nilbog",
         "wikiDescription": "Fusing Gimmiegold Shard with Legendary or higher",
         "shardFamily": "Cave Dweller, Poltergeist",
@@ -536,7 +536,7 @@
     {
         "shardID": "E66",
         "attributeName": "Freezing Spread",
-        "attributeEffect": "Grants +0.5  Gemstone Spread for every 29–20  Cold Resistance",
+        "attributeEffect": "Grants +0.5  Gemstone Spread for every 29–20  Cold Resistance you have while in the  Glacite Mineshafts",
         "shardName": "Littlefoot",
         "wikiDescription": "Catch with Pocket Black Hole\nKill Littlefoot while using Salts",
         "shardFamily": "Arctic",
